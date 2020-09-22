@@ -1,4 +1,4 @@
-Удобней смотрится на сайте: https://docs.ankiweb.net
+Удобней смотрится на сайте: https://alexeygorelov.github.io/anki-manual-ru
 
 Это руководство лицензировано по лицензии CC BY-SA 4:
 
