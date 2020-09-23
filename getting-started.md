@@ -12,56 +12,53 @@
 
 - [Общие колоды и обзор основ](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
-- [Syncing](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
+- [Синхронизация](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
 
-- [Switching Card
-  Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+- [Переключение порядка карточек](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
-- [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+- [Оформление карточек](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
-- [Typing in the
-  Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+- [Вписывание ответа](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+
+Если YouTube блокируется в вашей стране, вы можете [скачать эти видео](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/).
+
+## Основные понятия
+
+### Карточки
+
+Пара вопрос-ответ называется 'карточкой'. Это название происходит от бумажных
+флэш карт (англ. *flashcard*) [прим. перев. Ещё встречается перевод как
+"дидактическая карточка"] с вопросом на одной стороне и ответом на обратной.
+В Anki карточка на самом деле не выглядит как бумажная карточка и когда
+отображается ответ, то вопрос остается видимым (по умолчанию, такое поведение
+может быть изменено). Например, если вы изучаете основы химии, то можете увидеть
+такой вопрос:
+
+    В: Химический символ кислорода?
+
+После обдумывания и принятия решения, что ответом является О, вы нажимаете
+кнопку показа ответа и Anki показывает вам:
+
+    В: Химический символ кислорода?
+    О: О
+
+Убедившись в своей правоте вы можете сообщить Anki, насколько легко вам было
+вспомнить ответ, и Anki подберёт время следующего показа карточки.
+
+### Колоды
+
+'Колода' -- это группа карточек. Вы можете размещать карточки в разных колодах
+для изучения отдельных частей вашей коллекции карточек, вместо того чтобы учить
+все сразу. У каждой колоды могут быть разные настройки, например, сколько новых
+карточек показывать каждый день или как долго следует ждать до следующего
+показа карточки.
+
+Колоды могут содержать другие колоды, что позволяет вам организовать их в
+древовидную структуру. В Anki используется "::" как показатель разных уровней.
+Так в названии колоды "Китайский::Ханзи" отмечается, что колода "Ханзи"
+является частью колоды "Китайский".
 
 <!----------------------------------------------------------------------------->
-If YouTube is unavailable in your country, you can [download the
-videos](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
-instead.
-
-## Key Concepts
-
-### Cards
-
-A question and answer pair is called a 'card'. This is based on a paper
-flashcard with a question on one side and the answer on the back. In
-Anki a card doesn’t actually look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
-you’re studying basic chemistry, you might see a question like:
-
-    Q: Chemical symbol for oxygen?
-
-After thinking about it, and deciding the answer is O, you click the
-show answer button, and Anki shows you:
-
-    Q: Chemical symbol for oxygen?
-    A: O
-
-After confirming that you are correct, you can tell Anki how well you
-remembered, and Anki will choose a next time to show you again.
-
-### Decks
-
-A 'deck' is a group of cards. You can place cards in different decks to
-study parts of your card collection instead of studying everything at
-once. Each deck can have different settings, such as how many new cards
-to show each day, or how long to wait until cards are shown again.
-
-Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses “::” to show different levels. A deck called
-“Chinese::Hanzi” refers to a “Hanzi” deck, which is part of a “Chinese”
-deck. If you select “Hanzi” then only the Hanzi cards will be shown; if
-you select “Chinese” then all Chinese cards, including Hanzi cards, will
-be shown.
-
 To place decks into a tree, you can either name them with “::” between
 each level, or drag and drop them from the deck list. Decks that have
 been nested under another deck (that is, that have at least one “::” in
