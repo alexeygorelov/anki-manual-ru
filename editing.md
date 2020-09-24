@@ -156,7 +156,7 @@ and the top right button to change deck. The window that opens up will
 not only allow you to select a deck or note type, but also to add new
 decks or manage your note types.
 
-## Using Decks Appropriately
+## Правильное использование колод
 
 Decks are designed to divide your content up into broad categories that
 you wish to study separately, such as English, Geography, and so on. You

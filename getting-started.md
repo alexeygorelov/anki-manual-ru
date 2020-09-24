@@ -58,27 +58,28 @@
 Так в названии колоды "Китайский::Ханзи" отмечается, что колода "Ханзи"
 является частью колоды "Китайский".
 
-<!----------------------------------------------------------------------------->
-To place decks into a tree, you can either name them with “::” between
-each level, or drag and drop them from the deck list. Decks that have
-been nested under another deck (that is, that have at least one “::” in
-their names) are often called 'subdecks', and top-level decks are
-sometimes called 'superdecks' or 'parent decks'.
+Чтобы собирать колоды в дерево, вы можете либо именовать их с "::" между каждым
+уровнем, либо мышкой перетаскивать и отпускать из списка колод. Колоды,
+вложенные в другие колоды (в названии которых хоть раз встречается "::") часто
+называют 'подколодами', а колоды верхнего уровня иногда называют 'суперколодами'
+или 'родительскими'.
 
-Anki starts with a deck called “default”; any cards which have somehow
-become separated from other decks will go here. Anki will hide the
-default deck if it contains no cards and you have added other decks.
-Alternatively, you may rename this deck and use it for other cards.
+Anki запускается с единственной колодой под названием "по умолчанию" (англ.
+*default*); все карточки, которые каким-то образом отделились от других колод,
+будут попадать сюда. Anki скроет колоду по умолчанию, если в ней нет карт и вы
+добавили другие колоды. Или же вы можете переименовать эту колоду и использовать
+ее для других карточек.
 
-Decks are best used to hold broad categories of cards, rather than
-specific topics such as “food verbs” or “lesson 1”. For more info on
-this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
+Колоды больше всего подходят для объединения широких категорий карточек, а не
+для таких конкретных тем, как "пищевые глаголы" или "урок 1". Более подробную
+информацию об этом см. в разделе [правильное использование колод](editing.md#правильное-использование-колод).
 
-For information on how decks affect the order cards are displayed in,
-please see the [display order](studying.md#display-order) section.
+Информацию о том, как колоды влияют на порядок отображения в них карточек,
+смотрите в разделе [порядок отображения](studying.md#порядок-отображения)
 
 ### Notes & Fields
 
+<!----------------------------------------------------------------------------->
 When making flashcards, it’s often desirable to make more than one card
 that relates to some information. For example, if you’re learning
 French, and you learn that the word “bonjour” means “hello”, you may
