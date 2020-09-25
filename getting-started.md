@@ -27,7 +27,7 @@
 ### Карточки
 
 Пара вопрос-ответ называется 'карточкой'. Это название происходит от бумажных
-флэш карт (англ. *flashcard*) [прим. перев. Ещё встречается перевод как
+флэш-карточек (англ. *flashcard*) [прим. перев. Ещё встречается перевод как
 "дидактическая карточка"] с вопросом на одной стороне и ответом на обратной.
 В Anki карточка на самом деле не выглядит как бумажная карточка и когда
 отображается ответ, то вопрос остается видимым (по умолчанию, такое поведение
@@ -77,23 +77,23 @@ Anki запускается с единственной колодой под н
 Информацию о том, как колоды влияют на порядок отображения в них карточек,
 смотрите в разделе [порядок отображения](studying.md#Порядок-отображения)
 
-### Notes & Fields
+### Записи и поля
+
+При создании флэш-карточек часто бывает необходимо сделать более одной
+карточки, относящихся к одной информации. Например, если вы изучаете
+французский и узнаёте, что слово "bonjour" означает "здравствуйте", то вы
+можете создать одну карточку, которая показывает вам "bonjour" и просит вас
+вспомнить "здравствуйте", а другую карточку, которая показывает вам
+"здравствуйте" и просит вас вспомнить "bonjour". Одна карточка проверяет вашу
+способность узнавать иностранное слово, а другая -- умение воспроизвести его.
+
+Используя бумажные флэш-карточки, у вас только один вариант -- написать всю
+информацию дважды, по одному разу на каждой карточке. Некоторые компьютерные
+программы облегчают создание флэш-карточек, предоставляя возможность
+перевернуть лицевую и оборотную стороны карточки. Эта ситуация получше, чем с
+бумажными карточками, но есть два основных недостатка:
 
 <!----------------------------------------------------------------------------->
-When making flashcards, it’s often desirable to make more than one card
-that relates to some information. For example, if you’re learning
-French, and you learn that the word “bonjour” means “hello”, you may
-wish to create one card that shows you “bonjour” and asks you to
-remember “hello”, and another card that shows you “hello” and asks you
-to remember “bonjour”. One card is testing your ability to recognize the
-foreign word, and the other card is testing your ability to produce it.
-
-When using paper flashcards, your only option in this case is to write
-out the information twice, once for each card. Some computer flashcard
-programs make life easier by providing a feature to flip the front and
-back sides. This is an improvement over the paper situation, but there
-are two major downsides:
-
 - Because such programs don’t track your performance of recognition
   and production separately, cards will tend not to be shown to you at
   the optimum time, meaning you forget more than you’d like, or you
