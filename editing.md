@@ -1,24 +1,26 @@
-# Adding/Editing
+# Добавление и изменение
 
-## Adding Cards and Notes
+## Добавление карточек и записей
 
-Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the main window,
-and the Add Notes window will appear.
+Вспомним из [основ](getting-started.md), что в Anki мы добавляем записи, а не
+карточки, и уже из них Anki создаёт нам карточки. Нажав 'Добавить' в главном окне
+появится окно добавления записей.
 
-The top left of the window shows us the current note type. If it does
-not say “Basic,” then you may have added some note types when you
-downloaded a shared deck. The text below assumes that “Basic” is
-selected.
+В верхней левой части окна отображается текущий тип записи. Если он не указан
+как "Basic", то, возможно, вы добавили некоторые типы записей вместе со
+скачанными когда-то общими колодами. Следующий текст предполагает, что выбран
+тип "Basic".
 
-The top right of the window shows us the deck cards will be added to. If
-you’d like to add cards to a new deck, you can click on the deck name
-button and then click “Add”.
+В верхней правой части окна отображается колода, в которую будут добавляться
+карточки. Если хотите добавить карточки в новую колоду, вы можете нажать на
+названии колоды и затем нажать 'Добавить'.
 
-Below the note type, you’ll see some buttons, and an area labeled
-“Front” and “Back”. Front and Back are called 'fields', and you can add,
-remove and rename them by clicking the “Fields…​” button above.
+Под типом записи вы увидите несколько кнопок и области под названиями "Лицевая"
+(англ. *Front*) и "Обратная" (англ. *Back*). Лицевая и Обратная области
+называются 'полями' и вы можете добавлять, удалять и переименовывать их, щелкнув
+по кнопке "Поля…​" выше.
 
+<!----------------------------------------------------------------------------->
 Below the fields is another area labelled “Tags”. Tags are labels that
 you can attach to your notes, to make organizing and finding notes
 easier. You can leave the tags blank if you wish, or add one or more of

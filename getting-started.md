@@ -93,22 +93,22 @@ Anki запускается с единственной колодой под н
 перевернуть лицевую и оборотную стороны карточки. Эта ситуация получше, чем с
 бумажными карточками, но есть два основных недостатка:
 
+- Поскольку подобные программы отслеживают вашу способность к распознаванию и
+  воспроизведению информации по-отдельности, карточки, как правило, не
+  показываются в оптимальное время, что означает, что вы либо забываете больше
+  чем хотелось, либо занимаетесь больше, чем необходимо.
+
+- Поменять местами вопрос и ответ можно только в том случае, если вам нужна
+  в точности одинаковая информация на обеих сторонах. Это означает, что вы не
+  можете, например, отобразить дополнительную информацию на обратной стороне
+  каждой карточки.
+
+Anki решает эти проблемы, позволяя вам разделить содержимое ваших карточек на
+отдельные кусочки информации. Вы можете указать Anki, какие кусочки информации
+вы хотите на каждой из карточек и Anki позаботится о создании их для вас, а так
+же обновит их если вы сделаете какие-либо изменения в будущем.
+
 <!----------------------------------------------------------------------------->
-- Because such programs don’t track your performance of recognition
-  and production separately, cards will tend not to be shown to you at
-  the optimum time, meaning you forget more than you’d like, or you
-  study more than is necessary.
-
-- Reversing the question and answer only works when you want exactly
-  the same content on each side. This means it’s not possible to
-  display extra info on the back of each card for example.
-
-Anki solves these problems by allowing you to split the content of your
-cards up into separate pieces of information. You can then tell Anki
-which pieces of information you want on each card, and Anki will take
-care of creating the cards for you and updating them if you make any
-edits in the future.
-
 Imagine we want to study French vocabulary, and we want to include the
 page number on the back of each card. We want our cards to look like
 this:
