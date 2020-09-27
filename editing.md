@@ -101,7 +101,7 @@ material you’re studying is a good choice here – things like “Japanese”,
 ”Trivia”, and so on. Once you’ve chosen a name, close the Note Types
 window, and you’ll return to the adding window.
 
-## Customizing Fields
+## Настройка полей
 
 To customize fields, click the “Fields…​” button when adding or editing
 a note, or while the note type is selected in the Manage Note Types
