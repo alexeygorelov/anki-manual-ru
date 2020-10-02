@@ -3,7 +3,7 @@
 - [Начало работы](getting-started.md)
 - [Studying](studying.md)
 - [Adding/Editing](editing.md)
-- [Card Templates](templates/intro.md)
+- [Шаблоны карточек](templates/intro.md)
   - [Field Replacements](templates/fields.md)
   - [Card Generation](templates/generation.md)
   - [Styling & HTML](templates/styling.md)

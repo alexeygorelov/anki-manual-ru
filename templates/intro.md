@@ -1,4 +1,4 @@
-# Card Templates
+# Шаблоны карточек
 
 Card templates tell Anki which fields should appear on the front and back of your card,
 and control which cards will be generated when certain fields have text in them.
