@@ -173,29 +173,18 @@ The production card templates work in a similar way:
     О: {{Русский}}<br>
        Страница #{{Страница}}
 
+Однажды создав тип карточки, в дальнейшем, каждый раз добавляя новую запись,
+карточка будет создаваться на основе этого типа карточки. Типы карточек
+упрощают содержание в единообразном состоянии оформления ваших карточек и могут
+значительно облегчить добавление информации.
+
+Для добавления и изменения типов карточек, нажмите кнопку "Карточки…​" во время добавления или изменения записи. Дополнительные сведения о типах карточек см. в разделе [Шаблоны карточек](templates/intro.md).
+
+### Типы записей
+
+Anki позволяет создавать различные типы записей для различного материала. У каждого типа записи имеется свой набор полей и типов карточек. Хорошей идеей будет создание отдельных типов записей для каждой обширной темы которую вы изучаете. Для этого, в приведённом выше французском примере, можно создать тип записи с названием "Французский". Если бы мы хотели изучать столицы, мы могли бы создать для этого отдельный тип записи, с такими полями, как "Страна" и "Столица".
+
 <!----------------------------------------------------------------------------->
-Once a card type has been created, every time you add a new note, a card
-will be created based on that card type. Card types make it easy to keep
-the formatting of your cards consistent and can greatly reduce the
-amount of effort involved in adding information. They also mean Anki can
-ensure related cards don’t appear too close to each other, and they
-allow you to fix a typing mistake or factual error once and have all the
-related cards updated at once.
-
-To add and edit card types, click the “Cards…​” button while adding or
-editing notes. For more information on card types, please see the [Cards
-and Templates](templates/intro.md) section.
-
-### Note Types
-
-Anki allows you to create different types of notes for different
-material. Each type of note has its own set of fields and card types.
-It’s a good idea to create a separate note type for each broad topic
-you’re studying. In the above French example, we might create a note
-type called “French” for that. If we wanted to learn capital cities, we
-could create a separate note type for that as well, with fields such as
-“Country” and “Capital City”.
-
 When Anki checks for duplicates, it only compares other notes of the
 same type. Thus if you add a capital city called “Orange” using the
 capital city note type, you won’t see a duplicate message when it comes
