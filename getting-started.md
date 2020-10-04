@@ -184,32 +184,29 @@ The production card templates work in a similar way:
 
 Anki позволяет создавать различные типы записей для различного материала. У каждого типа записи имеется свой набор полей и типов карточек. Хорошей идеей будет создание отдельных типов записей для каждой обширной темы которую вы изучаете. Для этого, в приведённом выше французском примере, можно создать тип записи с названием "Французский". Если бы мы хотели изучать столицы, мы могли бы создать для этого отдельный тип записи, с такими полями, как "Страна" и "Столица".
 
+Когда Anki проверяет наличие дубликатов, то сравнивает только другие заметки
+того же типа. Так, если вы добавите столицу под названием "Апельсин" используя
+тип записи столицы, то вы не увидите сообщение о дубликате, когда прийдёт время
+учить как сказать "апельсин" по-французски.
+
+При создании новой коллекции [прим. перев. *профиля*], Anki автоматически
+добавляет некоторые стандартные типы записей в неё. Эти типы записей
+предназначены облегчить работу с Anki для новых пользователей, но в дальнейшем
+рекомендуется определить свои собственные типы записей для того материала
+который вы изучаете.
+
+Основная  
+Содержит поля Лицо и Оборот, и будет создавать одну карточку. Текст напечатанный
+в поле Лицо будет отображаться на лицевой стороне карточки, а текст который вы
+введёте в поле Оборот будет отображаться на обратной стороне карточки.
+
+Основная (с обратной карточкой)  
+Как Основная, только создаёт две карточки для введённого вами текста: одну из
+лицо→оборот и одну из оборот→лицо.
+
 <!----------------------------------------------------------------------------->
-When Anki checks for duplicates, it only compares other notes of the
-same type. Thus if you add a capital city called “Orange” using the
-capital city note type, you won’t see a duplicate message when it comes
-time to learn how to say “orange” in French.
-
-When you create a new collection, Anki automatically adds some standard
-note types to it. These note types are provided to make Anki easier for
-new users, but in the long run it’s recommended you define your own note
-types for the content you are learning. The standard note types are as
-follows:
-
-Basic  
-Has Front and Back fields, and will create one card. Text you enter in
-Front will appear on the front of the card, and text you enter in Back
-will appear on the back of the card.
-
-Basic (and reversed card)  
-Like Basic, but creates two cards for the text you enter: one from
-front→back and one from back→front.
-
-Basic (optional reversed card)  
-This is a front→back card, and optionally a back→front card. To do this,
-it has a third field called “Add Reverse.” If you enter any text into
-that field, a reverse card will be created. More information about this
-is available in the [Cards and Templates](templates/intro.md) section.
+Основная (обратная по выбору)  
+Это лицо→оборот карточка, и 
 
 Cloze  
 A note type which makes it easy to select text and turn it into a cloze
