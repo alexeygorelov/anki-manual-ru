@@ -247,7 +247,7 @@ When pasting text, Anki will strip most formatting by default. If you
 hold down the shift key while pasting, Anki will preserve more
 formatting.
 
-## Cloze Deletion
+## Заполнение пропусков
 
 'Cloze deletion' is the process of hiding one or more words in a
 sentence. For example, if you have the sentence:
