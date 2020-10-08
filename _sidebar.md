@@ -1,7 +1,7 @@
 - [Введение](/)
 - [Общие сведения](background.md)
 - [Начало работы](getting-started.md)
-- [Studying](studying.md)
+- [Изучение](studying.md)
 - [Adding/Editing](editing.md)
 - [Шаблоны карточек](templates/intro.md)
   - [Field Replacements](templates/fields.md)
