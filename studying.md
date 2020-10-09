@@ -1,26 +1,23 @@
 # Изучение
 
+Когда вы нашли колоду которая вам нравится или добавили несколько записей
+самостоятельно -- пора начинать обучение.
+
+## Колоды
+
+Заучивание карточек в Anki осуществляется в пределах выбранной в настоящий
+момент колоды и любых подколод которые она содержит.
+
+На экране колод ваши колоды представлены в виде списка. В нем присутствуют два
+числовых столбца: 'К просмотру' и 'Новые'. 'К просмотру' -- это количество
+ожидающих повторения и уже разучиваемые карточки. 'Новые' -- это количество
+новых карточек, которые подготовлены к заучиванию в этот день.
+
+При нажатии на колоду она станет 'текущей колодой' и Anki переключится на экран
+изучения. Вы можете вернуться к списку колод, чтобы изменить выбранную в данный
+момент колоду в любое время, нажав на 'Колоды' в верхней части главного окна.
+
 <!----------------------------------------------------------------------------->
-When you have found a deck you like or entered some notes in, it’s time
-to start studying.
-
-## Decks
-
-Study in Anki is limited to the currently selected deck as well as any
-subdecks it contains.
-
-On the decks screen, your decks will be displayed in a list. There are
-two number columns, 'due' and 'new'. 'Due' is the count of waiting
-reviews and cards currently in learning. 'New' is the number of new
-cards that are ready to be learnt that day.
-
-When you click on a deck, it will become the 'current deck', and Anki
-will change to the study screen. You can return to the deck list to
-change the currently selected deck at any time by clicking on “Decks” at
-the top of the main window. (You can also use the Study
-Deck action in the menu to select a new deck from the keyboard, or you
-can press the ‘s’ key to study the currently selected deck.)
-
 You can click the gears button to the right of a deck to rename or
 delete a deck, change its options, or [export](exporting.md) it.
 
