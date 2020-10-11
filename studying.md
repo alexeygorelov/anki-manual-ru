@@ -26,7 +26,7 @@
 Если в колоде имеются подколоды, карточки отобразятся из [каждой колоды по
 очереди](studying.md#Порядок-отображения).
 
-## Study Overview
+## Общие сведения об изучении
 
 После нажатия на колоду для изучения, вы увидите экран на котором показано
 сколько карточек у вас запланировано на сегодня. Это называется экраном
@@ -41,28 +41,18 @@
 - **Повторяемые** --- это карточки, которые были изучены ранее, а теперь должны
   быть пересмотрены, чтобы вы их не забыли.
 
+Чтобы начать сеанс заучивания, нажмите кнопку **Учить**. Anki будет показывать
+вам карточки до тех пор, пока запланированные на сегодня карточки не закончатся.
+
+В процессе изучения можно вернуться к обзору, нажав клавишу "s" на клавиатуре.
+
+## Вопросы
+
+При показе карточки, сперва показывается только вопрос. Подумав над ответом,
+нажмите либо кнопку **Показать ответ**, либо пробел на клавиатуре --- будет показан ответ. Это нормально, если вам потребуется немного времени, чтобы вспомнить ответ, но, как правило, если вы не можете ответить в течение 10 секунд, скорее всего, лучше сдаться и показать ответ, чем продолжать пытаться его вспомнить. 
+
 <!------------------------------------------------------------------------------->
-To start a study session, click the **Study Now** button. Anki will
-proceed to show you cards until the cards to be shown for the day have
-run out.
-
-While studying, you can return to the overview by pressing the “s” key
-on your keyboard.
-
-## Questions
-
-When a card is shown, only the question is shown at first. After
-thinking about the answer, either click the **Show Answer** button, or
-press the spacebar. The answer will then be shown. It’s okay if it takes
-you a little while to recall the answer, but as a general rule if you
-can’t answer within about 10 seconds, it’s probably better to give up
-and show the answer than keep struggling to remember.
-
-When the answer is shown, you should compare the answer you thought of
-with the answer which is shown and tell Anki how well you remembered. If
-you don’t trust yourself to compare your answer accurately, you can ask
-Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
-just showing it to you.
+Когда покажется ответ, вам следует сравнить его с тем который вы придумали и сообщить Anki, на сколько точно вы запомнили.
 
 The number of buttons available for grading depends on whether the card
 is being 'learnt' or 'reviewed'.
