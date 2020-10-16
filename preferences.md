@@ -1,4 +1,4 @@
-# Preferences
+# Настройки
 
 The preferences are available from the Tools menu on Windows/Linux, or
 the Anki menu on a Mac.

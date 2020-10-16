@@ -78,34 +78,35 @@
 последнем шаге, то она переводится [прим. перев. *из изучаемой*] в повторяемую
 карточку (она 'выпускник' (англ. *graduate*)). По умолчанию, карточка достигнув
 конца обучающих шагов, будет показана снова на следующий день, затем задержки
-между показами будут увеличиваться всё больше (смотрите следующий раздел).
+между показами будут увеличиваться (смотрите следующий раздел).
+
+**Легко** --- немедленно переводит карточку в повторяемую, даже если остались
+ещё шаги. По умолчанию, карточка будет показана повторно через 4 дня, затем
+задержки между показами будут увеличиваться. Лёгкая кнопка не будет показана,
+если вы в режиме переучивания, и это задаст тот же интервал, что и "хорошо".
+
+Когда карточки показываются в первый раз, они начинают на первом шаге. Это
+означает, что ответив **Хорошо** на карточке с первого раза покажет её ещё раз
+через 10 минут, а первый шаг в 1 минуту будет пропущен. Если вы нажмёте Снова,
+карточка вернется через 1 минуту.
+
+Вы можете использовать клавиши 1, 2 и 3 на клавиатуре, для выбора конкретной
+кнопки, где 1 --- это **Снова**. Нажатие клавиши пробела выбирает **Хорошо**. 
+
+Если нет других карточек для показа, Anki снова покажет изучаемые карточки,
+даже если их задержка полностью не закончилась. Если вы предпочитаете ждать
+всю обучающую задержку, вы можете изменить поведение в [настройках](preferences.md).
+
+## Повторение
+
+Когда карточка уже была изучена и готова к повторению, есть четыре кнопки для
+оценки ответа:
 
 <!----------------------------------------------------------------------------->
-**Легко** --- немедленно переводит карточку в повторяемую, даже если остались ещё шаги...
+**Снова** --- помечает ваш ответ как неверный и указывает Anki чаще показывать
+карточку в будущем...
 
-When cards are seen for the first time, they start at step one. This
-means answering **Good** on a card for the first time will show it one
-more time in 10 minutes, and the initial 1 minute step will be skipped.
-If you push Again, though, the card will come back in 1 minute.
-
-You can use the 1, 2 and 3 keys on your keyboard to select a particular
-button, where 1 is **Again**. Pressing the spacebar will select
-**Good**.
-
-If there are no other cards to show you, Anki will show learning cards
-again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in the
-[preferences](preferences.md).
-
-## Reviewing
-
-When a card has been previously learnt and is ready to be reviewed
-again, there are four buttons to rate your answer:
-
-**Again** marks your answer as incorrect and asks Anki to show the card
-more frequently in the future. The card is said to have 'lapsed'. Please
-see the [lapses](deck-options.md) section for more information about how lapsed
-reviews are handled.
+<!-- Карточка считается 'просроченной'...? -->
 
 **Hard** shows the card at a slightly longer delay than last time, and
 tells Anki to show the card more frequently in the future.
