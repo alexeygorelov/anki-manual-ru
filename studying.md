@@ -102,21 +102,21 @@
 Когда карточка уже была изучена и готова к повторению, есть четыре кнопки для
 оценки ответа:
 
-<!----------------------------------------------------------------------------->
 **Снова** --- помечает ваш ответ как неверный и указывает Anki чаще показывать
-карточку в будущем...
+карточку в будущем. Карточка считается 'забытой' (англ. *lapsed*). Смотрите
+раздел [забытые](deck-options.md) для получения более подробной информации о
+том, как обрабатываются забытые повторения.
 
-<!-- Карточка считается 'просроченной'...? -->
+**Трудно** --- показывает карточку с чуть большей задержкой, чем в прошлый раз
+и указывает Anki чаще показывать карточку в будущем.
 
-**Hard** shows the card at a slightly longer delay than last time, and
-tells Anki to show the card more frequently in the future.
+**Хорошо** --- сообщает Anki, что последняя задержка была примерно правильной и
+лёгкость карточки не нуждается в уменьшении или увеличении. При значении
+лёгкости по умолчанию, задержка перед следующим показом карточки будет примерно
+в 2,5 раза дольше чем в предыдущий раз, так что если бы вы в прошлый раз ждали
+10 дней, чтобы увидеть карточку, то следующая задержка составит около 25 дней.
 
-**Good** tells Anki that the last delay was about right, and the card
-easiness doesn’t need to be adjusted down or up. At the default starting
-easiness, the card will be shown again approximately 2 1/2 times longer
-than the previous time, so if you had waited 10 days to see the card
-previously, the next delay would be about 25 days.
-
+<!----------------------------------------------------------------------------->
 **Easy** tells Anki you found the delay too short. The card will be
 scheduled further into the future than 'Good', and Anki will schedule
 the card less frequently in the future. Because 'Easy' rapidly increases

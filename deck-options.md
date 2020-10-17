@@ -1,4 +1,4 @@
-# Deck Options
+# Настройки колоды
 
 Deck options are accessed by selecting a deck on the 'Decks' screen, and
 then clicking 'Options' at the bottom of the screen.
@@ -189,7 +189,7 @@ putting them together. This means that there is a slight bias towards
 older cards being shown first, but it prevents individual cards from
 showing up in a predictable order.
 
-## Lapses
+## Забытые
 
 When you forget a review card, it is said to have 'lapsed'. The default
 behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
