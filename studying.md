@@ -116,27 +116,24 @@
 в 2,5 раза дольше чем в предыдущий раз, так что если бы вы в прошлый раз ждали
 10 дней, чтобы увидеть карточку, то следующая задержка составит около 25 дней.
 
-<!----------------------------------------------------------------------------->
-**Easy** tells Anki you found the delay too short. The card will be
-scheduled further into the future than 'Good', and Anki will schedule
-the card less frequently in the future. Because 'Easy' rapidly increases
-the delay, it’s best used for only the easiest of cards. Usually you
-should find yourself answering 'Good' instead.
+**Легко** --- сообщает Anki, что вы сочли задержку слишком короткой. Карточка
+будет запланирована дальше, чем при ответе 'Хорошо' и в последствии Anki будет
+включать её в расписание чуть реже. Поскольку 'Легко' быстро увеличивает
+задержку, она лучше всего подходит для, действительно, самых простых карточек.
+Обычно вместо этого ответа, стоит использовать ответ 'Хорошо'.
 
-As with learning cards, you can use 1-4 on the keyboard to select an
-answer. Pressing the spacebar will select 'Good'.
+Как и с изучаемыми карточками, вы можете использовать клавиши 1-4 на клавиатуре
+для выбора ответа. Нажатие клавиши пробела выбирает **Хорошо**.
 
 ## Due Counts
 
-When only the question is shown, Anki shows three numbers like 12 + 34 +
-56 at the bottom of the screen. These represent the new cards, cards in
-learning, and cards to review. If you’d prefer not to see the numbers,
-you can turn them off in Anki’s preferences.
+Когда показывается только вопрос, Anki показывает в нижней части экрана три
+числа вроде 12 + 34 + 56. Они обозначают новые карточки, изучаемые карточки и
+повторяемые карточки. Если вы предпочитаете не видеть этих цифр, вы можете
+отключить их в настройках Anki.
 
-In the old scheduler, the numbers count _reviews_ needed to finish all the
-cards in that queue, not the number of _cards_. If you have multiple
-steps configured for lapsed cards, the number will increase by more than
-one when you fail a card, since that card needs to be shown several times.
+<!----------------------------------------------------------------------------->
+В старом планировщике, числа считающие _просмотры_ требовало завершения всех карточек в этой очереди, а не число _карточек_...
 
 In the new scheduler, the numbers count _cards_, so the number will always
 increase by one regardless of the steps remaining.
