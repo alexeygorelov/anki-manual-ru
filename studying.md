@@ -132,27 +132,29 @@
 повторяемые карточки. Если вы предпочитаете не видеть этих цифр, вы можете
 отключить их в настройках Anki.
 
+В старом планировщике, считается количество _просмотров_ необходимое для
+завершения всех карточек в этой очереди, а не количество самих _карточек_. Если
+задано несколько шагов для забытых карточек, то число увеличивается более чем
+на один, если вы не справились с карточкой, так как она должна быть показана
+несколько раз.
+
+В новом планировщике, считается количество _карточек_, так что число всегда
+увеличивается на один, независимо от оставшихся шагов.
+
+Когда отображается ответ, Anki выводит примерное время следующего показа
+карточки над каждой кнопкой. Если вы предпочитаете не видеть оценок, вы можете
+отключить их в [настройках](preferences.md) Anki.
+
+Кроме того, Anki случайным образом не много изменяет время следующего показа,
+чтобы предотвратить случаи, когда карточки добавленные вместе и всегда
+получавшие одинаковые оценки продолжали бы и дальше показываться одна за
+другой. Эти изменения не отражаются в оценках времени, а применяются после
+выбора кнопки.
+
+## Правка и ещё
+
 <!----------------------------------------------------------------------------->
-В старом планировщике, числа считающие _просмотры_ требовало завершения всех карточек в этой очереди, а не число _карточек_...
-
-In the new scheduler, the numbers count _cards_, so the number will always
-increase by one regardless of the steps remaining.
-
-When the answer is shown, Anki shows an estimate of the next time a card
-will be shown above each button. If you’d prefer not to see the
-estimates, you can disable them in Anki’s [preferences](preferences.md).
-
-Anki additionally adds a small amount of random variation to the next
-due times, in order to prevent cards that were introduced together and
-always rated the same from always staying next to each other. This
-variation is not shown on the time estimates but will be applied after
-selecting the button.
-
-## Editing and More
-
-You can click the **Edit** button in the bottom left to edit the current
-note. When you finish editing, you’ll be returned to study. The editing
-screen works very similarly to the [add notes](editing.md) screen.
+Для изменения текущей заметки нажмите кнопку **Правка** в левом нижнем углу...
 
 At the bottom right of the review screen is a button labeled **More**.
 This button provides some other operations you can do on the current
