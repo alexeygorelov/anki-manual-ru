@@ -153,19 +153,21 @@
 
 ## Правка и ещё
 
+Для изменения текущей заметки нажмите кнопку **Правка** в левом нижнем углу.
+Завершив редактирование вы будете возвращены к обучению. Экран редактирования
+работает аналогично экрану [добавления записи](editing.md)
+
+В правом нижнем углу экрана просмотра находится кнопка **Ещё**. Эта кнопка
+предоставляет несколько других операций, которые можно выполнить с текущей
+карточкой или записью:
+
+Поставить флаг  
+Ставит цветную метку на карточку или убирает её. Метки будут отображаться во
+время изучения, а в окне Обзора можно выполнять поиск отмеченных карточек. Это
+полезно, когда вы хотите выполнить некоторое действие над карточкой позднее,
+например, когда вернётесь домой, поискать какое-нибудь слово.
+
 <!----------------------------------------------------------------------------->
-Для изменения текущей заметки нажмите кнопку **Правка** в левом нижнем углу...
-
-At the bottom right of the review screen is a button labeled **More**.
-This button provides some other operations you can do on the current
-card or note:
-
-Flag Card  
-Adds a colored marker to the card, or toggles it off. Flags will appear during
-study, and you can search for flagged cards in the Browse screen. This is useful
-when you want to take some action on the card at a later date, such as looking
-up a word when you get home.
-
 Mark Note  
 Adds a “marked” tag to the current note, so it can be easily found in the
 browser. This is similar to flagging individual cards, but works with a tag
