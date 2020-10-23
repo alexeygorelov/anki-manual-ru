@@ -167,24 +167,24 @@
 полезно, когда вы хотите выполнить некоторое действие над карточкой позднее,
 например, когда вернётесь домой, поискать какое-нибудь слово.
 
+Отметить запись  
+Добавляет текущей записи метку "marked", что позволяет легко найти её в
+обозревателе. Это схоже с отметкой отдельных карточек, только работает с
+метками (англ. *tag*), поэтому, если в записи есть несколько карточек, все они
+появятся в поиске по метке marked. Большинству пользователей лучше использовать
+флаги --- отметки, в основном, оставлены для совместимости с более старыми
+версиями Anki.
+
+Отложить карточку / запись  
+Прячет карточку или все карточки записи от показа до следующего дня. (Если вы
+хотите вернуть карточки раньше, нажмите кнопку "вернуть" в окне [обзора колоды](studying.md#Общие-сведения-об-изучении).)
+Это полезно, если в данный момент вы не можете ответить на карточку или хотите
+вернуться к ней в другой раз. Откладывание также может [произойти автоматически](studying.md#Связанные-и-отложенные)
+для карточек одной записи. Если карточки находятся в процессе изучения на момент
+их откладывания, то сперва они перемещаются обратно в очередь новых карточек или
+очередь повторяемых перед тем как быть отложеными.
+
 <!----------------------------------------------------------------------------->
-Mark Note  
-Adds a “marked” tag to the current note, so it can be easily found in the
-browser. This is similar to flagging individual cards, but works with a tag
-instead, so if the note has multiple cards, all cards will appear in a search
-for the marked tag. Most users will want to use flags instead - marking is
-mainly left around for compatibility with older Anki versions.
-
-Bury Card / Note  
-Hides a card or all of the note’s cards from review until the next day.
-(If you want to unbury cards before then, you can click the “unbury”
-button on the [deck overview](studying.md#study-overview) screen.) This is useful if
-you cannot answer the card at the moment or you want to come back to it
-another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
-cards of the same note. If cards were in learning when they are buried,
-they are moved back to the new card queue or review queue prior to being
-buried.
-
 Suspend Card / Note  
 Hides a card or all of the note’s cards from review until they are
 manually unsuspended (by clicking the suspend button in the browser).
@@ -244,7 +244,7 @@ cards from ordered to random order, please see the [deck
 options](deck-options.md). For more fine-grained ordering of new cards, you
 can change the order in the [browser](browsing.md).
 
-## Siblings and Burying
+## Связанные и отложенные
 
 Recall from [the basics](getting-started.md) that Anki can create more than one
 card for each thing you input, such as a front→back card and a
