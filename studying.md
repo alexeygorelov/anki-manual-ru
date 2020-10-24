@@ -184,41 +184,40 @@
 их откладывания, то сперва они перемещаются обратно в очередь новых карточек или
 очередь повторяемых перед тем как быть отложеными.
 
-<!----------------------------------------------------------------------------->
-Suspend Card / Note  
-Hides a card or all of the note’s cards from review until they are
-manually unsuspended (by clicking the suspend button in the browser).
-This is useful if you want to avoid reviewing the note for some time,
-but don’t want to delete it. If cards were in learning when they are
-suspended, they are moved back to the new card queue or review queue
-prior to being suspended.
+Исключить карточку / запись  
+Прячет карточку или все карточки записи от показа до тех пор, пока они не будут
+включены вручную (нажатием кнопки исключения--включения в окне обзора). Это
+полезно, если вы не хотите повторять запись некоторое время, но не хотите
+удалять её. Если карточки находятся в процессе изучения на момент их исключения,
+то сперва они перемещаются обратно в очередь новых карточек или очередь
+повторяемых перед исключением.
 
-Delete Note  
-Deletes the note and all of its cards.
+Удалить запись  
+Удаляет запись и все её карточки.
 
-Options  
-Edit the options for the current deck.
+Настройки  
+Редактировать настройки текущей колоды.
 
-Replay Audio  
-If the card has audio on the front or back, play it again.
+Повторное воспроизведение аудио  
+Если у карточки есть аудио на лицевой или оборотной стороне, воспроизводит его повторно.
 
-Record Own Voice  
-Record from your microphone for the purposes of checking your
-pronunciation. This recording is temporary and will go away when you
-move to the next card. If you want to add audio to a card permanently,
-you can do that in the edit window.
+Записать свой голос  
+Запись с микрофона для проверки произношения. Это временная запись и она
+исчезнет при переходе к следующей карточке. Если вы хотите добавить на карточку
+постоянную аудио-запись, то это можно сделать в окне редактирования.
 
-Replay Own Voice  
-Replay the previous recording of your voice (presumably after showing
-the answer).
+Воспроизвести свой голос  
+Воспроизвести предыдущую запись своего голоса (предположительно, после показа
+ответа).
 
 ## Порядок отображения
 
-Studying will show cards from the selected deck and any decks it
-contains. Thus, if you select your “French” deck, the subdecks
-“French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
-well.
+В процессе изучения показываются карточки из текущей выбранной колоды и всех
+колод, которые она содержит. Таким образом, если вы выберете колоду
+"Французский", подкалоды "Французский::Словарь" и "Французский::Моя тетрадь::Урок 1"
+также будут показаны.
 
+<!----------------------------------------------------------------------------->
 For new cards and reviews, Anki fetches cards from the decks in
 alphabetical order. So in the above example, you would get cards first
 from “French”, then “My Textbook”, and finally “Vocab”. You can use this
