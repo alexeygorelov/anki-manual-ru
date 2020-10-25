@@ -214,20 +214,21 @@
 
 В процессе изучения показываются карточки из текущей выбранной колоды и всех
 колод, которые она содержит. Таким образом, если вы выберете колоду
-"Французский", подкалоды "Французский::Словарь" и "Французский::Моя тетрадь::Урок 1"
+"Французский", подколоды "Французский::Словарь" и "Французский::Моя тетрадь::Урок 1"
 также будут показаны.
 
-<!----------------------------------------------------------------------------->
-For new cards and reviews, Anki fetches cards from the decks in
-alphabetical order. So in the above example, you would get cards first
-from “French”, then “My Textbook”, and finally “Vocab”. You can use this
-to control the order cards appear in, placing high priority cards in
-decks that appear higher in the list. When computers sort text
-alphabetically, the “-” character comes before alphabetical characters,
-and “\~” comes after them. So you could call the deck “-Vocab” to make
-them appear first, and you could call the other deck “\~My Textbook” to
-force it to appear after everything else.
+Новые и повторяемые карточки Anki выбирает из расположенных в алфавитном
+порядке колод. Так в приведенном выше примере, сначала вы увидите карточки
+из колоды "Моя тетрадь", затем "Словарь", и, наконец "Французский". Это можно
+использовать для управления порядком отображения карточек, помещая карточки с
+большим приоритетом в колоды, находящиеся выше по списку. При компьютерной
+сортировке текста по алфавиту, символ "-" идёт перед буквами алфавита, а "\~"
+--- после них [прим. перев. *но перед русскими. В русских (кириллических)
+названиях колод вместо "\~" можно использовать знак "№"*]. Значит, вы можете
+назвать колоду "-Французский", чтобы она отображалась первой, а другую ---
+"№Словарь", чтобы отображать её после всего остального.
 
+<!----------------------------------------------------------------------------->
 New cards and reviews are fetched separately, and Anki won’t wait until
 both queues are empty before moving on to the next deck, so it’s
 possible you’ll be exposed to new cards from one deck while seeing
