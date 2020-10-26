@@ -267,7 +267,7 @@ hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.
 
-## Keyboard Shortcuts
+## Клавиатурные сокращения
 
 Most of the common operations in Anki have keyboard shortcuts. Most of
 them are discoverable in the interface: menu items list their shortcuts
