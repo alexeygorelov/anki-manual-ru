@@ -228,17 +228,16 @@
 назвать колоду "-Французский", чтобы она отображалась первой, а другую ---
 "№Словарь", чтобы отображать её после всего остального.
 
+Новые и повторяемые карточки выбираются отдельно, и Anki не будет ждать, пока
+закончатся обе очереди, прежде чем перейти к следующей колоде, так что
+возможно, вам будут показываться новые карточки из одной колоды и повторяемые
+из другой, и наоборот. Если вам это не подходит, нажимайте непосредственно
+на колоду которую хотите изучать, а не на родительские колоды.
+
+Изучаемые карточки, поскольку у них, так сказать, жесткий временной режим,
+выбираются из всех колод одновременно и отображаются в порядке своей очереди.
+
 <!----------------------------------------------------------------------------->
-New cards and reviews are fetched separately, and Anki won’t wait until
-both queues are empty before moving on to the next deck, so it’s
-possible you’ll be exposed to new cards from one deck while seeing
-reviews from another deck, or vice versa. If you don’t want this, click
-directly on the deck you want to study instead of one of the parent
-decks.
-
-Since cards in learning are somewhat time-critical, they are fetched
-from all decks at once and shown in the order they are due.
-
 To control the order reviews from a given deck appear in, or change new
 cards from ordered to random order, please see the [deck
 options](deck-options.md). For more fine-grained ordering of new cards, you
