@@ -237,19 +237,19 @@
 Изучаемые карточки, поскольку у них, так сказать, жесткий временной режим,
 выбираются из всех колод одновременно и отображаются в порядке своей очереди.
 
-<!----------------------------------------------------------------------------->
-To control the order reviews from a given deck appear in, or change new
-cards from ordered to random order, please see the [deck
-options](deck-options.md). For more fine-grained ordering of new cards, you
-can change the order in the [browser](browsing.md).
+Для управления порядком, в котором появляются карточки из определённой колоды,
+или изменения порядка показа новых карточек из упорядоченного в произвольный,
+смотрите в [настройках колоды](deck-options.md). Ещё более точно настроить
+порядок появления новых карточек можно в [обозревателе](browsing.md).
 
 ## Связанные и отложенные
 
-Recall from [the basics](getting-started.md) that Anki can create more than one
-card for each thing you input, such as a front→back card and a
-back→front card, or two different cloze deletions from the same text.
-These related cards are called 'siblings'.
+Вспомним из [основ](getting-started.md), что Anki может создавать более одной
+карточки из каждой записи, например, карточки лицо→оборот и оборот→лицо, или
+два разных заполнения пропусков из одного текста. Такие карточки, относящиеся к
+одной записи, называются 'связанными'.
 
+<!----------------------------------------------------------------------------->
 When you answer a card that has siblings, Anki can prevent the card’s
 siblings from being shown in the same session by automatically 'burying'
 them. Buried cards are hidden from review until the clock rolls over to

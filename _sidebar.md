@@ -11,7 +11,7 @@
 - [Настройки колоды](deck-options.md)
 - [Syncing with AnkiWeb](syncing.md)
 - [Profiles](profiles.md)
-- [Browsing](browsing.md)
+- [Обзор](browsing.md)
 - [Filtered Decks](filtered-decks.md)
 - [Searching](searching.md)
 - [Importing](importing.md)
