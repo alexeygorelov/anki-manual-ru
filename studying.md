@@ -250,13 +250,13 @@
 одной записи, называются 'связанными'.
 
 <!----------------------------------------------------------------------------->
-When you answer a card that has siblings, Anki can prevent the card’s
-siblings from being shown in the same session by automatically 'burying'
-them. Buried cards are hidden from review until the clock rolls over to
-a new day or you manually unbury them using the “Unbury” button that’s
-visible at the bottom of the [deck overview](studying.md#study-overview) screen. Anki
-will bury siblings even if the siblings are not in the same deck (for
-instance, if you use the [deck override](templates/intro.md) feature).
+Отвечая на одну из связанных карточек, Anki может предотвращать показ связанных
+с ней карточек в этот же день, автоматически 'откладывая' их. Отложенные
+карточки скрыты от повтора до тех пор, пока на часах не наступит следующий день
+или вы вручную не вернёте их при помощи кнопки "Вернуть" отображаемой внизу
+экрана [обзора колоды](studying.md#Общие-сведения-об-изучении). Anki отложит
+связанные карточки даже если они находятся в разных колодах (например, если вы
+используете функцию [deck override](templates/intro.md)).
 
 You can enable burying from the [deck options](deck-options.md) screen -
 there are separate settings for new cards and reviews.
