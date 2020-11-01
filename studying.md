@@ -249,35 +249,31 @@
 два разных заполнения пропусков из одного текста. Такие карточки, относящиеся к
 одной записи, называются 'связанными'.
 
-<!----------------------------------------------------------------------------->
 Отвечая на одну из связанных карточек, Anki может предотвращать показ связанных
 с ней карточек в этот же день, автоматически 'откладывая' их. Отложенные
 карточки скрыты от повтора до тех пор, пока на часах не наступит следующий день
 или вы вручную не вернёте их при помощи кнопки "Вернуть" отображаемой внизу
 экрана [обзора колоды](studying.md#Общие-сведения-об-изучении). Anki отложит
 связанные карточки даже если они находятся в разных колодах (например, если вы
-используете функцию [deck override](templates/intro.md)).
+используете функцию [подмена колоды](templates/intro.md)).
 
-You can enable burying from the [deck options](deck-options.md) screen -
-there are separate settings for new cards and reviews.
+Вы можете включить откладывание в окне [настроек колоды](deck-options.md) ---
+отдельно для новых и повторяемых карточек.
 
-Anki will only bury siblings that are new or review cards. It will not
-hide cards in learning, as time is of the essence for those cards. On
-the other hand, when you study a learning card, any new/review siblings
-will be buried.
+Anki будет откладывать связанные карточки, которые являются новыми или
+повторяемыми. Изучаемые карточки не будут скрываться, поскольку время для них
+имеет существенное значение. С другой стороны, заучивая карточку которая
+является изучаемой, любые новые/повторяемые карточки будут отложены.
 
 ## Клавиатурные сокращения
 
-Most of the common operations in Anki have keyboard shortcuts. Most of
-them are discoverable in the interface: menu items list their shortcuts
-next to them, and hovering the mouse cursor over a button will generally
-show its shortcut in a tooltip.
+Для большинства общих действий в Anki имеются клавиатурные сокращения. Многие
+из них легко обнаружить в элементах интерфейса: рядом с пунктами меню
+отображаются их клавиатурные сокращения, а наведение курсора мыши на кнопку, как
+правило, показывает её клавиатурное сокращение во всплывающей подсказке.
 
-When studying, either space or enter will show the answer. When the
-answer is shown, you can use space or enter to select the Good button.
-You can use the 1-4 keys to select a specific ease button. Many people
-find it convenient to answer most cards with space and keep one finger
-on 1 for when they forget.
+<!----------------------------------------------------------------------------->
+Во время обучения, как пробел так и клавиша ввода покажут ответ...
 
 The "Study Deck" item in the Tools menu allows you to quickly switch to
 a deck with the keyboard. You can trigger it with the '/' key. When
