@@ -272,26 +272,25 @@ Anki будет откладывать связанные карточки, ко
 отображаются их клавиатурные сокращения, а наведение курсора мыши на кнопку, как
 правило, показывает её клавиатурное сокращение во всплывающей подсказке.
 
+Во время обучения, как пробел так и клавиша ввода покажут ответ. Когда
+покажется ответ, вы можете использовать клавиши пробела или ввода для выбора
+кнопки Хорошо. Для выбора конкретной кнопки лёгкости можно использовать клавиши
+1-4. Многим людям удобно отвечать на большинство карточек клавишей пробела и
+держать один палец на цифре 1, на случай если забыли ответ.
+
+Пункт "Учить колоду" в меню Инструменты позволяет вам быстро переключиться на
+другую колоду с помощью клавиатуры. Вызвать его можно клавишей '/'. Будучи
+открытым, в нём отображаются все ваши колоды и строка фильтра сверху. По мере
+ввода символов, Anki будет отображать только те колоды которые соответствуют
+введённым вами символам. Можно добавить пробел для разделения нескольких
+условий поиска, и Anki покажет только колоды, соответствующие всем условиям.
+Так "яп 1" или "ок1 яп" в обоих случаях будут соответствовать колоде
+"Японский::Урок1".
+
+## Отставание
+
 <!----------------------------------------------------------------------------->
-Во время обучения, как пробел так и клавиша ввода покажут ответ...
-
-The "Study Deck" item in the Tools menu allows you to quickly switch to
-a deck with the keyboard. You can trigger it with the '/' key. When
-opened, it will display all of your decks and show a filter area at the
-top. As you type characters, Anki will display only decks matching the
-characters you type. You can add a space to separate multiple search
-terms, and Anki will show only decks that match all the terms. So “ja 1”
-or “on1 ja” would both match a deck called “Japanese::Lesson1”.
-
-## Falling Behind
-
-If you fall behind in your reviews, Anki will prioritize cards that have
-been waiting the longest. It does this by taking the cards that have
-been waiting the longest and showing them to you in a random order up
-until your daily review limit. This ordering ensures that no cards will
-be left waiting indefinitely, but it means that if you introduce new
-cards, their reviews won’t appear until you’ve gotten through your
-backlog.
+Если вы отстали от графика повторения, Anki отдаст предпочтение карточкам, которые ждут дольше всех...
 
 If you wish to change the order of the overdue reviews, you can do so by
 creating a [filtered deck](filtered-decks.md).
