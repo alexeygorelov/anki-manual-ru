@@ -12,7 +12,7 @@
 - [Syncing with AnkiWeb](syncing.md)
 - [Profiles](profiles.md)
 - [Обзор](browsing.md)
-- [Filtered Decks](filtered-decks.md)
+- [Фильтрованные колоды](filtered-decks.md)
 - [Searching](searching.md)
 - [Importing](importing.md)
 - [Экспортирование](exporting.md)

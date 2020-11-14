@@ -1,4 +1,4 @@
-# Filtered Decks & Cramming
+# Фильтрованные колоды и зубрёжка
 
 When you study a regular deck in Anki, only a limited number of cards
 are shown: the cards Anki thinks you’re about to forget, and a daily
