@@ -20,34 +20,34 @@
 называются 'полями' и вы можете добавлять, удалять и переименовывать их, щелкнув
 по кнопке "Поля…​" выше.
 
+Под полями находится другая область под названием "Метки". Метки --- это
+ярлыки, которые вы можете прикрепить к вашим записям, чтобы упростить их
+организацию и поиск. Вы можете оставить метки пустыми, если хотите, или
+добавить одну или несколько из них. Метки разделяются знаком пробела. Если в
+метках указано
+
+    словарь уточнить_у_репетитора
+
+…​то у записи которую вы добавите будет две метки.
+
+При вводе лицевого и обратного текста, вы можете нажать кнопку "Добавить" или
+сочетание клавиш Ctrl+Enter (Command+Enter на Mac) для добавления записи в
+коллекцию. После чего, карточка будет создана и добавлена в выбранную вами
+колоду. Если вы захотите изменить добавленную карточку, вы можете нажать кнопку
+истории для поиска недавно добавленных карточек в [обзоре](browsing.md).
+
+Anki проверяет первое поле на уникальность, поэтому предупредит, если вы
+внесёте две карточки в Лицевом поле которых будут одинаковые данные, например,
+"яблоко". Проверка уникальности ограничивается текущим типом записи, так, если
+вы изучаете несколько языков, две карточки с одинаковой Лицевой стороной не
+будут отображаться как повторы, пока у вас будут разные типы записей для
+каждого языка.
+
+Anki не проверяет на повторы другие поля автоматически из соображений
+эффективности, но в обозревателе есть функция "Найти повторы", которую можно
+запускать периодически.
+
 <!----------------------------------------------------------------------------->
-Below the fields is another area labelled “Tags”. Tags are labels that
-you can attach to your notes, to make organizing and finding notes
-easier. You can leave the tags blank if you wish, or add one or more of
-them. Tags are separated by a space. If the tags area says
-
-    vocab check_with_tutor
-
-…​then the note you add would have two tags.
-
-When you’ve entered text into the front and back, you can click the
-“Add” button or press Ctrl+Enter (Command+Enter on a Mac) to add the
-note to your collection. When you do so, a card will be created as well,
-and placed into the deck you chose. If you’d like to edit a card you
-added, you can click the history button to search for a recently added
-card in the [browser](browsing.md).
-
-Anki checks the first field for uniqueness, so it will warn you if you
-enter two cards with a Front field of “apple” (for example). The
-uniqueness check is limited to the current note type, so if you’re
-studying multiple languages, two cards with the same Front would not be
-listed as duplicates as long as you had a different note type for each
-language.
-
-Anki doesn’t check for duplicates in other fields automatically for
-efficiency reasons, but the browser has a “Find Duplicates” function
-which you can run periodically.
-
 For more information on the buttons between the note type and the
 fields, please see the [editor](editing.md) section.
 
