@@ -47,30 +47,26 @@ Anki не проверяет на повторы другие поля авто�
 эффективности, но в обозревателе есть функция "Найти повторы", которую можно
 запускать периодически.
 
-<!----------------------------------------------------------------------------->
-For more information on the buttons between the note type and the
-fields, please see the [editor](editing.md) section.
+Дополнительные сведения о кнопках между типом записи и полями см. в разделе
+[редактор](editing.md).
 
-Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this
-article](http://www.supermemo.com/articles/20rules.htm) on the SuperMemo
-site. In particular:
+Разным людям нравится повторять по-разному,но есть некоторые общие концепции,
+о которых следует помнить. Отличное введение --- [эта статья](http://www.supermemo.com/articles/20rules.htm) на сайте SuperMemo. В частности:
 
--   **Keep it simple**: The shorter your cards, the easier they are to
-    review. You may be tempted to include lots of information “just in
-    case,” but reviews will quickly become painful.
+-   **Будь проще**: Чем короче карточки, тем легче их повторять. У вас может
+    возникнуть соблазн включить много информации "на всякий случай", но
+    повторения станут мучительными очень быстро.
 
--   **Don’t memorize without understanding**: If you’re studying a
-    language, try to avoid large lists of words. The best way to learn
-    languages is in context, which means seeing those words used in a
-    sentence. Likewise, imagine you’re studying a computer course. If
-    you attempt to memorize the mountain of acronyms, you’ll find it
-    very difficult to make progress. But if you take the time to
-    understand the concepts behind the acronyms, learning the acronyms
-    will become a lot easier.
+-   **Не запоминай без понимания**: Если вы изучаете язык, старайтесь избегать
+    больших списков слов. Лучше всего изучать языки в контексте, что означает
+    видеть использование этих слов в предложении. Так же представьте, что вы
+    изучаете компьютерный курс. Пытаясь запомнить горы сокращений, вам будет
+    очень трудно добиться прогресса. Но уделив время на понимание ключевых
+    принципов, стоящих за этими сокращениями намного упростит их изучение.
 
 ## Adding a Note Type
 
+<!----------------------------------------------------------------------------->
 While basic note types are sufficient for simple cards with only a word
 or phrase on each side, as soon as you find yourself wanting to include
 more than one piece of information on the front or back, it’s better to
