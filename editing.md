@@ -101,26 +101,26 @@ Anki не проверяет на повторы другие поля авто�
 Для настройки полей, нажмите кнопку "Поля…​" при добавлении или изменении
 записи, или когда тип записи выделен в окне Управления типами записей.
 
+Вы можете добавлять, удалять или переименовывать поля, нажимая соответствующие
+кнопки. Чтобы изменить порядок, в котором поля отображаются в этом диалоговом
+окне и окне добавления записей, можно использовать кнопку переместить, которая
+запрашивает порядковый номер, который должно иметь поле. Так, если вы хотите
+переместить поле на место первого поля, введите "1".
+
+Не используйте в качестве имен полей 'Tags', 'Type', 'Deck', 'Card' или
+'FrontSide', так как это[специальные поля](templates/fields.md#Специальные-поля)
+и они не будут работать правильно.
+
+Опции в нижней части экрана позволяют изменять различные свойства полей,
+которые будут использоваться при добавлении и редактировании карточек. Здесь
+вы *не* настраиваете то, что появляется на карточках при повторении; для этого
+смотрите [шаблоны](templates/intro.md).
+
 <!----------------------------------------------------------------------------->
-You can add, remove, or rename fields by clicking the appropriate
-buttons. To change the order in which the fields appear in this dialog
-and the add notes dialog, you can use the reposition button, which asks
-for the numerical position you want the field to have. So if you want to
-change a field to be the new first field, enter “1”.
-
-Do not use 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide' as field
-names, as they are [special fields](templates/fields.md#special-fields) and will not work
-properly.
-
-The options at the bottom of the screen allow you to edit various
-properties of the fields to be used when adding and editing the cards.
-This is *not* where you customize what appears on your cards when
-reviewing; for that, please see [templates](templates/intro.md).
-
-**Editing Font** allows you to customize the font and size used when
-editing notes. This is useful if you want to make unimportant
-information smaller, or increase the size of foreign characters which
-are hard to read. The changes you make here do not affect how cards
+**Шрифт в редакторе** позволяет настроить шрифт и размер шрифта при
+редактировании записей. Это полезно, если вы хотите сделать неважную информацию
+меньше или увеличить размер иностранных символов, которые трудно прочитать...
+The changes you make here do not affect how cards
 appear when reviewing: to do that, please see the
 [templates](templates/intro.md) section. If you have enabled the “type in the
 answer” function, however, the text you type will use the font size

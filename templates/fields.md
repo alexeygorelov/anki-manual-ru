@@ -122,7 +122,7 @@ using the `cloze-only` filter, like so:
     
 The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.
 
-## Special Fields
+## Специальные поля
 
 There are some special fields you can include in your templates:
 
