@@ -62,7 +62,7 @@ syncing in order to use the full sync option without first downloading
 the changes. Similarly, if you are experiencing problems with Anki, you
 might want to (or might be instructed to) disable add-ons temporarily to
 see if one might be causing the problem. You can do both of these things
-by holding down the Shift key while starting Anki.
+by holding down the <kbd>Shift</kbd> key while starting Anki.
 
 It is possible to specify a custom folder location during startup. This
 is an advanced feature that is primarily intended to be used with
@@ -114,9 +114,11 @@ third-party synchronization service, as it can lead to database
 corruption when files are synced while in use.
 
 If you just want to synchronize your media, you can link external
-folders into services like DropBox. Please see
-<http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders> for more
-info.
+folders into services like DropBox. Please see [DropboxWiki: Sync 
+Folders Outside Dropbox (archive.org)][dropboxwiki-sync-other]
+for more info.
+
+[dropboxwiki-sync-other]: http://web.archive.org/web/20180919153730/http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders
 
 If you wish to keep your collection in sync as well, it is strongly
 recommended that you create a script that copies your files from your
@@ -211,7 +213,7 @@ for each note type first.
 If Anki can’t write to files in the [Anki folder](#file-locations), a message
 will be displayed on startup saying that Anki can’t write to the
 harddisk, and Anki will close. If you’re unsure how to fix the
-permissions, please contact someone near you who is knowledgable about
+permissions, please contact someone near you who is knowledgeable about
 computers and can help you out.
 
 ## Permissions of Temp Folder
@@ -225,7 +227,7 @@ are listed below. As this is somewhat complicated, please ask someone
 knowledgeable about Windows if you are not sure.
 
 1.  Click on the start bar, and type in %temp% (including the percents),
-    then hit enter.
+    then hit <kbd>Enter</kbd>.
 
 2.  Go up one folder, and locate the temp folder. Right click on it, and
     choose Properties.

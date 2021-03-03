@@ -1,4 +1,5 @@
-- [Введение](/)
+<!----------------------------------------------------------------------------->
+- [Введение](intro.md)
 - [Общие сведения](background.md)
 - [Начало работы](getting-started.md)
 - [Изучение](studying.md)
@@ -7,7 +8,7 @@
   - [Field Replacements](templates/fields.md)
   - [Card Generation](templates/generation.md)
   - [Styling & HTML](templates/styling.md)
-- [Настройки](preferences.md)
+- [Preferences](preferences.md)
 - [Настройки колоды](deck-options.md)
 - [Syncing with AnkiWeb](syncing.md)
 - [Profiles](profiles.md)

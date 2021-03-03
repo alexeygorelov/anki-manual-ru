@@ -1,47 +1,58 @@
 # Browsing
 
-The Browse screen allows you to search through your cards and notes, and edit
-them. It is opened by clicking on _Browse_ in the main window, or by pressing
-_b_ on your keyboard. It is comprised of three sections: the _sidebar_ on the
-left, the _card list_ on the top right, and the _current note_ on the bottom
+The Browse window allows you to search through your cards and notes, and edit
+them. It is opened by clicking **Browse** in the main window, or by pressing
+**b**. It is comprised of three sections: the *sidebar* on the
+left, the *card list* on the top right, and the *current note* on the bottom
 right. By positioning the mouse between two sections, it is possible to click
-and drag to expand one section and shrink another.
+and drag to expand one section and shrink the other.
 
 ## Sidebar
 
-The sidebar on the left allows quick access to common search terms. Clicking
+The *sidebar* on the left allows quick access to common search terms. Clicking
 on an item will search for it.
 
-You can hold down Ctrl (Command on a Mac) while clicking in order to append
-the clicked item to the current search with an AND condition, instead of
-starting a new search. If you wanted to show learning cards that were
+You can hold down <kbd>Ctrl</kbd> (<kbd>Command</kbd> on Mac) while clicking in
+order to append the clicked item to the current search with an AND condition,
+instead of starting a new search. If you wanted to show learning cards that were
 also in the German deck for instance, you could click on "Learning",
-then Ctrl+click on "German".
+then <kbd>Ctrl</kbd>-click on "German".
 
-You can hold down Shift to create an OR search instead of an AND. For
-example, you could click one deck, then shift-click another to show
+You can hold down <kbd>Shift</kbd> to create an OR search instead of an AND. For
+example, you could click one deck, then <kbd>Shift</kbd>-click another to show
 cards from either of the decks in the same view.
 
-You can hold down Alt (Option on a Mac) in order to reverse the search
-(prepend a _-_) – for instance, to show all cards in a current deck that
-do _not_ have a certain tag. Alt/option can be combined with either Ctrl
-or Shift (e.g., Ctrl-Alt-clicking will result in adding a new search
-term that is negated).
+You can hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on Mac) in order to reverse the
+search (prepend a `-`) – for instance, to show all cards in a current deck that
+do *not* have a certain tag. <kbd>Alt</kbd>/<kbd>Option</kbd> can be combined with
+either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g., <kbd>Ctrl</kbd>+<kbd>Alt</kbd>-clicking
+will result in adding a new search term that is negated).
 
-To remove tags that are not used by any notes, use Tools&gt;Check
-Database from the main window.
+On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
+<kbd>Shift</kbd> when clicking a search term to replace all occurences of the
+same kind of search with the new one.
+Let’s say you had previously typed in a complicated search expression like
+`deck:Swahili (is:due or tag:important)`
+and now want to perform the same search for your Urdu deck. You can
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>-click the Urdu deck in the sidebar to obtain the
+according search expression:
+`deck:Urdu (is:due or tag:important)`.
 
-## Searching
+
+To remove tags that are not used by any notes, use **Tools &gt; Check Database**
+from the main window.
+
+## Search Box
 
 Above the card list is a search box. You can type in various things
-there to search for cards. For information on the search syntax, please
-see the [searching section](searching.md).
+there to search for cards. For information on the search syntax,
+see [Searching](searching.md).
 
 ## Card List
 
 The card list displays cards that match the current search.
 
-The columns are configurable: right click on one (or ctrl+click on a
+The columns are configurable: right click on one (or <kbd>Ctrl</kbd>-click on a
 Mac) to choose which columns you’d like to see. You can drag columns to
 reorder them. Clicking on a column will sort by that column; click again
 to reverse the sort order. Not all columns can be sorted on.
@@ -59,18 +70,18 @@ the last time changes were made to the _card_ (e.g., when you reviewed
 the card and the review history and interval were updated).
 
 When you click on a card, its note will be shown in the bottom section.
-If you drag the mouse or hold ctrl or command to select multiple cards,
+If you drag the mouse or hold <kbd>Ctrl</kbd> or <kbd>Command</kbd> to select multiple cards,
 the editor will be temporarily hidden. Various operations (such as
 changing the deck) can operate on multiple cards at once.
 
-The background colour will change depending on the card. Marked cards
+The background color will change depending on the card. Marked cards
 are a shade of purple. Suspended cards are a shade of yellow. For more
-information about marked and suspended cards, please see [editing and
-more](studying.md#editing-and-more).
+information about marked and suspended cards, see [Editing and
+More](studying.md#editing-and-more).
 
-One of the available columns is called the _sort field_. Anki allows you
+One of the available columns is called the **Sort Field**. Anki allows you
 to choose one field from each type of note to be used for sorting. You
-can change the sort field by clicking on "Fields…​" in the current note
+can change the sort field by clicking **Fields** in the current note
 section.
 
 The question and answer columns display what you’d see on the question
@@ -82,45 +93,48 @@ what would be seen during review.
 ## Current Note
 
 The bottom right area displays the currently selected card’s note. For
-more information about cards and notes, please see [the
-basics](getting-started.md). For more information on formatting buttons, please see
-[editing](editing.md).
+more information about cards and notes, see [Getting Started](getting-started.md).
+For more information on formatting buttons, see [Editing](editing.md).
 
 You can see a preview of what the currently selected card would look
-like when reviewing by clicking the "preview" button next to the search
+like when reviewing by clicking the **Preview** button next to the search
 box. Note that this will not display any type answer fields on your
 cards, which makes it easier to preview cards quickly.
 
 ## Menu
 
-Up the top of the window/screen is the menu. You can also access it quickly by
-right clicking or command+clicking on the card list area.
+Right clicking on selected cards in the *card list* shows up a menu of actions 
+you can perform on those cards:
 
-_Info_ shows various information about the currently selected card,
-including its review history. For more information, see the
-[statistics](stats.md) section.
+**Info** shows various information about the currently selected card,
+including its review history. For more information, see [Card Info](stats.md#card-info).
 
-_Toggle Mark_ and _Toggle Suspend_ are documented in
+**Toggle Mark** and ***Toggle Suspend*** are documented in
 [editing and more](studying.md#editing-and-more).
 
-_Change Deck_ allows you to move cards to a different deck. Cards can be
+**Change Deck** allows you to move cards to a different deck. Cards can be
 placed in different decks, so if you want to move all cards in a note,
-you should first use Edit &gt; Select Notes.
+you should first use **Edit &gt; Select Notes** to select all cards, right click on
+selected cards and then click **Change Deck**.
 
-_Add Tags_ and _Remove Tags_ allow you to add or remove tags from notes
-in bulk. To remove unused tags from the list on the left, use
-Tools&gt;Check Database from the main window.
+**Add Tags** and **Remove Tags** allow you to add or remove tags from notes
+in bulk. To remove unused tags from *sidebar*, start from the main window,
+click **Tools** in the menu bar and click **Check Database**.
 
-_Delete_ removes the selected card(s) and their notes. It is not
+**Delete** removes the selected card(s) and their notes. It is not
 possible to remove individual cards, as individual cards are controlled
 by the [templates](templates/intro.md).
 
 ## Find and Replace
 
-This option (Notes→Find and Replace…​) allows you to replace text in the
-notes you have selected. The regular expression option allows you to
-perform complex replacements. For example, given the following text in a
-field:
+To replace text in selected notes, you can either:
+
+- Right click on selected notes in the *card list*, and click **Find and Replace**.
+
+- In the **Browser** window, click **Notes** in the menu bar and click **Find and Replace**.
+
+The regular expression option allows you to perform complex replacements.
+For example, given the following text in a field:
 
     <img src="pic.jpg" />
 
@@ -141,24 +155,23 @@ Will change the card to:
     pic.jpg
 
 A full discussion on regular expressions is outside the scope of this document.
-There are a number of tutorials available on the web.
-For a syntax guide, on Anki 2.1.28+ please see <https://docs.rs/regex/1.3.9/regex/#syntax>.
-For older Anki versions, please see <http://docs.python.org/library/re.html>.
+There are a number of syntax guides available on the web:
+- For Anki 2.1.28+, see <https://docs.rs/regex/1.3.9/regex/#syntax>.
+- For older Anki versions, see <http://docs.python.org/library/re.html>.
 
 ## Finding Duplicates
 
-You can use the Notes→Find Duplicates option to search for notes that
+You can use the **Notes > Find Duplicates** option to search for notes that
 have the same content. When you open the window, Anki will look at all
 of your note types and present a list of all possible fields. If you
-want to look for duplicates in the "Back" field, you’d select it from
-the list and then click "Search".
+want to look for duplicates in the *Back* field, you’d select it from
+the list and then click **Search**.
 
-Unlike the check that happens when you add cards manually, the duplicate
-finding feature is not limited to a single note type. This means that by
-default, it will search in all note types that have the field you
-provided.
+By default, it will search in all note types that have the field you provided. 
+This differs from the duplicate check when you add cards manually, which 
+is limited to a single note type.
 
-The _optional filter_ text box allows you to narrow down where Anki will
+The **Optional filter** text box allows you to narrow down where Anki will
 look for duplicates. If you only want to search for duplicates in the
 "French Vocab" and "French Verbs" note types, you would enter:
 
@@ -170,19 +183,19 @@ you could use:
     deck:'myDeck'
 
 The search syntax is the same as used when searching in the browser.
-Please see the [searching](searching.md) section for more information.
+For more information, see [Searching](searching.md).
 
 You can click one of the links in the search results list to display the
 duplicate notes in that set. If the search brings up a large number of
-duplicates, you may wish to instead click the Tag Duplicates button,
-which will tag all matching notes with "duplicate." You can then search
+duplicates, you may wish to instead click the **Tag Duplicates** button,
+which will tag all matching notes with *duplicate*. You can then search
 for this tag in the browser and handle them all from the same screen.
 
 ## Other Menu Items
 
 Some other items in the menus:
 
-_Reschedule_ allows you to move cards to the end of the new card queue,
+**Reschedule** allows you to move cards to the end of the new card queue,
 or reschedule them as a review card on a given date. The second option
 is useful if you have imported already-learnt material, and you want to
 start it off with higher initial intervals. For example, choosing 60 and
@@ -195,13 +208,13 @@ If you want to hide the history, you will need to export your notes as a
 text file, delete the notes, and then import the text file again,
 creating new notes.
 
-_Reposition_ allows you to change the order new cards will appear in.
+**Reposition** allows you to change the order new cards will appear in.
 You can find out the existing positions by enabling the _due_ column, as
 described in the card list section above. If you run the reposition
 command when multiple cards are selected, it will apply increasing
 numbers to each card in turn. By default the number increases by one for
 each card, but this can be adjusted by changing the "step" setting. The
-_Shift position of existing cards_ option allows you to insert cards
+**Shift position of existing cards** option allows you to insert cards
 between currently existing ones, pushing the currently existing ones
 apart. For instance, if you have five cards and you want to move 3, 4,
 and 5 between 1 and 2, selecting this setting would cause the cards to
@@ -209,15 +222,15 @@ end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option
 off, 1 and 2 will get the same position number (and it will thus be
 unpredictable which of the cards with the same number comes up first).
 
-_Change Note Type_ allows you to convert the selected notes from one
-type to another. For example, imagine you have a Russian note type and a
-Computer note type, and you accidentally added some computer-related
-text into a Russian note. You can use this option to fix that mistake.
+**Change Note Type** allows you to convert the selected notes from one
+type to another. For example, imagine you have a *Russian* note type and a
+*Computer* note type, and you accidentally added some computer-related
+text into a *Russian* note. You can use this option to fix that mistake.
 The scheduling of cards is not affected.
 
-_Select Notes_ takes the currently selected cards, finds their notes,
+**Select Notes** takes the currently selected cards, finds their notes,
 and then selects all cards of those notes. If your notes have only one
 card, this does nothing.
 
-The _Go_ menu exists to provide keyboard shortcuts to jump to various
+The **Go** menu exists to provide keyboard shortcuts to jump to various
 parts of the browser, and to go up and down the card list.

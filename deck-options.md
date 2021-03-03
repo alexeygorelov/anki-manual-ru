@@ -174,8 +174,8 @@ higher retention.
 **Hard interval** specifies what the next interval will be when you
 press the Hard button. The percentage is relative to the previous
 interval, eg with a default 120%, a card with a 10 day interval will be
-given 12 days. This option is only available when the experimental
-scheduler is enabled in the preferences.
+given 12 days. This option is only available when the [experimental
+scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) is enabled in the preferences.
 
 Turning off **bury related…​** will prevent Anki from [burying
 siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
@@ -202,7 +202,7 @@ interval determined by the settings below.
 
 The new interval is determined when you answer "Again" to a review card,
 not when the card finishes its relearning steps. For this reason, the
-"Good" and "Easy" buttons during relearing do not alter the interval
+"Good" and "Easy" buttons during relearning do not alter the interval
 again - they only control which step you are on. If there is only a
 single step (the default), the "Easy" button will be hidden, since it
 would accomplish the same thing as the "Good" button. If you have 2 or

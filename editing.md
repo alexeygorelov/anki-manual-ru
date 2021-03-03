@@ -31,10 +31,11 @@
 …​то у записи которую вы добавите будет две метки.
 
 При вводе лицевого и обратного текста, вы можете нажать кнопку "Добавить" или
-сочетание клавиш Ctrl+Enter (Command+Enter на Mac) для добавления записи в
-коллекцию. После чего, карточка будет создана и добавлена в выбранную вами
-колоду. Если вы захотите изменить добавленную карточку, вы можете нажать кнопку
-истории для поиска недавно добавленных карточек в [обзоре](browsing.md).
+сочетание клавиш <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> на Mac)
+для добавления записи в коллекцию. После чего, карточка будет создана и
+добавлена в выбранную вами колоду. Если вы захотите изменить добавленную
+карточку, вы можете нажать кнопку истории для поиска недавно добавленных карточек
+в [обзоре](browsing.md).
 
 Anki проверяет первое поле на уникальность, поэтому предупредит, если вы
 внесёте две карточки в Лицевом поле которых будут одинаковые данные, например,
@@ -53,16 +54,16 @@ Anki не проверяет на повторы другие поля авто�
 Разным людям нравится повторять по-разному,но есть некоторые общие концепции,
 о которых следует помнить. Отличное введение --- [эта статья](http://www.supermemo.com/articles/20rules.htm) на сайте SuperMemo. В частности:
 
--   **Будь проще**: Чем короче карточки, тем легче их повторять. У вас может
-    возникнуть соблазн включить много информации "на всякий случай", но
-    повторения станут мучительными очень быстро.
+- **Будь проще**: Чем короче карточки, тем легче их повторять. У вас может
+  возникнуть соблазн включить много информации "на всякий случай", но повторения
+  станут мучительными очень быстро.
 
--   **Не запоминай без понимания**: Если вы изучаете язык, старайтесь избегать
-    больших списков слов. Лучше всего изучать языки в контексте, что означает
-    видеть использование этих слов в предложении. Так же представьте, что вы
-    изучаете компьютерный курс. Пытаясь запомнить горы сокращений, вам будет
-    очень трудно добиться прогресса. Но уделив время на понимание ключевых
-    принципов, стоящих за этими сокращениями намного упростит их изучение.
+- **Не запоминай без понимания**: Если вы изучаете язык, старайтесь избегать
+  больших списков слов. Лучше всего изучать языки в контексте, что означает
+  видеть использование этих слов в предложении. Так же представьте, что вы
+  изучаете компьютерный курс. Пытаясь запомнить горы сокращений, вам будет очень
+  трудно добиться прогресса. Но уделив время на понимание ключевых принципов,
+  стоящих за этими сокращениями намного упростит их изучение.
 
 ## Добавление типа записи
 
@@ -108,12 +109,12 @@ Anki не проверяет на повторы другие поля авто�
 переместить поле на место первого поля, введите "1".
 
 Не используйте в качестве имен полей 'Tags', 'Type', 'Deck', 'Card' или
-'FrontSide', так как это[специальные поля](templates/fields.md#Специальные-поля)
+'FrontSide', так как это [специальные поля](templates/fields.md#Специальные-поля)
 и они не будут работать правильно.
 
 Опции в нижней части экрана позволяют изменять различные свойства полей,
 которые будут использоваться при добавлении и редактировании карточек. Здесь
-вы *не* настраиваете то, что появляется на карточках при повторении; для этого
+вы _не_ настраиваете то, что появляется на карточках при повторении; для этого
 смотрите раздел [шаблоны](templates/intro.md).
 
 **Шрифт в редакторе** позволяет настроить шрифт и размер шрифта при
@@ -161,20 +162,19 @@ may be tempted to create lots of little decks to keep your content
 organized, such as “my geography book chapter 1”, or “food verbs”, but
 this is not recommended, for the following reasons:
 
--   Lots of little decks mean you end up reviewing cards in a
-    recognizable order. Whether it’s because you’re clicking on each
-    deck in turn (which is slow) or you’ve added a number of decks under
-    a single parent deck, you’ll end up seeing all the “chapter 1” or
-    “food verb” cards together. This makes it easier to answer the
-    cards, as you can guess them from the context, which leads to weaker
-    memories. When you need to recall the word or phrase outside Anki,
-    you won’t have the luxury of being shown related content first!
+- Lots of little decks mean you end up reviewing cards in a
+  recognizable order. Whether it’s because you’re clicking on each
+  deck in turn (which is slow) or you’ve added a number of decks under
+  a single parent deck, you’ll end up seeing all the “chapter 1” or
+  “food verb” cards together. This makes it easier to answer the
+  cards, as you can guess them from the context, which leads to weaker
+  memories. When you need to recall the word or phrase outside Anki,
+  you won’t have the luxury of being shown related content first!
 
--   Anki was not designed to handle many decks (more than several
-    dozen), and it will slow down as you add more – especially if you’re
-    studying on a mobile client. A few extra decks is not going to make
-    a noticeable difference, but if you have many decks the delays will
-    start to add up.
+- While less of a problem than it was in earlier Anki versions,
+  adding hundreds of decks may cause slowdowns, and very large deck
+  trees with thousands of items can actually break the display of
+  the deck list in the current implementation.
 
 Instead of creating lots of little decks, it’s a better idea to use tags
 and/or fields to classify your content. Instead of creating a “food
@@ -215,9 +215,9 @@ chemical compounds like H<sub>2</sub>O or simple math equations like
 x<sup>2</sup>.
 
 The Fx button clears any formatting in the currently selected text. This
-includes colours, bold, etc.
+includes colors, bold, etc.
 
-The next two buttons allow you to change text colour.
+The next two buttons allow you to change text color.
 
 The \[…​\] button is visible when a cloze note type is selected.
 
@@ -238,9 +238,10 @@ underlying HTML of a field, and shortcuts to add MathJax or
 Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.
 
-When pasting text, Anki will strip most formatting by default. If you
-hold down the shift key while pasting, Anki will preserve more
-formatting.
+When pasting text, Anki will keep most formatting by default. If you
+hold down the <kbd>Shift</kbd> key while pasting, Anki will strip most of the
+formatting. Under Preferences, you can toggle "Paste without shift
+key strips formatting" to modify the default behavior.
 
 ## Заполнение пропусков
 
@@ -287,7 +288,7 @@ will have the following on the question:
 
 You can also elide multiple sections on the same card. In the above
 example, if you change c2 to c1, only one card would be created, with
-both Canberra and 1913 hidden. If you hold down alt (option on a Mac)
+both Canberra and 1913 hidden. If you hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on a Mac)
 while creating a cloze, Anki will automatically use the same number
 instead of incrementing it.
 
@@ -335,7 +336,6 @@ sure to clone the existing Cloze type instead of another type of note.
 Things like formatting can be customized, but it is not possible to add
 extra card templates to the cloze note type.
 
-
 ## Inputting Foreign Characters and Accents
 
 All modern computers have built in support for typing accents and
@@ -368,5 +368,31 @@ information.
 
 The toolkit Anki is built on has trouble dealing with a few input
 methods, such as holding down keys to select accented characters on Mac
-OS X, and typing characters by holding down the alt key and typing a
+OS X, and typing characters by holding down the <kbd>Alt</kbd> key and typing a
 numeric code on Windows.
+
+## Unicode Normalization
+
+Text like `á` can be represented in multiple ways on a computer, such as
+using a specific code for that symbol, or by using a standard `a` and then
+another code for the accent on top. This causes problems when mixing input
+from different sources, or using different computers - if your computer
+handles keyboard input in one form, but the content is stored in a different
+form, it will not match when searching, even though the end result appears
+identical.
+
+To ensure content can easily be found in searches, Anki normalizes the text
+to a standard form. For most users this process is transparent, but if you
+are studying certain material like archaic Japanese symbols, the normalization
+process can end up converting them to a more modern equivalent.
+
+If you want character variants preserved, the following in the [debug console](./misc.md)
+will turn off normalization:
+
+```python
+mw.col.conf["normalize_note_text"] = False
+```
+
+Any content added after that will remain untouched. The trade-off is that you may
+find it difficult to search for the content if you're switching between operating
+systems, or pasting content from mixed sources.

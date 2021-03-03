@@ -71,10 +71,6 @@ Things to note from the above:
 - You can prepend a minus sign to a term to find notes that don’t
   match.
 
-- If you want to search for something including a space or
-  parenthesis, enclose it in double quotes. You can quote either the
-  `"entire:term"`, or just the `part:"after a colon"`.
-
 - You can group search terms by placing them in parentheses, as in the
   **dog (cat or mouse)** example. This becomes important when
   combining OR and AND searches — in the example, with the
@@ -87,6 +83,11 @@ Things to note from the above:
   searching for "example" unless that field is the sort field. If a
   word is not formatted, or the formatting does not change in the
   middle of the word, then Anki will be able to find it in any field.
+
+- Standard searches are case insensitive for Latin characters - a-z will
+  match A-Z, and vice versa. Other characters such as Cyrillic are case sensitive
+  in a standard search, but can be made case insensitive by searching on a word
+  boundary or regular expression (w:, re:).
 
 ## Limiting to a field
 
@@ -171,7 +172,10 @@ Searches that ignore combining characters are slower than regular searches.
 Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with "regular expressions",
 a standard and powerful way of searching in text.
 
-Start a search with `re:` to search by regular expression. Some examples:
+Start a search with `re:` to search by regular expression. To make things easier, Anki will
+treat the following as [raw input](#raw-input), so bear in mind the rules listed there.
+
+Some examples:
 
 `"re:(some|another).*thing"`  
 find notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing"
@@ -229,6 +233,18 @@ review cards, not including lapsed cards
 
 `is:learn -is:review`  
 cards that are in learning for the first time
+
+`flag:1`  
+cards with a red flag
+
+`flag:2`  
+cards with an orange flag
+
+`flag:3`  
+cards with a green flag
+
+`flag:4`  
+cards with a blue flag
 
 ## Card properties
 
@@ -288,6 +304,58 @@ cards answered Again (1) over the last 7 days
 cards answered Easy (4) in the last month
 
 For speed, rating searches are limited to 31 days.
+
+## Matching special characters
+
+This section was written for Anki 2.1.36+ - earlier versions did not support escaping
+characters in certain situations.
+
+As shown in the previous section, some characters like `*`, `_` and `"` have a
+special meaning in Anki. If you need to locate those characters in a search,
+you need to tell Anki not to treat them specially.
+
+- _Space_  
+  To match something including spaces, enclose the `"entire term"` in double
+  quotes. If it is a colon search, you also have the option to only quote the
+  `part:"after the colon"`.
+
+- `"`, `*` and `_`  
+  Add a backslash before these characters to treat them literally. For example,
+  `_` will match any single character, but `\_` matches only an actual underscore.
+
+- `\`  
+  Because a backlash is used to remove the special meaning from other characters,
+  it too is treated specially. If you need to search for an actual backslash,
+  use `\\` instead of `\`.
+
+- `(` and `)`  
+  You can search for parentheses either by enclosing the full term in quotes,
+  and/or by using a backslash. That is, `"some(text)"`, `some\(text\)` and
+  `"some\(text\)"` are all equivalent, but `some(text)` is not.
+
+- `-`  
+  Starting a search term with `-` usually inverts it: `-dog` matches everything
+  except dog for example. If you instead wish to include an actual hyphen,
+  you can either use a backslash, or include the text in quotes, such as
+  `\-.-` or `"-.-"`.
+
+- `:`  
+  Colons have to be escaped unless they are preceded by another, unescaped colon.
+  So `w:e:b` is a word boundary search for `e:b`, `w\:e\:b` searches literally for
+  `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
+  [field searches](#limiting-to-a-field)).
+
+#### Raw input
+
+Text preceded by certain keywords (like `re:`) will be treated as raw input. That is,
+the charcters listed above largely lose their special meaning. In such a context, only
+a minimum of escaping is required to prevent ambiguity:
+
+- `"` must be escaped.
+
+- Spaces and unescaped parentheses require the search term to be quoted.
+
+- The search term must not end in an odd number of backslashes.
 
 ## Object IDs
 

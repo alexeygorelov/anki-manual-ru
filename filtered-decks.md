@@ -4,7 +4,7 @@ When you study a regular deck in Anki, only a limited number of cards
 are shown: the cards Anki thinks you’re about to forget, and a daily
 limit of new cards. This is generally useful, as it ensures you don’t
 spend more time studying than necessary. But sometimes it can be useful
-to step outside of these normal limits, such as when you need to revise
+to step outside of these normal limits, such as when you need to review
 for a test, focus on particular material, and so on. To make this
 possible, Anki provides a different type of deck called a 'filtered
 deck'.
@@ -87,7 +87,7 @@ filtered deck while cards are still in learning, they will be turned
 back into new cards. In the case of failed reviews in relearning, any
 remaining relearning steps will be skipped. This has been fixed in the
 [experimental
-scheduler](https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21).
+scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
 
 ## Creating Manually
 

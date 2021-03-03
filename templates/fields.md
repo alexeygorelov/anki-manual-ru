@@ -271,7 +271,7 @@ importing/exporting, and so on. Examples that won’t work:
     [latex]{{Field 1}}[/latex]
 
 Instead, you should include the media references in the field. Please
-see the importing section for more information.
+see the [importing section](../importing.md#importing-media) for more information.
 
 ## Проверка своего ответа
 
@@ -304,7 +304,7 @@ compare. Since FrontSide is on the back of the card, the type answer box
 will appear on the back as well.
 
 When reviewing, Anki will display a text box where you can type in the
-answer, and upon hitting enter or showing the answer, Anki will show you
+answer, and upon hitting <kbd>Enter</kbd> or showing the answer, Anki will show you
 which parts you got right and which parts you got wrong. The text box’s
 font size will be the size you configured for that field (via the
 “Fields” button when editing).
@@ -328,7 +328,7 @@ Which will affect the following HTML for the answer comparison:
 
     <code id=typeans>...</code>
 
-Advanced users can override the default type-answer colours with the css
+Advanced users can override the default type-answer colors with the css
 classes 'typeGood', 'typeBad' and 'typeMissed'. AnkiMobile supports
 'typeGood' and 'typeBad', but not 'typeMissed'.
 

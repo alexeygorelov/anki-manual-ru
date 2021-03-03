@@ -5,6 +5,11 @@ synchronized across multiple devices, and to study online. Please sign
 up for a [free account](https://ankiweb.net/) before following the steps
 below.
 
+## Intro Videos
+
+For a quick introduction to syncing, please check out the
+[syncing intro videos](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on).
+
 ## Setup
 
 To start syncing your collection across devices, click the sync button
@@ -35,12 +40,14 @@ Once syncing is enabled, Anki will automatically sync each time your
 collection is closed or opened. If you would prefer to synchronize
 manually, you can disable automatic syncing in Anki’s preferences.
 
-## Button Colour
+## Button Color
 
 The sync button will change to blue when a normal sync is required,
 and red when a full sync is required.
 
 ## Media
+
+Related video: https://www.youtube.com/watch?v=phP9GGG-PxY
 
 Anki will synchronize any sounds and images used by your notes. It will
 notice when media has been added or removed from your media folder, but
@@ -53,6 +60,8 @@ file system, as Anki may not be able to detect media changes on a FAT32
 filesystem.
 
 ## Conflicts
+
+Related video: https://www.youtube.com/watch?v=UEAcpfMQnjo
 
 Under normal circumstances, reviews and note edits can be merged, so if
 you review or edit on two different devices before syncing, Anki will
