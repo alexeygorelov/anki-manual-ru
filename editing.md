@@ -128,21 +128,21 @@ Anki не проверяет на повторы другие поля авто�
 [проверка своего ответа](templates/fields.md#Проверка-своего-ответа).)
 
 
+**Сортировать по этому полю…​** указывает Anki отображать это поле в столбце
+Поле сортировки обозревателя. Это можно использовать для сортировки карточек по
+этому полю. Одновременно только одно поле может быть полем сортировки.
+
+Когда **Помнить последние введённые данные…​** отмечено, Anki не будет очищать
+содержимое этих полей после добавления записи. Это может быть удобно при вводе
+одинаковой информации в подряд идущих записях.
+
+**Направление текста справа-налево** полезно при изучении языка который
+отображает текст справа-налево (англ. *right to left (RTL)*), например, арабский
+или иврит. В настоящее время этот параметр управляет только редактированием;
+чтобы убедиться, что текст отображается правильно во время повторения,
+необходимо настраивать свой [шаблон](templates/styling.md).
+
 <!----------------------------------------------------------------------------->
-**Sort by this field…​** tells Anki to show this field in the Sort Field
-column of the browser. You can use this to sort cards by that field.
-Only one field can be the sort field at once.
-
-When **Remember last input…​** is checked, Anki will not clear out this
-field’s content after a note is added. If you find yourself entering the
-same content into multiple notes, you may find this useful.
-
-**Reverse text direction** is useful if you are studying languages that
-display text from right to left (RTL), such as Arabic or Hebrew. This
-setting currently only controls editing; to make sure the text displays
-correctly during review, you’ll need to adjust your
-[template](templates/styling.md).
-
 After you’ve added fields, you’ll probably want to add them to the front
 or back of your cards. For more information on that, please see the
 [templates](templates/intro.md) section.
