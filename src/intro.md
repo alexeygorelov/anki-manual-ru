@@ -22,5 +22,5 @@
 - [日本語](http://wikiwiki.jp/rage2050/?FrontPage)
 - [简体中文](http://www.ankichina.net/manual/anki/)
 
-If you would like to help translate the manual into a different language,
-please see the [translation docs](https://translating.ankiweb.net/anki/manual.html).
+Если вы хотите помочь с переводом руководства на другой язык, посмотрите
+[Документацию по переводу](https://translating.ankiweb.net/anki/manual).
