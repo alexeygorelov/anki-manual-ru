@@ -27,7 +27,6 @@
 - [Add-ons](addons.md)
 - [Miscellaneous](misc.md)
 
-
 [Contributing](contrib.md)
 [ЧаВо](faqs.md)
 [Ресурсы](resources.md)
