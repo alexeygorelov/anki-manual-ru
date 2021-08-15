@@ -1,0 +1,22 @@
+[book]
+authors = ["Ankitects Pty Ltd and contributors"]
+language = "ru"
+multilingual = false
+src = "src"
+title = "Руководство по Anki"
+
+[build]
+create-missing = true
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[output.html]
+git-repository-url = "https://github.com/alexeygorelov/anki-manual-ru"
+additional-css = ["css/kbd.css"]
+
+[output.linkcheck]
+optional = true
+warning-policy = "warn"
+follow-web-links = true
