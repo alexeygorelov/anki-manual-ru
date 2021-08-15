@@ -1,0 +1,475 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Studying - Руководство по Anki</title>
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="css/kbd.css">
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="studying.html" class="active"><strong aria-hidden="true">3.</strong> Studying</a></li><li class="chapter-item expanded "><a href="editing.html"><strong aria-hidden="true">4.</strong> Adding/Editing</a></li><li class="chapter-item expanded "><a href="templates/intro.html"><strong aria-hidden="true">5.</strong> Card Templates</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="templates/fields.html"><strong aria-hidden="true">5.1.</strong> Field Replacements</a></li><li class="chapter-item expanded "><a href="templates/generation.html"><strong aria-hidden="true">5.2.</strong> Card Generation</a></li><li class="chapter-item expanded "><a href="templates/styling.html"><strong aria-hidden="true">5.3.</strong> Styling &amp; HTML</a></li></ol></li><li class="chapter-item expanded "><a href="preferences.html"><strong aria-hidden="true">6.</strong> Preferences</a></li><li class="chapter-item expanded "><a href="deck-options.html"><strong aria-hidden="true">7.</strong> Deck Options</a></li><li class="chapter-item expanded "><a href="syncing.html"><strong aria-hidden="true">8.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item expanded "><a href="profiles.html"><strong aria-hidden="true">9.</strong> Profiles</a></li><li class="chapter-item expanded "><a href="browsing.html"><strong aria-hidden="true">10.</strong> Browsing</a></li><li class="chapter-item expanded "><a href="filtered-decks.html"><strong aria-hidden="true">11.</strong> Filtered Decks</a></li><li class="chapter-item expanded "><a href="searching.html"><strong aria-hidden="true">12.</strong> Searching</a></li><li class="chapter-item expanded "><a href="importing.html"><strong aria-hidden="true">13.</strong> Importing</a></li><li class="chapter-item expanded "><a href="exporting.html"><strong aria-hidden="true">14.</strong> Exporting</a></li><li class="chapter-item expanded "><a href="files.html"><strong aria-hidden="true">15.</strong> Managing Files</a></li><li class="chapter-item expanded "><a href="stats.html"><strong aria-hidden="true">16.</strong> Statistics</a></li><li class="chapter-item expanded "><a href="media.html"><strong aria-hidden="true">17.</strong> Media</a></li><li class="chapter-item expanded "><a href="math.html"><strong aria-hidden="true">18.</strong> Math &amp; Symbols</a></li><li class="chapter-item expanded "><a href="leeches.html"><strong aria-hidden="true">19.</strong> Leeches</a></li><li class="chapter-item expanded "><a href="addons.html"><strong aria-hidden="true">20.</strong> Add-ons</a></li><li class="chapter-item expanded "><a href="misc.html"><strong aria-hidden="true">21.</strong> Miscellaneous</a></li><li class="chapter-item expanded affix "><a href="contrib.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="faqs.html">FAQs</a></li><li class="chapter-item expanded affix "><a href="resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Руководство по Anki</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/alexeygorelov/anki-manual-ru" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="Изучение"><a class="header" href="#Изучение">Изучение</a></h1>
+<ul>
+<li><a href="#%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D1%8B">Колоды</a></li>
+<li><a href="#%D0%9E%D0%B1%D1%89%D0%B8%D0%B5-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D0%B1-%D0%B8%D0%B7%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B8">Общие сведения об изучении</a></li>
+<li><a href="#%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B">Вопросы</a></li>
+<li><a href="#%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Обучение</a></li>
+<li><a href="#%D0%9F%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D0%B5">Повторение</a></li>
+<li><a href="#due-counts">Due Counts</a></li>
+<li><a href="#%D0%9F%D1%80%D0%B0%D0%B2%D0%BA%D0%B0-%D0%B8-%D0%B5%D1%89%D1%91">Правка и ещё</a></li>
+<li><a href="#%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F">Порядок отображения</a></li>
+<li><a href="#%D0%A1%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B8-%D0%BE%D1%82%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5">Связанные и отложенные</a></li>
+<li><a href="#%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B5-%D1%81%D0%BE%D0%BA%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D1%8F">Клавиатурные сокращения</a></li>
+<li><a href="#%D0%9E%D1%82%D1%81%D1%82%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Отставание</a></li>
+</ul>
+<p>Когда вы нашли колоду которая вам нравится или добавили несколько записей
+самостоятельно --- пора начинать обучение.</p>
+<h2 id="Колоды"><a class="header" href="#Колоды">Колоды</a></h2>
+<p>Заучивание карточек в Anki осуществляется в пределах выбранной в настоящий
+момент колоды и любых подколод которые она содержит.</p>
+<p>На экране колод ваши колоды представлены в виде списка. В нем присутствуют два
+числовых столбца: 'К просмотру' и 'Новые'. 'К просмотру' --- это количество
+ожидающих повторения и уже разучиваемые карточки. 'Новые' --- это количество
+новых карточек, которые подготовлены к заучиванию в этот день.</p>
+<p>При нажатии на колоду она станет 'текущей колодой' и Anki переключится на экран
+изучения. Вы можете вернуться к списку колод, чтобы изменить выбранную в данный
+момент колоду в любое время, нажав на 'Колоды' в верхней части главного окна.
+(Можно также использовать действие Учить колоду для выбора новой колоды с
+клавиатуры или нажать клавишу 's' для изучения выбранной в данный момент
+колоды.)</p>
+<p>Можно нажать кнопку шестерёнки справа от колоды, чтобы переименовать или удалить
+колоду, изменить её параметры или <a href="exporting.html">экспортировать</a> её.</p>
+<p>With the old scheduler, when a deck has subdecks, the cards will appear from <a href="studying.html#display-order">each deck in
+turn</a>.</p>
+<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">new scheduler</a>,
+when a deck has subdecks, reviews are now taken from all children decks
+at once. The review limit of the child decks is ignored - only the limit of the
+deck you clicked on applies.</p>
+<h2 id="Общие-сведения-об-изучении"><a class="header" href="#Общие-сведения-об-изучении">Общие сведения об изучении</a></h2>
+<p>После нажатия на колоду для изучения, вы увидите экран на котором показано
+сколько карточек у вас запланировано на сегодня. Это называется экраном
+'обзора колоды'. Карточки разделены на три типа:</p>
+<ul>
+<li>
+<p><strong>Новые</strong> --- это карточки, которые вы скачали или добавлены вручную, но
+никогда раньше не изучали.</p>
+</li>
+<li>
+<p><strong>Изучаемые</strong> --- это карточки, которые недавно были показаны первый раз и
+сейчас в процессе изучения.</p>
+</li>
+<li>
+<p><strong>Повторяемые</strong> --- это карточки, которые были изучены ранее, а теперь должны
+быть пересмотрены, чтобы вы их не забыли.</p>
+</li>
+</ul>
+<p>Чтобы начать сеанс заучивания, нажмите кнопку <strong>Учить</strong>. Anki будет показывать
+вам карточки до тех пор, пока запланированные на сегодня карточки не закончатся.</p>
+<p>В процессе изучения можно вернуться к обзору, нажав клавишу &quot;s&quot; на клавиатуре.</p>
+<h2 id="Вопросы"><a class="header" href="#Вопросы">Вопросы</a></h2>
+<p>При показе карточки, сперва показывается только вопрос. Подумав над ответом,
+нажмите либо кнопку <strong>Показать ответ</strong>, либо пробел на клавиатуре --- будет
+показан ответ. Это нормально, если вам потребуется немного времени, чтобы
+вспомнить ответ, но, как правило, если вы не можете ответить в течение 10
+секунд, скорее всего, лучше сдаться и показать ответ, чем продолжать пытаться
+его вспомнить. </p>
+<p>Когда покажется ответ, вам следует сравнить его с тем который вы придумали и
+сообщить Anki, на сколько точно вы запомнили. Если вы не уверены в точности
+сравнения ответов, вы можете указать Anki <a href="templates/fields.html#%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%81%D0%B2%D0%BE%D0%B5%D0%B3%D0%BE-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0">предлагать вам набирать ответ с клавиатуры</a>, а не просто показывать его вам.</p>
+<p>Количество кнопок, доступных для оценки ответа, зависит от того, является ли
+карточка 'изучаемой' или 'повторяемой'.</p>
+<h2 id="Обучение"><a class="header" href="#Обучение">Обучение</a></h2>
+<p>При изучении новых или переучивании забытых карточек, Anki будет показывать
+карточки по одному или нескольку раз, чтобы помочь вам их запомнить. Каждый
+такой показ называется 'обучающий шаг'. По умолчанию установлено два
+шага: 1 минута и 10 минут. Количество и продолжительность таких шагов можно
+изменить в <a href="deck-options.html">настройках колоды</a>.</p>
+<p>В процессе обучения доступны три кнопки оценки:</p>
+<p><strong>Снова</strong> --- перемещает карточку обратно к первому шагу.</p>
+<p><strong>Хорошо</strong> --- перемещает карточку на следующий шаг. Если карточка была на
+последнем шаге, то она переводится [прим. перев. <em>из изучаемой</em>] в повторяемую
+карточку (она 'выпускник' (англ. <em>graduate</em>)). По умолчанию, карточка достигнув
+конца обучающих шагов, будет показана снова на следующий день, затем задержки
+между показами будут увеличиваться (смотрите следующий раздел).</p>
+<p><strong>Easy</strong> immediately converts the card into a review card, even if there
+were steps remaining. By default, the card will be shown again 4 days
+later, and then at increasingly long delays. In the old scheduler, the &quot;Easy&quot; button will not be
+shown if you are in relearning mode and it would give the same interval
+as “Good.” With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">new scheduler</a>,
+when cards are in relearning, the &quot;Easy&quot; button boosts the interval by 1 day.</p>
+<p>Когда карточки показываются в первый раз, они начинают на первом шаге. Это
+означает, что ответив <strong>Хорошо</strong> на карточке с первого раза покажет её ещё раз
+через 10 минут, а первый шаг в 1 минуту будет пропущен. Если вы нажмёте Снова,
+карточка вернется через 1 минуту.</p>
+<p>Вы можете использовать клавиши 1, 2 и 3 на клавиатуре, для выбора конкретной
+кнопки, где 1 --- это <strong>Снова</strong>. Нажатие клавиши пробела выбирает <strong>Хорошо</strong>. </p>
+<p>Если нет других карточек для показа, Anki снова покажет изучаемые карточки,
+даже если их задержка полностью не закончилась. Если вы предпочитаете ждать
+всю обучающую задержку, вы можете изменить поведение в <a href="preferences.html">настройках</a>.</p>
+<h2 id="Повторение"><a class="header" href="#Повторение">Повторение</a></h2>
+<p>Когда карточка уже была изучена и готова к повторению, есть четыре кнопки для
+оценки ответа:</p>
+<p><strong>Снова</strong> --- помечает ваш ответ как неверный и указывает Anki чаще показывать
+карточку в будущем. Карточка считается 'забытой' (англ. <em>lapsed</em>). Смотрите
+раздел <a href="deck-options.html#%D0%97%D0%B0%D0%B1%D1%8B%D1%82%D1%8B%D0%B5">забытые</a> для получения более подробной
+информации о том, как обрабатываются забытые повторения.</p>
+<p><strong>Трудно</strong> --- показывает карточку с чуть большей задержкой, чем в прошлый раз
+и указывает Anki чаще показывать карточку в будущем.</p>
+<p><strong>Хорошо</strong> --- сообщает Anki, что последняя задержка была примерно правильной и
+лёгкость карточки не нуждается в уменьшении или увеличении. При значении
+лёгкости по умолчанию, задержка перед следующим показом карточки будет примерно
+в 2,5 раза дольше чем в предыдущий раз, так что если бы вы в прошлый раз ждали
+10 дней, чтобы увидеть карточку, то следующая задержка составит около 25 дней.</p>
+<p><strong>Легко</strong> --- сообщает Anki, что вы сочли задержку слишком короткой. Карточка
+будет запланирована дальше, чем при ответе 'Хорошо' и в последствии Anki будет
+включать её в расписание чуть реже. Поскольку 'Легко' быстро увеличивает
+задержку, она лучше всего подходит для, действительно, самых простых карточек.
+Обычно вместо этого ответа, стоит использовать ответ 'Хорошо'.</p>
+<p>Как и с изучаемыми карточками, вы можете использовать клавиши 1-4 на клавиатуре
+для выбора ответа. Нажатие клавиши пробела выбирает <strong>Хорошо</strong>.</p>
+<h2 id="due-counts"><a class="header" href="#due-counts">Due Counts</a></h2>
+<p>Когда показывается только вопрос, Anki показывает в нижней части экрана три
+числа вроде 12 + 34 + 56. Они обозначают новые карточки, изучаемые карточки и
+повторяемые карточки. Если вы предпочитаете не видеть этих цифр, вы можете
+отключить их в настройках Anki.</p>
+<p>В старом планировщике, считается количество <em>просмотров</em> необходимое для
+завершения всех карточек в этой очереди, а не количество самих <em>карточек</em>. Если
+задано несколько шагов для забытых карточек, то число увеличивается более чем
+на один, если вы не справились с карточкой, так как она должна быть показана
+несколько раз.</p>
+<p>В новом планировщике, считается количество <em>карточек</em>, так что число всегда
+увеличивается на один, независимо от оставшихся шагов.</p>
+<p>Когда отображается ответ, Anki выводит примерное время следующего показа
+карточки над каждой кнопкой. Если вы предпочитаете не видеть оценок, вы можете
+отключить их в <a href="preferences.html">настройках</a> Anki.</p>
+<p>Кроме того, Anki случайным образом не много изменяет время следующего показа,
+чтобы предотвратить случаи, когда карточки добавленные вместе и всегда
+получавшие одинаковые оценки продолжали бы и дальше показываться одна за
+другой. Эти изменения не отражаются в оценках времени, а применяются после
+выбора кнопки.</p>
+<h2 id="Правка-и-ещё"><a class="header" href="#Правка-и-ещё">Правка и ещё</a></h2>
+<p>Для изменения текущей заметки нажмите кнопку <strong>Правка</strong> в левом нижнем углу.
+Завершив редактирование вы будете возвращены к обучению. Экран редактирования
+работает аналогично экрану <a href="editing.html">добавления записи</a></p>
+<p>В правом нижнем углу экрана просмотра находится кнопка <strong>Ещё</strong>. Эта кнопка
+предоставляет несколько других операций, которые можно выполнить с текущей
+карточкой или записью:</p>
+<ul>
+<li>
+<p><strong>Flag Card</strong>: Adds a colored marker to the card, or toggles it off. Flags will appear during
+study, and you can search for flagged cards in the Browse screen. This is useful
+when you want to take some action on the card at a later date, such as looking
+up a word when you get home.</p>
+</li>
+<li>
+<p><strong>Bury Card / Note</strong>: Hides a card or all of the note’s cards from review until the next day.
+(If you want to unbury cards before then, you can click the “unbury”
+button on the <a href="studying.html#study-overview">deck overview</a> screen.) This is useful if
+you cannot answer the card at the moment or you want to come back to it
+another time. Burying can also <a href="studying.html#siblings-and-burying">happen automatically</a> for
+cards of the same note.</p>
+<p>With the old scheduler, if cards were in learning when they are buried,
+they are moved back to the new card queue or review queue prior to being
+buried.</p>
+<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">2.1 scheduler</a>,
+however, burying cards does not reset a card's learning steps.</p>
+</li>
+<li>
+<p><strong>Set Due Card</strong>: Make cards review cards, and <a href="browsing.html#cards">make them due on a certain date.</a></p>
+</li>
+<li>
+<p><strong>Suspend Card / Note</strong>: Hides a card or all of the note’s cards from review until they are
+manually unsuspended (by clicking the suspend button in the browser).
+This is useful if you want to avoid reviewing the note for some time,
+but don’t want to delete it.
+With the old scheduler, if cards were in learning when they are
+suspended, they are moved back to the new card queue or review queue
+prior to being suspended.</p>
+<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">2.1 scheduler</a>,
+however, suspending cards does not reset a card's learning steps.</p>
+</li>
+<li>
+<p><strong>Options</strong>: Edit the <a href="deck-options.html">options</a> for the current deck.</p>
+</li>
+<li>
+<p><strong>Card Info</strong>: Displays <a href="stats.html#card-info">statistical information</a> about the card.</p>
+</li>
+<li>
+<p><strong>Mark Note</strong>: Adds a “marked” tag to the current note, so it can be easily found in the
+browser. This is similar to flagging individual cards, but works with a tag
+instead, so if the note has multiple cards, all cards will appear in a search
+for the marked tag. Most users will want to use flags instead - marking is
+mainly left around for compatibility with older Anki versions.</p>
+</li>
+<li>
+<p><strong>Delete Note</strong>: Deletes the note and all of its cards.</p>
+</li>
+<li>
+<p><strong>Replay Audio</strong>: If the card has audio on the front or back, play it again.</p>
+</li>
+<li>
+<p><strong>Pause Audio</strong>: Pauses the audio if it is playing.</p>
+</li>
+<li>
+<p><strong>Audio -5s / +5s</strong>: Jump backwards / forward 5 seconds in the currently playing audio.</p>
+</li>
+<li>
+<p><strong>Record Own Voice</strong>: Record from your microphone for the purposes of checking your
+pronunciation. This recording is temporary and will go away when you
+move to the next card. If you want to add audio to a card permanently,
+you can do that in the edit window.</p>
+</li>
+<li>
+<p><strong>Replay Own Voice</strong>: Replay the previous recording of your voice (presumably after showing
+the answer).</p>
+</li>
+</ul>
+<h2 id="Порядок-отображения"><a class="header" href="#Порядок-отображения">Порядок отображения</a></h2>
+<p>В процессе изучения показываются карточки из текущей выбранной колоды и всех
+колод, которые она содержит. Таким образом, если вы выберете колоду
+&quot;Французский&quot;, подколоды &quot;Французский::Словарь&quot; и &quot;Французский::Моя тетрадь::Урок 1&quot;
+также будут показаны.</p>
+<p>Новые и повторяемые карточки Anki выбирает из расположенных в алфавитном
+порядке колод. Так в приведенном выше примере, сначала вы увидите карточки
+из колоды &quot;Моя тетрадь&quot;, затем &quot;Словарь&quot;, и, наконец &quot;Французский&quot;. Это можно
+использовать для управления порядком отображения карточек, помещая карточки с
+большим приоритетом в колоды, находящиеся выше по списку. При компьютерной
+сортировке текста по алфавиту, символ &quot;-&quot; идёт перед буквами алфавита, а &quot;~&quot;
+--- после них [прим. перев. <em>но перед русскими. В русских (кириллических)
+названиях колод вместо &quot;~&quot; можно использовать знак &quot;№&quot;</em>]. Значит, вы можете
+назвать колоду &quot;-Французский&quot;, чтобы она отображалась первой, а другую ---
+&quot;№Словарь&quot;, чтобы отображать её после всего остального.</p>
+<p>Новые и повторяемые карточки выбираются отдельно, и Anki не будет ждать, пока
+закончатся обе очереди, прежде чем перейти к следующей колоде, так что
+возможно, вам будут показываться новые карточки из одной колоды и повторяемые
+из другой, и наоборот. Если вам это не подходит, нажимайте непосредственно
+на колоду которую хотите изучать, а не на родительские колоды.</p>
+<p>Изучаемые карточки, поскольку у них, так сказать, жесткий временной режим,
+выбираются из всех колод одновременно и отображаются в порядке своей очереди.</p>
+<p>Для управления порядком, в котором появляются карточки из определённой колоды,
+или изменения порядка показа новых карточек из упорядоченного в произвольный,
+смотрите в <a href="deck-options.html">настройках колоды</a>. Ещё более точно настроить
+порядок появления новых карточек можно в <a href="browsing.html">обозревателе</a>.</p>
+<h2 id="Связанные-и-отложенные"><a class="header" href="#Связанные-и-отложенные">Связанные и отложенные</a></h2>
+<p>Вспомним из <a href="getting-started.html">основ</a>, что Anki может создавать более одной
+карточки из каждой записи, например, карточки лицо→оборот и оборот→лицо, или
+два разных заполнения пропусков из одного текста. Такие карточки, относящиеся к
+одной записи, называются 'связанными'.</p>
+<p>Отвечая на одну из связанных карточек, Anki может предотвращать показ связанных
+с ней карточек в этот же день, автоматически 'откладывая' их. Отложенные
+карточки скрыты от повтора до тех пор, пока на часах не наступит следующий день
+или вы вручную не вернёте их при помощи кнопки &quot;Вернуть&quot; отображаемой внизу
+экрана <a href="studying.html#%D0%9E%D0%B1%D1%89%D0%B8%D0%B5-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D0%B1-%D0%B8%D0%B7%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B8">обзора колоды</a>. Anki отложит
+связанные карточки даже если они находятся в разных колодах (например, если вы
+используете функцию <a href="templates/intro.html">подмена колоды</a>).</p>
+<p>Вы можете включить откладывание в окне <a href="deck-options.html">настроек колоды</a> ---
+отдельно для новых и повторяемых карточек.</p>
+<p>Anki будет откладывать связанные карточки, которые являются новыми или
+повторяемыми. Изучаемые карточки не будут скрываться, поскольку время для них
+имеет существенное значение. С другой стороны, заучивая карточку которая
+является изучаемой, любые новые/повторяемые карточки будут отложены.</p>
+<h2 id="Клавиатурные-сокращения"><a class="header" href="#Клавиатурные-сокращения">Клавиатурные сокращения</a></h2>
+<p>Для большинства общих действий в Anki имеются клавиатурные сокращения. Многие
+из них легко обнаружить в элементах интерфейса: рядом с пунктами меню
+отображаются их клавиатурные сокращения, а наведение курсора мыши на кнопку, как
+правило, показывает её клавиатурное сокращение во всплывающей подсказке.</p>
+<p>Во время обучения, как <kbd>Пробел</kbd> так и клавиша <kbd>Enter</kbd> покажут
+ответ. Когда покажется ответ, вы можете использовать клавиши <kbd>Пробела</kbd></p>
+<p>или <kbd>Enter</kbd> для выбора кнопки Хорошо. Для выбора конкретной кнопки
+лёгкости можно использовать клавиши <kbd>1</kbd>–<kbd>4</kbd>. Многим людям
+удобно отвечать на большинство карточек клавишей <kbd>Пробела</kbd> и держать
+один палец на цифре <kbd>1</kbd>, на случай если забыли ответ.</p>
+<p>Пункт &quot;Учить колоду&quot; в меню Инструменты позволяет вам быстро переключиться на
+другую колоду с помощью клавиатуры. Вызвать его можно клавишей '/'. Будучи
+открытым, в нём отображаются все ваши колоды и строка фильтра сверху. По мере
+ввода символов, Anki будет отображать только те колоды которые соответствуют
+введённым вами символам. Можно добавить пробел для разделения нескольких
+условий поиска, и Anki покажет только колоды, соответствующие всем условиям.
+Так &quot;яп 1&quot; или &quot;ок1 яп&quot; в обоих случаях будут соответствовать колоде
+&quot;Японский::Урок1&quot;.</p>
+<h2 id="Отставание"><a class="header" href="#Отставание">Отставание</a></h2>
+<p>Если вы отстали от графика повторения, Anki отдаст предпочтение карточкам,
+которые ждут дольше всех. Она выбирает карточки ожидающие дольше всех и
+показывает их в случайном порядке до тех пор, пока не будет исчерпан суточный
+лимит показов. Такой порядок гарантирует, что никакие карточки не останутся в
+состоянии вечного ожидания, однако это означает, что если вы добавите новых
+карточек, то не увидите их до тех пор, пока не наверстаете отставание.</p>
+<p>Если вы хотите изменить порядок просмотра просроченных карточек, вы можете это
+сделать с помощью создания <a href="filtered-decks.html">фильтрованной колоды</a>.</p>
+<p>Отвечая на карточки, некоторое время находившиеся в ожидании, Anki учитывает
+эту задержку при определении времени следующего показа карточки. Дополнительную
+информацию смотрите в разделе про <a href="faqs.html">алгоритм</a> интервальных повторений
+Anki.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="getting-started.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="editing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="getting-started.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="editing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
