@@ -1,19 +1,24 @@
-# Add-ons
+# Дополнения (Add-ons)
 
-Anki's capabilities can be extended with add-ons. Add-ons can provide
-features like extra support for specific languages, extra control over
-scheduling, and so on.
+Возможности Anki могут быть расширены использованием дополнений.
+Дополнения могут предоставлять дополнительные возможности, такие как:
+поддержка определённых языков, расширенный контроль над расписанием и т.д.
 
-To browse the list of available add-ons, select the Tools>Add-ons
-menu item, then click on Get Add-ons.
+Чтобы посмотреть список доступных дополнений, выберите в меню Инструменты –> Дополнения,
+затем нажмите на «Загрузить дополнения…» и «Посмотреть дополнения».
 
-Many add-on authors include their email address in the add-on, so if you
-need to get in touch with the author, editing the add-on and looking at
-the top of the file may help.
+Если вы скачали дополнение, которое работает некорректно, или вы сделали ошибку 
+при редактировании дополнения, вы можете использовать опцию «Удалить» чтобы удалить его.
 
-If you have downloaded an add-on that is not working properly, or if you
-accidentally made a mistake when editing an add-on, you can use the
-"Delete" option in the menu to remove it.
+Дополнения используют и изменяют произвольные части кодовой базы Anki, 
+поэтому иногда обновление Anki может нарушить совместимость со старыми дополнениями.
+Если одно из ваших дополнений перестаёт работать после обновления Anki, пожалуйста,
+сообщите об этой проблеме автору дополнения. Если вам необходимо это дополнение, 
+вам нужно продолжить использование старой версии Anki до тех пор, пока дополнение не получит обновление. 
 
-To learn how to write your own add-ons, please see the [add-on writing
-guide](https://addon-docs.ankiweb.net).
+На большинстве страниц дополнений в Ankiweb есть кнопка «Contact Author», 
+и многие авторы включают адрес своей почты внутрь дополнения, если вам необходимо связаться с автором, 
+попробуйте открыть файл дополнения на редактирование и посмотреть в начале файла.
+
+Чтобы узнать, как написать своё собственное дополнение, пожалуйста, посмотрите 
+[руководство по созданию дополнений (англ.)](https://addon-docs.ankiweb.net/)

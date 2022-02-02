@@ -37,6 +37,11 @@ and placed into the deck you chose. If you would like to edit a card you
 added, you can click the history button to search for a recently added
 card in the [browser](browsing.md).
 
+Дополнительные сведения о кнопках между типом записи и полями см. в разделе
+[редактор](editing.md).
+
+### Duplicate Check
+
 Anki checks the first field for uniqueness, so it will warn you if you
 enter two cards with a Front field of "apple" (for example). The
 uniqueness check is limited to the current note type, so if you're
@@ -48,11 +53,10 @@ Anki does not check for duplicates in other fields automatically for
 efficiency reasons, but the browser has a "Find Duplicates" function,
 which you can run periodically.
 
-Дополнительные сведения о кнопках между типом записи и полями см. в разделе
-[редактор](editing.md).
+###  Effective Learning
 
 Разным людям нравится повторять по-разному,но есть некоторые общие концепции,
-о которых следует помнить. Отличное введение --- [эта статья](http://www.supermemo.com/articles/20rules.htm) на сайте SuperMemo. В частности:
+о которых следует помнить. Отличное введение — [эта статья](http://www.supermemo.com/articles/20rules.htm) на сайте SuperMemo. В частности:
 
 - **Keep it simple**: The shorter your cards, the easier they are to
   review. You may be tempted to include lots of information "just in
@@ -135,15 +139,11 @@ answer](templates/fields.md#checking-your-answer) section.)
 Поле сортировки обозревателя. Это можно использовать для сортировки карточек по
 этому полю. Одновременно только одно поле может быть полем сортировки.
 
-When **Remember last input…​** is checked, Anki will not clear out this
-field's content after a note is added. If you find yourself entering the
-same content into multiple notes, you may find this useful.
-
 **Reverse text direction** is useful if you are studying languages that
 display text from right to left (RTL), such as Arabic or Hebrew. This
 setting currently only controls editing; to make sure the text displays
 correctly during review, you'll need to adjust your
-[template](templates/styling.md).
+[template](templates/styling.md#text-direction).
 
 After you have added fields, you will probably want to add them to the front
 or back of your cards. For more information on that, please see the
@@ -156,53 +156,107 @@ and the top right button to change deck. The window that opens up will
 not only allow you to select a deck or note type, but also to add new
 decks or manage your note types.
 
-## Правильное использование колод
+## Organizing Content
 
-Decks are designed to divide your content up into broad categories that
-you wish to study separately, such as English, Geography, and so on. You
-may be tempted to create lots of little decks to keep your content
-organized, such as "my geography book chapter 1", or "food verbs", but
+### Using Decks Appropriately
+
+[Decks](getting-started.md#decks) are designed to divide your content up into
+broad categories that you wish to study separately, such as English, Geography,
+and so on. You may be tempted to create lots of little decks to keep your
+content organized, such as "my geography book chapter 1", or "food verbs", but
 this is not recommended, for the following reasons:
 
-- Lots of little decks mean you end up reviewing cards in a
-  recognizable order. Whether it is because you are clicking on each
-  deck in turn (which is slow) or you have added a number of decks under
-  a single parent deck, you will end up seeing all the "chapter 1" or
-  "food verb" cards together. This makes it easier to answer the
+- Lots of little decks may mean you end up seeing cards in a
+  recognizable order. On older scheduler versions, new cards can only
+  be introduced in deck order. And if you were planning to click on each deck
+  in turn (which is slow), you will end up seeing all the "chapter 1" or
+  "food verb" reviews together. This makes it easier to answer the
   cards, as you can guess them from the context, which leads to weaker
   memories. When you need to recall the word or phrase outside Anki,
-  you won't have the luxury of being shown related content first!
+  you won't always have the luxury of being shown related content first!
 
 - While less of a problem than it was in earlier Anki versions,
   adding hundreds of decks may cause slowdowns, and very large deck
   trees with thousands of items can actually break the display of
-  the deck list in the current implementation.
+  the deck list in Anki versions before 2.1.50.
+
+### Using Tags
 
 Instead of creating lots of little decks, it's a better idea to use tags
-and/or fields to classify your content. Instead of creating a "food
-verbs" decks for example, you could add those cards to your main
-language study deck, and tag the cards with "food" and "verb". Each card
-can have multiple tags, which means you can do things like search for
-all verbs, or all food-related vocabulary, or all verbs that are related
-to food.
+and/or fields to classify your content. Tags are a useful way to boost 
+search results, find specific content, and keep your collection 
+organized.
+There are many ways of using tags and flags effectively, and
+thinking in advance about how you want to use them will help you decide
+what will work best for you.
+
+Some people prefer using decks and subdecks to keep their cards organized,
+but using tags have a big advantage over decks for that: you can add several
+tags to a single note, but a single card can only belong to one deck, which 
+makes tags a more powerful and flexible categorization system than 
+decks in most cases. You can also organize tags in trees [in the same way
+as you can do for decks](getting-started.md#decks).
+
+For example, instead of creating a "food verbs" deck, you could add those 
+cards to your main language study deck, and tag the cards with "food" and
+"verb". Since each card can have multiple tags, you can do things like 
+[search](searching.md#tags-decks-cards-and-notes) for all verbs, or all 
+food-related vocabulary, or all verbs that are related to food. 
+
+You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
+delete, rename, or organize tags there. Please note that
+tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
+all the siblings will be tagged as well. If you need to tag a single card,
+but not its siblings, you should consider using flags instead.
+
+### Using Flags
+
+Flags are similar to tags, but they will appear during study in the review 
+window, showing a colored flag icon on the upper right area of the screen. 
+You can also search for flagged cards in the Browse screen, rename flags 
+from the browser and create filtered decks from flagged cards, but unlike tags, 
+a single card can have only one flag at a time. Another important difference
+is that flags work at [card](getting-started.md#cards) level, so flagging a card that have siblings 
+won't have any effect on the card's siblings. 
+
+You can flag / unflag cards directly while in review mode (by pressing 
+<kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac) 
+and from the [Browser.](browsing.md)
+
+
+### The "Marked" Tag
+
+Anki treats a tag called "marked" specially. There are options in the review
+screen and browse screen to add and remove the "marked" tag. The review screen 
+will show a star when the current card's note has that tag. And cards are 
+shown in a different color in the browse screen when their note is marked.
+
+Note: Marking is mainly left around for compatibility with older Anki 
+versions; most users will want to use flags instead.
+
+
+### Using Fields
 
 For those who like to stay very organized, you can add fields to your
 notes to classify your content, such as "book", "page", and so on. Anki
 supports searching in specific fields, which means you can do a search
-for "book:'my book' page:63" and immediately find what you're looking
+for `"book:my book" page:63` and immediately find what you're looking
 for.
 
-Anki's [custom study and filtered deck](filtered-decks.md) features make this
-especially powerful, as you can create temporary decks out of search
+### Custom Study and Filtered Decks
+
+Using [custom study and filtered deck](filtered-decks.md) you can create 
+temporary decks out of search
 terms. This allows you to review your content mixed together in a single
 deck most of the time (for optimum memory), but also create temporary
 decks when you need to focus on particular material, such as before a
 test. The general rule is that if you always want to be able to study
 some content separately, it should be in a normal deck; if you only
 occasionally need to be able to study it separately (for a test, when
-under a backlog, etc.), then tags, fields, and filtered decks are better.
+under a backlog, etc.), then filtered decks created from tags, flags, 
+marks or fields are better.
 
-## Features
+## Editing Features
 
 The editor is shown when [adding notes](editing.md), [editing a
 note](studying.md) during reviews, or [browsing](browsing.md).
@@ -216,10 +270,11 @@ buttons allow you to subscript or superscript text, which is useful for
 chemical compounds like H<sub>2</sub>O or simple mathematical equations like
 x<sup>2</sup>.
 
-The Fx button clears any formatting in the currently selected text — including the colour
+The rubber eraser button clears any formatting in the currently selected text — including the colour
 of the text,  whether the selected text is bold, etc.
 
-The next two buttons allow you to change text colour.
+The next three buttons allow creating lists, text alignment and text indent.
+Then, there are two buttons to allow you to change text colour.
 
 The \[…​\] button is visible when a cloze note type is selected.
 
@@ -233,9 +288,16 @@ about media, please see the [media](media.md) section.
 The microphone icon allows you to record from your computer's microphone
 and attach the recording to the note.
 
-The last button shows more advanced features, such as editing the
-underlying HTML of a field, and shortcuts to add MathJax or
+The Fx button shows shortcuts to add MathJax or
 [LaTeX](math.md) to your notes.
+
+The `</>` button allows editing the underlying HTML of a field.
+
+Anki 2.1.45+ supports adjusting sticky fields directly from the editing screen.
+If you click on the pin icon on the right of a field, Anki will not clear out
+the field's content after a note is added. If you find yourself entering the
+same content into multiple notes, you may find this useful. On previous Anki
+versions, sticky fields were toggled from the Fields screen.
 
 Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.
@@ -368,9 +430,9 @@ things to consider. Please see [this
 page](http://dotancohen.com/howto/rtl_right_to_left.html) for more
 information.
 
-The toolkit, on which Anki is built, has trouble dealing with a few input
-methods, such as holding down keys to select accented characters on Mac
-OS X, and typing characters by holding down the <kbd>Alt</kbd> key and typing a
+The toolkit on which Anki is built has trouble dealing with a few input
+methods, such as holding down keys to select accented characters on macOS, 
+and typing characters by holding down the <kbd>Alt</kbd> key and typing a
 numeric code on Windows.
 
 ## Unicode Normalization

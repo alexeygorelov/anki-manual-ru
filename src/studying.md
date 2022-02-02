@@ -10,26 +10,21 @@
 Заучивание карточек в Anki осуществляется в пределах выбранной в настоящий
 момент колоды и любых подколод которые она содержит.
 
-На экране колод ваши колоды представлены в виде списка. В нем присутствуют два
-числовых столбца: 'К просмотру' и 'Новые'. 'К просмотру' — это количество
-ожидающих повторения и уже разучиваемые карточки. 'Новые' — это количество
-новых карточек, которые подготовлены к заучиванию в этот день.
+On the decks screen, your decks will be displayed in a list. There are
+three columns. 'New' is the number of new
+cards that are ready to be learnt that day. The second column shows
+the number of cards currently in learning. 'Due' is the count of waiting
+reviews. 
 
-При нажатии на колоду она станет 'текущей колодой' и Anki переключится на экран
-изучения. Вы можете вернуться к списку колод, чтобы изменить выбранную в данный
-момент колоду в любое время, нажав на 'Колоды' в верхней части главного окна.
-(Можно также использовать действие Учить колоду для выбора новой колоды с
-клавиатуры или нажать клавишу 's' для изучения выбранной в данный момент
-колоды.)
+When you click on a deck, it will become the 'current deck', and Anki
+will change to the study screen. You can return to the deck list to
+change the currently selected deck at any time by clicking on “Decks” at
+the top of the main window. (You can also use the Study
+Deck action in the menu to select a new deck from the keyboard, or you
+can press the <kbd>s</kbd> key to study the currently selected deck.)
 
-Можно нажать кнопку шестерёнки справа от колоды, чтобы переименовать или удалить
-колоду, изменить её параметры или [экспортировать](exporting.md) её.
-
-Со старым планировщиком, если в колоде имеются подколоды, карточки отобразятся из [каждой колоды по
-очереди](studying.md#Порядок-отображения).
-
-С [новым планировщиком](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-если в колоде имеются подколоды, карточки для повтора теперь берутся сразу со всех дочерних колод. Лимит показов дочерних колод игнорируется — применяется только лимит колоды, на которую вы щелкнули.
+You can click the gears button to the right of a deck to rename or
+delete a deck, change its [options](deck-options.md), or [export](exporting.md) it.
 
 ## Общие сведения об изучении
 
@@ -49,7 +44,8 @@
 Чтобы начать сеанс заучивания, нажмите кнопку **Учить**. Anki будет показывать
 вам карточки до тех пор, пока запланированные на сегодня карточки не закончатся.
 
-В процессе изучения можно вернуться к обзору, нажав клавишу "s" на клавиатуре.
+While studying, you can return to the overview by pressing the <kbd>s</kbd> key
+on your keyboard.
 
 ## Вопросы
 
@@ -64,47 +60,49 @@
 сообщить Anki, на сколько точно вы запомнили. Если вы не уверены в точности
 сравнения ответов, вы можете указать Anki [предлагать вам набирать ответ с клавиатуры](templates/fields.md#Проверка-своего-ответа), а не просто показывать его вам.
 
-Количество кнопок, доступных для оценки ответа, зависит от того, является ли
-карточка 'изучаемой' или 'повторяемой'.
+## Learning/Relearning Cards
 
-## Обучение
+When learning new cards, or when relearning cards that you have
+forgotten, Anki will show you the cards one or more times to help you
+memorize them. Each time is called a 'learning step'. By default there
+are two steps: 1 minute and 10 minutes. You can change the number of
+steps and the delays between them in the [deck options](deck-options.md#new-cards).
 
-При изучении новых или переучивании забытых карточек, Anki будет показывать
-карточки по одному или нескольку раз, чтобы помочь вам их запомнить. Каждый
-такой показ называется 'обучающий шаг'. По умолчанию установлено два
-шага: 1 минута и 10 минут. Количество и продолжительность таких шагов можно
-изменить в [настройках колоды](deck-options.md).
-
-В процессе обучения доступны три кнопки оценки:
+There are four rating buttons when learning:
 
 **Снова** — перемещает карточку обратно к первому шагу.
 
-**Хорошо** — перемещает карточку на следующий шаг. Если карточка была на
-последнем шаге, то она переводится [прим. перев. _из изучаемой_] в повторяемую
-карточку (она 'выпускник' (англ. _graduate_)). По умолчанию, карточка достигнув
-конца обучающих шагов, будет показана снова на следующий день, затем задержки
-между показами будут увеличиваться (смотрите следующий раздел).
+**Hard**  repeats the current step after the first step, and is the average 
+of Again and Good on the first step.
 
-**Легко** — немедленно переводит карточку в повторяемую, даже если остались
-ещё шаги. По умолчанию, карточка будет показана повторно через 4 дня, затем
-задержки между показами будут увеличиваться. В старом планировщике, кнопка
-"лёгко" не будет показана, если вы в режиме переучивания, и это задаст тот же
-интервал, что и "хорошо". С [новым планировщиком](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html), когда карточки в режиме переучивания, кнопка "легко" увеличивает
-интервал на 1 день.
+**Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
+step, the card is converted into a review card (it 'graduates'). By
+default, once the card has reached the end of the learning steps, the
+card will be shown again the next day, then at increasingly long delays
+(see the next section).
+
+**Easy** immediately converts the card into a review card, even if there
+were steps remaining. [By default](deck-options.md#easy-interval), the card will be shown again 4 days
+later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
+shown if you are in relearning mode as it would give the same interval
+as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+when cards are in relearning, the "Easy" button boosts the interval by 1 day.
 
 Когда карточки показываются в первый раз, они начинают на первом шаге. Это
 означает, что ответив **Хорошо** на карточке с первого раза покажет её ещё раз
 через 10 минут, а первый шаг в 1 минуту будет пропущен. Если вы нажмёте Снова,
 карточка вернется через 1 минуту.
 
-Вы можете использовать клавиши 1, 2 и 3 на клавиатуре, для выбора конкретной
-кнопки, где 1 — это **Снова**. Нажатие клавиши пробела выбирает **Хорошо**. 
+You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
+button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
+**Good**.
 
-Если нет других карточек для показа, Anki снова покажет изучаемые карточки,
-даже если их задержка полностью не закончилась. Если вы предпочитаете ждать
-всю обучающую задержку, вы можете изменить поведение в [настройках](preferences.md).
+If there are no other cards to show you, Anki will show learning cards
+again even if their delay has not elapsed completely. If you’d prefer to
+wait the full learning delay, you can change this behaviour in 
+[Preferences>Scheduling>Learn Ahead Limit](preferences.md).
 
-## Повторение
+## Review Cards
 
 Когда карточка уже была изучена и готова к повторению, есть четыре кнопки для
 оценки ответа:
@@ -114,49 +112,59 @@
 раздел [забытые](deck-options.md#Забытые) для получения более подробной
 информации о том, как обрабатываются забытые повторения.
 
-**Трудно** — показывает карточку с чуть большей задержкой, чем в прошлый раз
-и указывает Anki чаще показывать карточку в будущем.
+**Hard** by default, shows the card at a [slightly longer delay](deck-options.md#hard-interval) 
+than last time, and tells Anki to show the card more frequently in the future.
 
-**Хорошо** — сообщает Anki, что последняя задержка была примерно правильной и
-лёгкость карточки не нуждается в уменьшении или увеличении. При значении
-лёгкости по умолчанию, задержка перед следующим показом карточки будет примерно
-в 2,5 раза дольше чем в предыдущий раз, так что если бы вы в прошлый раз ждали
-10 дней, чтобы увидеть карточку, то следующая задержка составит около 25 дней.
+**Good** tells Anki that the last delay was about right, and the card
+easiness doesn’t need to be adjusted down or up. At the [default starting
+easiness](deck-options.md#starting-ease), the card will be shown again approximately 2 1/2 times longer
+than the previous time, so if you had waited 10 days to see the card
+previously, the next delay would be about 25 days.
 
-**Легко** — сообщает Anki, что вы сочли задержку слишком короткой. Карточка
-будет запланирована дальше, чем при ответе 'Хорошо' и в последствии Anki будет
-включать её в расписание чуть реже. Поскольку 'Легко' быстро увеличивает
-задержку, она лучше всего подходит для, действительно, самых простых карточек.
-Обычно вместо этого ответа, стоит использовать ответ 'Хорошо'.
+**Easy** tells Anki you found the delay too short. The card will be
+scheduled [further into the future than 'Good'](deck-options.md#easy-bonus), and Anki will schedule
+the card less frequently in the future. Because 'Easy' rapidly increases
+the delay, it’s best used for only the easiest of cards. Usually you
+should find yourself answering 'Good' instead.
 
-Как и с изучаемыми карточками, вы можете использовать клавиши 1-4 на клавиатуре
-для выбора ответа. Нажатие клавиши пробела выбирает **Хорошо**.
+As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
+answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select **Good**.
 
-## Due Counts
+See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
+to learn more about how the algorithm works. 
+
+## Due Counts 
 
 Когда показывается только вопрос, Anki показывает в нижней части экрана три
 числа вроде 12 + 34 + 56. Они обозначают новые карточки, изучаемые карточки и
 повторяемые карточки. Если вы предпочитаете не видеть этих цифр, вы можете
 отключить их в настройках Anki.
 
-В старом планировщике, считается количество _просмотров_ необходимое для
-завершения всех карточек в этой очереди, а не количество самих _карточек_. Если
-задано несколько шагов для забытых карточек, то число увеличивается более чем
-на один, если вы не справились с карточкой, так как она должна быть показана
-несколько раз.
+In the v1 scheduler, the numbers count _reviews_ needed to finish all the
+cards in that queue, not the number of _cards_. If you have multiple
+steps configured for lapsed cards, the number will increase by more than
+one when you fail a card, since that card needs to be shown several times.
 
-В новом планировщике, считается количество _карточек_, так что число всегда
-увеличивается на один, независимо от оставшихся шагов.
+From the v2 scheduler, the numbers count _cards_, so the number will always
+increase by one regardless of the steps remaining.
 
 Когда отображается ответ, Anki выводит примерное время следующего показа
 карточки над каждой кнопкой. Если вы предпочитаете не видеть оценок, вы можете
 отключить их в [настройках](preferences.md) Anki.
 
-Кроме того, Anki случайным образом не много изменяет время следующего показа,
-чтобы предотвратить случаи, когда карточки добавленные вместе и всегда
-получавшие одинаковые оценки продолжали бы и дальше показываться одна за
-другой. Эти изменения не отражаются в оценках времени, а применяются после
-выбора кнопки.
+## Fuzz Factor
+
+When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
+to prevent cards that were introduced at the same time and given the same ratings
+from sticking together and always coming up for review on the same day. This fuzz
+will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
+you are using a previous version and you’re noticing a slight discrepancy between
+what you select and the intervals your cards actually get, this is probably the
+cause.
+
+Learning cards are also given up to 5 minutes of extra delay so that they 
+don’t always appear in the same order, but answer buttons won't reflect that. It 
+is not possible to turn this feature off.
 
 ## Правка и ещё
 
@@ -168,11 +176,11 @@
 предоставляет несколько других операций, которые можно выполнить с текущей
 карточкой или записью:
 
-- **Поставить флаг**: Ставит цветную метку на карточку или убирает её. Метки
-будут отображаться во время изучения, а в окне Обзора можно выполнять поиск
-отмеченных карточек. Это полезно, когда вы хотите выполнить некоторое действие
-над карточкой позднее, например, когда вернётесь домой, поискать какое-нибудь
-слово.
+- [**Flag Card**](editing.md#using-flags): Adds a colored marker to the card, or toggles it off. Flags will appear during
+study, and you can search for flagged cards in the Browse screen. This is useful
+when you want to take some action on the card at a later date, such as looking
+up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags 
+from the [browser](browsing.md).    
 
 - **Отложить карточку / запись**: Прячет карточку или все карточки записи от
 показа до следующего дня. (Если вы хотите вернуть карточки раньше, нажмите
@@ -204,11 +212,10 @@
 
 - **Сведения о карточке**: Отображает [статистику](stats.md#card-info) по карточке.
 
-- **Отметить запись**: Добавляет текущей записи метку "marked", что позволяет
-легко найти её в обозревателе. Это схоже с отметкой отдельных карточек, только работает с метками (англ. _tag_), поэтому, если в записи есть несколько
-карточек, все они появятся в поиске по метке marked. Большинству пользователей
-лучше использовать флаги — отметки, в основном, оставлены для совместимости с
-более старыми версиями Anki.
+- [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
+browser. This is similar to flagging individual cards, but works with a tag
+instead, so if the note has multiple cards, all cards will appear in a search
+for the marked tag. Most users will want to use flags instead. 
 
 - **Удалить запись**: Удаляет запись и все её карточки.
 
@@ -231,16 +238,29 @@
 "Французский", подколоды "Французский::Словарь" и "Французский::Моя тетрадь::Урок 1"
 также будут показаны.
 
-Новые и повторяемые карточки Anki выбирает из расположенных в алфавитном
-порядке колод. Так в приведенном выше примере, сначала вы увидите карточки
-из колоды "Моя тетрадь", затем "Словарь", и, наконец "Французский". Это можно
-использовать для управления порядком отображения карточек, помещая карточки с
-большим приоритетом в колоды, находящиеся выше по списку. При компьютерной
-сортировке текста по алфавиту, символ "-" идёт перед буквами алфавита, а "\~"
-— после них [прим. перев. *но перед русскими. В русских (кириллических)
-названиях колод вместо "\~" можно использовать знак "№"*]. Значит, вы можете
-назвать колоду "-Французский", чтобы она отображалась первой, а другую —
-"№Словарь", чтобы отображать её после всего остального.
+The way Anki fetches cards from the decks depends on the algorithm used:
+
+- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
+turn](studying.md#display-order).
+
+- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+when a deck has subdecks, reviews are taken from all children decks
+at once. The review limit of the child decks is ignored - only the limit of the
+deck you clicked on applies.
+
+- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
+each child deck's limit is also enforced, and you do not need to see the cards 
+in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
+
+By default, for new cards, Anki fetches cards from the decks in
+alphabetical order. So in the above example, you would get cards first
+from “French”, then “My Textbook”, and finally “Vocab”. You can use this
+to control the order cards appear in, placing high priority cards in
+decks that appear higher in the list. When computers sort text
+alphabetically, the “-” character comes before alphabetical characters,
+and “\~” comes after them. So you could call the deck “-Vocab” to make
+them appear first, and you could call the other deck “\~My Textbook” to
+force it to appear after everything else.
 
 Новые и повторяемые карточки выбираются отдельно, и Anki не будет ждать, пока
 закончатся обе очереди, прежде чем перейти к следующей колоде, так что
@@ -279,6 +299,10 @@ Anki будет откладывать связанные карточки, ко
 имеет существенное значение. С другой стороны, заучивая карточку которая
 является изучаемой, любые новые/повторяемые карточки будут отложены.
 
+Note: A card cannot be buried and suspended at the same time. Suspending a
+buried card will unbury it. Burying a suspended card does not work on Anki
+2.1.49+, whereas on earlier versions, it will unsuspend the card.
+
 ## Клавиатурные сокращения
 
 Для большинства общих действий в Anki имеются клавиатурные сокращения. Многие
@@ -316,5 +340,5 @@ Anki будет откладывать связанные карточки, ко
 
 Отвечая на карточки, некоторое время находившиеся в ожидании, Anki учитывает
 эту задержку при определении времени следующего показа карточки. Дополнительную
-информацию смотрите в разделе про [алгоритм](faqs.md) интервальных повторений
+информацию смотрите в разделе про [алгоритм](https://faqs.ankiweb.net/due-times-after-a-break.html) интервальных повторений
 Anki.

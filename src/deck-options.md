@@ -54,10 +54,10 @@ deck you select to study, not the deck of the current card.
 
 For example, let's say you have this collection:
 
-- Deck A (Preset 1)
-  - Deck A::Subdeck B (Preset 2)
-    - Card B1
-    - Card B2
+    - Deck A (Preset 1)
+      - Deck A::Subdeck B (Preset 2)
+        - Card B1
+        - Card B2
 
 Preset 1 and 2 are identical, with two exceptions:
 
@@ -85,7 +85,7 @@ Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.
 
-In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html), Anki
+In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits), Anki
 uses the limits of the deck you select as an upper limit on the number of cards.
 This means if "French" has a limit of 20 cards and "French::Lesson 1" and
 "French::Lesson 2" both have limits of 15 cards, when you click on "French",
@@ -94,8 +94,21 @@ you’ll get at most 15 cards from either child deck, and only 20 cards in total
 In the v1 or v2 scheduler, each parent applies its limits to its children. If you
 have decks in a grandparent-parent-child arrangement, both the grandparent and
 parent limits will alter how many cards are shown from the child, even if you
-click directly on the child.
+click directly on the child. In the v3 scheduler, this has been simplified, and 
+now each deck's limit controls how many cards from that specific deck can be used.
+Imagine that you have this collection:
 
+    - Parent deck (New Cards/Day: 20) 
+      - Child deck (New Cards/Day: 7)
+        - Grandchild deck A (New Cards/Day: 5)
+          - Cards 1 to 50
+        - Grandchild deck B (New Cards/Day: 5) 
+          - Cards 51 to 100
+
+- If you click on the Parent deck, you will get 10 new cards (from Grandchild decks A and B).
+- If you click on the Child deck, you will get 7 new cards (from Grandchild decks A and B).
+- If you click on any of the Grandchild decks, you will get 5 new cards.
+  
 Studying new cards will temporarily increase the number of reviews you need to
 do a day, as freshly learnt material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
@@ -106,7 +119,7 @@ your review burden decreases. More than one Anki user has excitedly studied
 hundreds of new cards over their first few days of using the program, and then
 become overwhelmed by the reviews required.
 
-If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html),
+If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits),
 please keep in mind that the new count is capped by the review count. If your
 review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
 new cards will be introduced. If your review limit has been reached, no new
@@ -126,7 +139,7 @@ heart attack when returning to Anki after a week off. When reviews have been
 hidden due to this option, a message will appear in the congratulations screen,
 suggesting you consider increasing the limit if you have time.
 
-In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) and
+In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) and
 v1 schedulers, the counts are affected by parents/selected decks in the same way
 as new cards.
 
@@ -139,9 +152,9 @@ so those learning cards will be subject to the daily limit.
 ## New Cards
 
 The settings in this section only affect new cards and cards in initial
-[learning](https://docs.ankiweb.net/studying.html?#learning) mode. Once a card
+[learning](studying.md#learningrelearning-cards) mode. Once a card
 has graduated (i.e. there are no more learning steps for this card), it  becomes a
-[review card](https://docs.ankiweb.net/studying.html?#reviewing), and the
+[review card](studying.md#review-cards), and the
 settings in this section are no longer applicable.
 
 ### Learning Steps
@@ -166,19 +179,18 @@ If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
 the [preferences](preferences.md).
 
-Anki treats small steps and steps that cross a day boundary differently.
-With small steps, the cards are shown as soon as the delay has passed,
-in preference to other waiting cards like reviews. This is done so that
-you can answer the card as closely to your requested delay as possible.
-In contrast, cards that cross a day boundary are scheduled on a per-day
-basis like reviews are. By default they are shown after normal reviews;
-this can be customized in the [display order](#display-order) section for
-the v3 scheduler, and in the preferences screen for older schedulers.
-
-Please see the [learning](studying.md#learning) section for more info on how
+Please see the [learning](studying.md#learningrelearning-cards) section for more info on how
 steps work. Also, check [this forum's
 post](https://forums.ankiweb.net/t/deck-options-explained/213) for more
 examples.
+
+#### Day Boundaries
+Anki treats small steps and steps that [cross a day boundary](./preferences.md#scheduling) differently.
+With small steps, the cards are shown as soon as the delay has passed,
+in preference to other waiting cards like reviews. This is done so that
+you can answer the card as closely to your requested delay as possible.
+In contrast, if the interval crosses a day boundary, it is automatically 
+converted to days.
 
 ### Graduating Interval
 
@@ -343,22 +355,23 @@ higher retention.
 
 Controls the easiness that cards start out with. It is
 set when a card graduates from learning for the first time. It defaults
-to 250%, meaning that once you have finished learning a card, answering
+to 2.50, meaning that once you have finished learning a card, answering
 `Good` on subsequent reviews will increase the delay by approximately
-2.5 (e.g. if the last delay was 10 days, the next delay would be around 25
+2.5x (e.g. if the last delay was 10 days, the next delay would be around 25
 days). Based upon how you rate the card in subsequent reviews, the
 easiness may increase or decrease from its starting value.
 
 ### Easy Bonus
 
 An extra multiplier applied to the interval when a review card is answered
-`Easy`. With the default value of 130%, `Easy` will give an interval that is
-1.3 times the `Good` interval.
+`Easy`. With the default value of 1.30, `Easy` will give an interval that is
+1.3 times the `Good` interval (e.g. if the last interval was 10 days, the next 
+interval would be around 13 days).
 
 ### Interval Modifier
 
-An extra multiplier that is applied to all reviews. At its default of 100% it
-does nothing. If you set it to 80%, though, for example, intervals will be generated at
+An extra multiplier that is applied to all reviews. At its default of 1.00 it
+does nothing. If you set it to 0.80, though, for example, intervals will be generated at
 80% of their normal size (so a 10 day interval would become 8 days). You can
 thus use the multiplier to make Anki present cards more or less frequently than
 it would otherwise, trading study time for retention or vice versa.
@@ -408,19 +421,19 @@ learning mode steps, instead of by adjusting this modifier.
 ### Hard Interval
 
 The multiplier used when you use the `Hard` button. The percentage is relative
-to the previous interval: e.g. with a default of 120%, a card with a 10-day interval
+to the previous interval: e.g. with a default of 1.20, a card with a 10-day interval
 will be given 12 days.
 
 ### New Interval
 
 The multiplier used when you use the `Again` button on a review card. The
-default 0% means that a review card's delay is reset to zero when you forget it
+default 0.00 means that a review card's delay is reset to zero when you forget it
 (which then becomes 1 day after the [minimum interval](#minimum-interval) is
 applied).
 
 If changed from the default, it is possible for forgotten cards to preserve part
 of their previous delay. For example, if a card had a 100 day interval, and you set
-the *New Interval* to 20%, the new interval would be 20 days.
+the *New Interval* to 0.20, the new interval would be 20 days.
 
 While preserving part of the interval may seem to make sense, SuperMemo has observed
 that preserving part of the delay can actually [be counter-productive](https://supermemo.guru/wiki/Post-lapse_stability). For this reason, we recommend you leave it on the default setting.

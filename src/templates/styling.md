@@ -208,6 +208,24 @@ make them smaller and colored, you could use the following:
 }
 ```
 
+## Text Direction
+
+If you use a language that is written right-to-left, such as Arabic or Hebrew,
+you can add the CSS `direction` property to the .card section for correct display during review:
+```css
+.card {
+  direction: rtl;
+}
+```
+
+This will change the direction of the entire card. You can change the direction
+of only certain fields by wrapping their references in some HTML:
+
+    <div dir="rtl">{{Front}}</div>
+
+To change the direction of fields in the editor, please see
+the [editing](../editing.md#customizing-fields) section.
+
 ## Other HTML
 
 Your templates can contain arbitrary HTML, which means that all the
@@ -358,7 +376,9 @@ template:
 ## Javascript
 
 As Anki cards are treated like webpages, it is possible to embed some
-Javascript on your cards via the card template.
+Javascript on your cards via the card template. For a good reference
+please read [this post](https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756)
+in the forums. 
 
 Because Javascript is an advanced feature and so many things can go
 wrong, **Javascript functionality is provided without any support or

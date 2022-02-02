@@ -7,8 +7,8 @@
 On Windows/Linux you can hold down the <kbd>Alt</kbd> key and press a highlighted
 letter to activate a particular menu.
 
-OS X doesn’t support this feature, but it does allow you to assign
-shortcuts to specific menu items instead. Please see
+Although macOS doesn’t support this feature, it does allow you instead to assign
+shortcuts to specific menu items. Please see
 <http://lifehacker.com/343328/create-a-keyboard-shortcut-for-any-menu-action-in-any-program>
 for more information.
 
@@ -17,7 +17,7 @@ for more information.
 Sometimes you may be asked to use the debug console to change a setting
 or check something. Unless asked to enter text in the "debug console",
 you will probably not need this. Advanced users may like to read more
-about it in the [add-on writing guide](https://addon-docs.ankiweb.net/features-and-debugging.html#debugging).
+about it in the [add-on writing guide](https://addon-docs.ankiweb.net/debugging.html#debug-console).
 
 When asked to enter text into the "debug console", please start Anki,
 and in the main window, press

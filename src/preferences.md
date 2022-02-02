@@ -48,6 +48,14 @@ note type (and opens the add window to the last-used note type when you choose
 Add). This may be more convenient if you always use a single note type for each
 deck.
 
+**Default search text**
+Allows you to customize the starting search text in the browser (eg, to start 
+with "deck:current").
+
+**User interface size**
+If you find that the interface elements are too small for you, you can 
+try to increase this setting.  
+
 ## Scheduling
 
 **Show next review time above answer buttons**  
@@ -79,6 +87,8 @@ setting of 4AM ensures that if you’re studying around midnight, you won’t ha
 two days' worth of cards shown to you in one session. If you stay up very late
 or wake up very early, you may want to adjust this to a time you’re usually
 sleeping. Note that the start of the next day is relative to your current timezone.
+Also note that any cards that cross a day boundary [will appear at the start of 
+the day they are scheduled for](./deck-options.md#day-boundaries), just like review cards do. 
 
 **Learn ahead limit**  
 Tells Anki how to behave when there is nothing left to study in the current deck

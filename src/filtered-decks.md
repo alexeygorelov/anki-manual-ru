@@ -115,8 +115,7 @@ times, and so on. Please see the [searching](searching.md) section of the
 manual for more information on the different possibilities.
 
 Filtered decks cannot pull in cards that are suspended, buried, or already in a
-different filtered deck. And if you are using the [v1 
-scheduler], cards in
+different filtered deck. And if you are using the v1 scheduler, cards in
 (re)learning will not be included either. For this reason, a search in the
 browser may reveal cards that do not end up in the filtered deck.
 
@@ -125,9 +124,6 @@ deck. The order you select controls both the order cards are gathered
 in, and the order they will be reviewed in. If you select "most lapses"
 and a limit of 20 for example, then Anki will show you only the 20 most
 lapsed cards.
-
-For efficiency reasons, if your cram deck contains more than 1000 cards,
-only 1000 cards will be shown as due on the deck list and study screens.
 
 ## Order
 
@@ -174,7 +170,7 @@ first, that you are most in danger of forgetting.
 
 ## Steps & Returning
 
-Please see the section on [learning](studying.md#learning) as a reminder of how
+Please see the section on [learning](studying.md#learningrelearning-cards) as a reminder of how
 steps work.
 
 By default, Anki will use the steps of a card’s home deck. If a new card
@@ -191,7 +187,7 @@ In the v1 scheduler, the **custom steps** option allows you to override the
 home deck’s steps and provide your own steps instead. The provided steps apply to both
 cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
 from the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
-filtered decks no longer support custom steps.
+filtered decks [no longer support custom steps](https://forums.ankiweb.net/t/filtered-deck-interval-problem/11834/8).
 
 **v3 scheduler**
 
