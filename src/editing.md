@@ -158,7 +158,7 @@ decks or manage your note types.
 
 ## Organizing Content
 
-### Using Decks Appropriately
+### Правильное использование колод
 
 [Decks](getting-started.md#decks) are designed to divide your content up into
 broad categories that you wish to study separately, such as English, Geography,

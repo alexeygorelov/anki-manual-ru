@@ -1,4 +1,4 @@
-# Platform Notes
+# Примечания к платформе
 
-The way Anki is installed, and the possible problems you may encounter, depend
-on the type of computer you are using.
+Способ установки Anki и возможные проблемы, с которыми вы можете столкнуться,
+зависят от типа используемого компьютера.

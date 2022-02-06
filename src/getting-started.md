@@ -4,6 +4,7 @@
 
 ## Установка и обновление
 
+<!-- ----------------------------------------------------------------------- -->
 Please see the instructions for your computer:
 
 - [Windows](./platform/windows/installing.md)
