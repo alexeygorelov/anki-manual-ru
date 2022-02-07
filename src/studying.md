@@ -10,21 +10,20 @@
 Заучивание карточек в Anki осуществляется в пределах выбранной в настоящий
 момент колоды и любых подколод которые она содержит.
 
-On the decks screen, your decks will be displayed in a list. There are
-three columns. 'New' is the number of new
-cards that are ready to be learnt that day. The second column shows
-the number of cards currently in learning. 'Due' is the count of waiting
-reviews. 
+На экране колод ваши колоды представлены в виде списка. В нем присутствуют три
+числовых столбца. 'Новые' — это количество новых карточек, которые подготовлены
+к заучиванию в этот день. Вторая колонка отображает количество карточек
+изучаемых в данный момент. 'К просмотру' — это количество ожидающих повторения. 
 
-When you click on a deck, it will become the 'current deck', and Anki
-will change to the study screen. You can return to the deck list to
-change the currently selected deck at any time by clicking on “Decks” at
-the top of the main window. (You can also use the Study
-Deck action in the menu to select a new deck from the keyboard, or you
-can press the <kbd>s</kbd> key to study the currently selected deck.)
+При нажатии на колоду она станет 'текущей колодой' и Anki переключится на экран
+изучения. Вы можете вернуться к списку колод, чтобы изменить выбранную в данный
+момент колоду в любое время, нажав на 'Колоды' в верхней части главного окна.
+(Можно также использовать действие Учить колоду для выбора новой колоды с
+клавиатуры или нажать клавишу <kbd>s</kbd> для изучения выбранной в данный
+момент колоды.)
 
-You can click the gears button to the right of a deck to rename or
-delete a deck, change its [options](deck-options.md), or [export](exporting.md) it.
+Можно нажать кнопку шестерёнки справа от колоды, чтобы переименовать или удалить
+колоду, изменить её [параметры](deck-options.md) или [экспортировать](exporting.md) её.
 
 ## Общие сведения об изучении
 
@@ -44,8 +43,7 @@ delete a deck, change its [options](deck-options.md), or [export](exporting.md) 
 Чтобы начать сеанс заучивания, нажмите кнопку **Учить**. Anki будет показывать
 вам карточки до тех пор, пока запланированные на сегодня карточки не закончатся.
 
-While studying, you can return to the overview by pressing the <kbd>s</kbd> key
-on your keyboard.
+В процессе изучения можно вернуться к обзору, нажав клавишу <kbd>s</kbd> на клавиатуре.
 
 ## Вопросы
 
@@ -60,14 +58,15 @@ on your keyboard.
 сообщить Anki, на сколько точно вы запомнили. Если вы не уверены в точности
 сравнения ответов, вы можете указать Anki [предлагать вам набирать ответ с клавиатуры](templates/fields.md#Проверка-своего-ответа), а не просто показывать его вам.
 
-## Learning/Relearning Cards
+## Изучаемые/Переучиваемые карточки
 
-When learning new cards, or when relearning cards that you have
-forgotten, Anki will show you the cards one or more times to help you
-memorize them. Each time is called a 'learning step'. By default there
-are two steps: 1 minute and 10 minutes. You can change the number of
-steps and the delays between them in the [deck options](deck-options.md#new-cards).
+При изучении новых карточек или переучивании забытых, Anki будет показывать
+карточки по одному или нескольку раз, чтобы помочь вам их запомнить. Каждый
+такой показ называется 'обучающий шаг'. По умолчанию установлено два
+шага: 1 минута и 10 минут. Количество и продолжительность таких шагов можно
+изменить в [настройках колоды](deck-options.md).
 
+<!-- ----------------------------------------------------------------------- -->
 There are four rating buttons when learning:
 
 **Снова** — перемещает карточку обратно к первому шагу.
