@@ -158,8 +158,7 @@
 <li><a href="#%D0%9E%D0%B1%D1%89%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BB%D0%BE%D0%B4%D1%8B">Общие колоды</a></li>
 </ul>
 <h2 id="Установка-и-обновление"><a class="header" href="#Установка-и-обновление">Установка и обновление</a></h2>
-<!-- ----------------------------------------------------------------------- -->
-<p>Please see the instructions for your computer:</p>
+<p>Пожалуйста, смотрите инструкции для своего компьютера:</p>
 <ul>
 <li><a href="./platform/windows/installing.html">Windows</a></li>
 <li><a href="./platform/mac/installing.html">Mac</a></li>
@@ -310,7 +309,7 @@
 добавляется автоматически на каждую карточку.) &lt;br&gt; — это специальный
 код, который указывает Anki перейти к следующей строке; дополнительные сведения
 доступны в разделе <a href="templates/intro.html">Шаблоны карточек</a>.</p>
-<p>The production card templates work in a similar way:</p>
+<p>Создание шаблонов карточек работает схожим образом:</p>
 <pre><code>В: {{Французский}}
 О: {{Русский}}&lt;br&gt;
    Страница #{{Страница}}
@@ -331,28 +330,33 @@
 предназначены облегчить работу с Anki для новых пользователей, но в дальнейшем
 рекомендуется определить свои собственные типы записей для того материала
 который вы изучаете.</p>
-<p><strong>Basic</strong> 
-Has Front and Back fields, and will create one card. Text you enter in
-Front will appear on the front of the card, and text you enter in Back
-will appear on the back of the card.</p>
-<p><strong>Basic (and reversed card)</strong><br />
-Like Basic, but creates two cards for the text you enter: one from
-front→back and one from back→front.</p>
-<p><strong>Basic (optional reversed card)</strong> 
-This is a front→back card, and optionally a back→front card. To do this,
-it has a third field called “Add Reverse.” If you enter any text into
-that field, a reverse card will be created. More information about this
-is available in the <a href="templates/intro.html">Cards and Templates</a> section.</p>
-<p><strong>Basic (type in the answer)</strong> 
-This is essentially Basic, with an extra text box on the front where you
-can type your answer in, after flipping to the back your input would be
-checked and compared with the answer. More information is available in the
-<a href="templates/fields.html#checking-your-answer">Checking Your Answer</a> section.</p>
-<p><strong>Cloze</strong><br />
-A note type which makes it easy to select text and turn it into a cloze
-deletion (e.g., “Man landed on the moon in […​]” → “Man landed on the
-moon in 1969”). More information is available in the <a href="editing.html#cloze-deletion">cloze
-deletion</a> section.</p>
+<p><strong>Основная</strong> 
+Содержит поля Лицо и Оборот, и будет создавать одну карточку. Текст напечатанный
+в поле Лицо будет отображаться на лицевой стороне карточки, а текст который вы
+введёте в поле Оборот будет отображаться на обратной стороне карточки.</p>
+<p>Это лицо→оборот карточка, а карточка оборот→лицо при необходимости. Для этого
+есть третье поле под названием &quot;Добавить обратную&quot;. Если в это поле будет
+введён какой-либо текст [прим. перев. <em>Любой текст, чтобы эта функция
+сработала</em>], обратная карточка будет создана. Дополнительные сведения об этом
+см. в разделе <a href="templates/intro.html">Шаблоны карточек</a><strong>Основная (с обратной карточкой)</strong><br />
+Как Основная, только создаёт две карточки для введённого вами текста: одну из
+лицо→оборот и одну из оборот→лицо.</p>
+<p><strong>Основная (обратная по выбору)</strong> 
+Это лицо→оборот карточка, а карточка оборот→лицо при необходимости. Для этого
+есть третье поле под названием &quot;Добавить обратную&quot;. Если в это поле будет
+введён какой-либо текст [прим. перев. <em>Любой текст, чтобы эта функция
+сработала</em>], обратная карточка будет создана. Дополнительные сведения об этом
+см. в разделе <a href="templates/intro.html">Шаблоны карточек</a>.</p>
+<p><strong>Основная (введите ответ)</strong> 
+По сути, это Основная, с дополнительным текстовым полем на лицевой стороне, где
+вы можете ввести свой ответ, после переворачивания на оборот, введённый вами
+текст будет проверен и сравнён с ответом. Дополнительные сведения об этом
+см. в разделе <a href="templates/fields.html#%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%81%D0%B2%D0%BE%D0%B5%D0%B3%D0%BE-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0">Проверка своего ответа</a>.</p>
+<p><strong>Задание с пропусками</strong><br />
+Тип записи который облегчает выбор текста и превращение его в обучающие пропуски
+(англ. <em>cloze deletion</em>) (например, &quot;Человек приземлился на Луну в […​] году&quot;
+→ &quot;Человек приземлился на Луну в 1969 году&quot;). Дополнительные сведения см. в
+разделе <a href="editing.html#%D0%97%D0%B0%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%BF%D1%83%D1%81%D0%BA%D0%BE%D0%B2">заполнение пропусков</a></p>
 <p>Чтобы добавить свои типы записей и изменить существующие, можно использовать
 Инструменты → Управлять типами записей из главного окна Anki.</p>
 <p>Записи и типы записей являются общими для всей коллекции, а не ограничиваются
