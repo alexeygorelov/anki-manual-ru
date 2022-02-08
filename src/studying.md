@@ -66,42 +66,38 @@
 шага: 1 минута и 10 минут. Количество и продолжительность таких шагов можно
 изменить в [настройках колоды](deck-options.md).
 
-<!-- ----------------------------------------------------------------------- -->
-There are four rating buttons when learning:
+В процессе обучения доступны черыре кнопки оценки:
 
 **Снова** — перемещает карточку обратно к первому шагу.
 
-**Hard**  repeats the current step after the first step, and is the average 
-of Again and Good on the first step.
+**Трудно** — повторяет текущий шаг после первого шага и является средним между
+Хорошо и Легко на первом шаге.
 
-**Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
-step, the card is converted into a review card (it 'graduates'). By
-default, once the card has reached the end of the learning steps, the
-card will be shown again the next day, then at increasingly long delays
-(see the next section).
+**Хорошо** — перемещает карточку на [следующий шаг](deck-options.md#learning-steps). Если карточка была на
+последнем шаге, то она переводится [прим. перев. _из изучаемой_] в повторяемую
+карточку (она 'выпускник' (англ. _graduate_)). По умолчанию, карточка достигнув
+конца обучающих шагов, будет показана снова на следующий день, затем задержки
+между показами будут увеличиваться (смотрите следующий раздел).
 
-**Easy** immediately converts the card into a review card, even if there
-were steps remaining. [By default](deck-options.md#easy-interval), the card will be shown again 4 days
-later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
-shown if you are in relearning mode as it would give the same interval
-as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-when cards are in relearning, the "Easy" button boosts the interval by 1 day.
+**Легко** — немедленно переводит карточку в повторяемую, даже если остались
+ещё шаги. [По умолчанию](deck-options.md#easy-interval), карточка будет показана повторно через 4 дня, затем
+задержки между показами будут увеличиваться. В планировщике версии v1 кнопка
+"Легко" не будет показана, если вы в режиме переучивания, и это задаст тот же
+интервал, что и "Хорошо". В версии [v2 планировщика+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) когда карточки в режиме
+переучивания, кнопка "Легко" увеличивает интервал на 1 день.
 
 Когда карточки показываются в первый раз, они начинают на первом шаге. Это
 означает, что ответив **Хорошо** на карточке с первого раза покажет её ещё раз
 через 10 минут, а первый шаг в 1 минуту будет пропущен. Если вы нажмёте Снова,
 карточка вернется через 1 минуту.
 
-You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
-**Good**.
+Вы можете использовать клавиши <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> и <kbd>4</kbd> на клавиатуре, для выбора конкретной кнопки, где <kbd>1</kbd> — это **Снова**. Нажатие клавиши <kbd>Space</kbd> или <kbd>Enter</kbd> выбирает **Хорошо**.
 
-If there are no other cards to show you, Anki will show learning cards
-again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in 
-[Preferences>Scheduling>Learn Ahead Limit](preferences.md).
+Если нет других карточек для показа, Anki снова покажет изучаемые карточки,
+даже если их задержка полностью не закончилась. Если вы предпочитаете ждать
+всю обучающую задержку, вы можете изменить поведение в [Настройки>Расписание>Лимит опережения](preferences.md).
 
-## Review Cards
+## Повторяемые карточки
 
 Когда карточка уже была изучена и готова к повторению, есть четыре кнопки для
 оценки ответа:
@@ -111,26 +107,24 @@ wait the full learning delay, you can change this behaviour in
 раздел [забытые](deck-options.md#Забытые) для получения более подробной
 информации о том, как обрабатываются забытые повторения.
 
-**Hard** by default, shows the card at a [slightly longer delay](deck-options.md#hard-interval) 
-than last time, and tells Anki to show the card more frequently in the future.
+**Трудно** — по умолчанию, показывает карточку с [чуть большей задержкой](deck-options.md#hard-interval),
+чем в прошлый раз и указывает Anki чаще показывать карточку в будущем.
 
-**Good** tells Anki that the last delay was about right, and the card
-easiness doesn’t need to be adjusted down or up. At the [default starting
-easiness](deck-options.md#starting-ease), the card will be shown again approximately 2 1/2 times longer
-than the previous time, so if you had waited 10 days to see the card
-previously, the next delay would be about 25 days.
+**Хорошо** — сообщает Anki, что последняя задержка была примерно правильной и
+лёгкость карточки не нуждается в уменьшении или увеличении. При [значении
+лёгкости по умолчанию](deck-options.md#starting-ease), задержка перед следующим показом карточки будет примерно
+в 2,5 раза дольше чем в предыдущий раз, так что если бы вы в прошлый раз ждали
+10 дней, чтобы увидеть карточку, то следующая задержка составит около 25 дней.
 
-**Easy** tells Anki you found the delay too short. The card will be
-scheduled [further into the future than 'Good'](deck-options.md#easy-bonus), and Anki will schedule
-the card less frequently in the future. Because 'Easy' rapidly increases
-the delay, it’s best used for only the easiest of cards. Usually you
-should find yourself answering 'Good' instead.
+**Легко** — сообщает Anki, что вы сочли задержку слишком короткой. Карточка
+будет запланирована [дальше, чем при ответе 'Хорошо'](deck-options.md#easy-bonus) и в последствии Anki будет
+включать её в расписание чуть реже. Поскольку 'Легко' быстро увеличивает
+задержку, она лучше всего подходит для, действительно, самых простых карточек.
+Обычно вместо этого ответа, стоит использовать ответ 'Хорошо'.
 
-As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
-answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select **Good**.
+Как и с изучаемыми карточками, вы можете использовать клавиши <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> и <kbd>4</kbd> на клавиатуре, для выбора ответа. Нажатие клавиши <kbd>Space</kbd> или <kbd>Enter</kbd> выбирает **Хорошо**.
 
-See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
-to learn more about how the algorithm works. 
+Узнать больше о работе алгоритма вы можете в разделе [Настройки колоды](deck-options.md) и [ЧаВо](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html). 
 
 ## Due Counts 
 
@@ -139,20 +133,22 @@ to learn more about how the algorithm works.
 повторяемые карточки. Если вы предпочитаете не видеть этих цифр, вы можете
 отключить их в настройках Anki.
 
-In the v1 scheduler, the numbers count _reviews_ needed to finish all the
-cards in that queue, not the number of _cards_. If you have multiple
-steps configured for lapsed cards, the number will increase by more than
-one when you fail a card, since that card needs to be shown several times.
+В планировщике версии 1, считается количество _просмотров_ необходимое для
+завершения всех карточек в этой очереди, а не количество самих _карточек_. Если
+задано несколько шагов для забытых карточек, то число увеличивается более чем
+на один, если вы не справились с карточкой, так как она должна быть показана
+несколько раз.
 
-From the v2 scheduler, the numbers count _cards_, so the number will always
-increase by one regardless of the steps remaining.
+В планировщике версии 2, считается количество _карточек_, так что число всегда
+увеличивается на один, независимо от оставшихся шагов.
 
 Когда отображается ответ, Anki выводит примерное время следующего показа
 карточки над каждой кнопкой. Если вы предпочитаете не видеть оценок, вы можете
 отключить их в [настройках](preferences.md) Anki.
 
-## Fuzz Factor
+## Фактор нечёткости
 
+<!-- ----------------------------------------------------------------------- -->
 When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
 to prevent cards that were introduced at the same time and given the same ratings
 from sticking together and always coming up for review on the same day. This fuzz
