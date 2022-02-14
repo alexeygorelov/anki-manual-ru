@@ -148,18 +148,18 @@
 
 ## Фактор нечёткости
 
-<!-- ----------------------------------------------------------------------- -->
-When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
-to prevent cards that were introduced at the same time and given the same ratings
-from sticking together and always coming up for review on the same day. This fuzz
-will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
-you are using a previous version and you’re noticing a slight discrepancy between
-what you select and the intervals your cards actually get, this is probably the
-cause.
+Когда вы выбираете кнопку сложности на повторяемой карточке, Anki также
+применяет небольшое количество случайной "нечёткости" чтобы карточки, которые
+были показаны в одно и то же время и получившие одинаковый рейтинг не держались
+постоянно вместе и всегда появлялись для повторения в один и тот же день. Эта
+нечёткость в кнопках ответа появляется, когда включён [планировщик версии 3](https://faqs.ankiweb.net/the-2021-scheduler.html),
+поэтому, если вы используете предудущую версию и замечаете некоторое
+несоответствие между тем, что вы выбираете, и теми интервалами, которые на самом
+деле получают ваши карточки, причина, вероятно в этом.
 
-Learning cards are also given up to 5 minutes of extra delay so that they 
-don’t always appear in the same order, but answer buttons won't reflect that. It 
-is not possible to turn this feature off.
+Изучаемым карточкам также даётся дополнительная задержка в 5 минут, чтобы они
+не всегда появляются в одном и том же порядке, но на кнопках ответа это никак не
+сказывается. Отключить эту функцию невозможно.
 
 ## Правка и ещё
 
@@ -171,11 +171,12 @@ is not possible to turn this feature off.
 предоставляет несколько других операций, которые можно выполнить с текущей
 карточкой или записью:
 
-- [**Flag Card**](editing.md#using-flags): Adds a colored marker to the card, or toggles it off. Flags will appear during
-study, and you can search for flagged cards in the Browse screen. This is useful
-when you want to take some action on the card at a later date, such as looking
-up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags 
-from the [browser](browsing.md).    
+- [**Поставить флаг**](editing.md#using-flags): Ставит цветную метку на карточку или убирает её. Метки
+будут отображаться во время изучения, а в окне Обзора можно выполнять поиск
+отмеченных карточек. Это полезно, когда вы хотите выполнить некоторое действие
+над карточкой позднее, например, когда вернётесь домой, поискать какое-нибудь
+слово. Если вы используете версию Anki 2.1.45+, вы также можете переименовывать
+флаги в [браузере](browsing.md)    
 
 - **Отложить карточку / запись**: Прячет карточку или все карточки записи от
 показа до следующего дня. (Если вы хотите вернуть карточки раньше, нажмите
