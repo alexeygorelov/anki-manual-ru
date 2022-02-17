@@ -126,7 +126,7 @@
 
 Узнать больше о работе алгоритма вы можете в разделе [Настройки колоды](deck-options.md) и [ЧаВо](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html). 
 
-## Due Counts 
+## Подсчёт очереди 
 
 Когда показывается только вопрос, Anki показывает в нижней части экрана три
 числа вроде 12 + 34 + 56. Они обозначают новые карточки, изучаемые карточки и
@@ -191,7 +191,7 @@
    Однако с [планировщиком 2.1](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
    откладывание карточек не сбрасывает шаги изучения карточки.
 
-- **Set Due Card**: Make cards review cards, and [make them due on a certain date.](browsing.md#cards)
+- **Задать срок**: Помещает карточки в очередь повторений, и [откладывает их срок выполнения до определённой даты.](browsing.md#cards)
 
 - **Исключить карточку / запись**: Прячет карточку или все карточки записи от
    показа до тех пор, пока они не будут включены вручную (нажатием кнопки
@@ -208,10 +208,11 @@
 
 - **Сведения о карточке**: Отображает [статистику](stats.md#card-info) по карточке.
 
-- [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
-browser. This is similar to flagging individual cards, but works with a tag
-instead, so if the note has multiple cards, all cards will appear in a search
-for the marked tag. Most users will want to use flags instead. 
+- [**Отметить запись**](editing.md#the-marked-tag): Добавляет текущей записи метку "marked", что позволяет
+легко найти её в обозревателе. Это схоже с отметкой отдельных карточек, только
+работает с метками (англ. _tag_), поэтому, если в записи есть несколько
+карточек, все они появятся в поиске по метке marked. Большинству пользователей
+лучше использовать флаги. 
 
 - **Удалить запись**: Удаляет запись и все её карточки.
 
@@ -234,29 +235,28 @@ for the marked tag. Most users will want to use flags instead.
 "Французский", подколоды "Французский::Словарь" и "Французский::Моя тетрадь::Урок 1"
 также будут показаны.
 
-The way Anki fetches cards from the decks depends on the algorithm used:
+То как Anki выбирает карточки из колод, зависит от используемого алгоритма:
 
-- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
-turn](studying.md#display-order).
+- С планировщиком версии 1, когда в колоде есть подколоды, карточки будут
+появляться из [каждой колоды по очереди](studying.md#display-order).
 
-- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-when a deck has subdecks, reviews are taken from all children decks
-at once. The review limit of the child decks is ignored - only the limit of the
-deck you clicked on applies.
+- С [планировщиком версии 2](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html), когда в колоде есть подколоды, карточки для повтора
+берутся сразу со всех дочерних колод. Лимит показов дочерних колод
+игнорируется — применяется только лимит колоды, на которую вы щелкнули.
 
-- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
-each child deck's limit is also enforced, and you do not need to see the cards 
-in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
+- С [планировщиком версии 3](https://faqs.ankiweb.net/the-2021-scheduler.html) лимит каждой подколоды также учитывается и вам не
+прийдётся просматривать карточки в том порядке, в котором идут колоды. Дополнительную информацию смотрите в разделе руководства [Настройки колод](deck-options.md#review-sort-order).
 
-By default, for new cards, Anki fetches cards from the decks in
-alphabetical order. So in the above example, you would get cards first
-from “French”, then “My Textbook”, and finally “Vocab”. You can use this
-to control the order cards appear in, placing high priority cards in
-decks that appear higher in the list. When computers sort text
-alphabetically, the “-” character comes before alphabetical characters,
-and “\~” comes after them. So you could call the deck “-Vocab” to make
-them appear first, and you could call the other deck “\~My Textbook” to
-force it to appear after everything else.
+По умолчанию новые карточки Anki выбирает из расположенных в алфавитном
+порядке колод. Так в приведенном выше примере, сначала вы увидите карточки
+из колоды "Моя тетрадь", затем "Словарь", и, наконец "Французский". Это можно
+использовать для управления порядком отображения карточек, помещая карточки с
+большим приоритетом в колоды, находящиеся выше по списку. При компьютерной
+сортировке текста по алфавиту, символ "-" идёт перед буквами алфавита, а "\~"
+— после них [прим. перев. *но перед русскими. В русских (кириллических)
+названиях колод вместо "\~" можно использовать знак "№"*]. Значит, вы можете
+назвать колоду "-Французский", чтобы она отображалась первой, а другую —
+"№Словарь", чтобы отображать её после всего остального.
 
 Новые и повторяемые карточки выбираются отдельно, и Anki не будет ждать, пока
 закончатся обе очереди, прежде чем перейти к следующей колоде, так что
@@ -295,9 +295,10 @@ Anki будет откладывать связанные карточки, ко
 имеет существенное значение. С другой стороны, заучивая карточку которая
 является изучаемой, любые новые/повторяемые карточки будут отложены.
 
-Note: A card cannot be buried and suspended at the same time. Suspending a
-buried card will unbury it. Burying a suspended card does not work on Anki
-2.1.49+, whereas on earlier versions, it will unsuspend the card.
+Примечание: Карточка не может быть одновременно отложена и исключена.
+Исключение отложенной карточки вернёт её из отложенных. Откладывание
+исключённой карточки ни работает в Anki 2.1.49+, тогда как в более ранних
+версиях он включает карту.
 
 ## Клавиатурные сокращения
 
