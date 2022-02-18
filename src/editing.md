@@ -8,112 +8,111 @@
 карточки, и уже из них Anki создаёт нам карточки. Нажав 'Добавить' в главном окне
 появится окно добавления записей.
 
-The top left of the window shows us the current note type. If it does
-not say "Basic," then you may have added some note types when you
-downloaded a shared deck. The text below assumes that "Basic" is
-selected.
+В верхней левой части окна отображается текущий тип записи. Если он не указан
+как "Basic", то, возможно, вы добавили некоторые типы записей вместе со
+скачанными когда-то общими колодами. Следующий текст предполагает, что выбран
+тип "Basic".
 
-The top right of the window shows us the deck cards will be added to. If
-you would like to add cards to a new deck, you can click on the deck name
-button and then click "Add".
+В верхней правой части окна отображается колода, в которую будут добавляться
+карточки. Если хотите добавить карточки в новую колоду, вы можете нажать на
+названии колоды и затем нажать "Добавить".
 
-Below the note type, you'll see some buttons, and an area labelled
-"Front" and "Back". Front and Back are called 'fields', and you can add,
-remove, and rename them by clicking the "Fields…​" button above.
+Под типом записи вы увидите несколько кнопок и области под названиями "Лицевая"
+(англ. *Front*) и "Обратная" (англ. *Back*). Лицевая и Обратная области
+называются 'полями' и вы можете добавлять, удалять и переименовывать их, щелкнув
+по кнопке "Поля…​" выше.
 
-Below the fields is another area labelled "Tags". Tags are labels that
-you can attach to your notes, to make organizing and finding notes
-easier. You can leave the tags blank if you wish, or add one or more of
-them. Tags are separated by a space. If the tags area says
+Под полями находится другая область под названием "Метки". Метки — это
+ярлыки, которые вы можете прикрепить к вашим записям, чтобы упростить их
+организацию и поиск. Вы можете оставить метки пустыми, если хотите, или
+добавить одну или несколько из них. Метки разделяются знаком пробела. Если в
+метках указано
 
     словарь уточнить_у_репетитора
 
 …​то у записи которую вы добавите будет две метки.
 
-When you have entered text into the front and back, you can click the
-"Add" button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
-note to your collection. When you do so, a card will be created as well,
-and placed into the deck you chose. If you would like to edit a card you
-added, you can click the history button to search for a recently added
-card in the [browser](browsing.md).
+При вводе лицевого и обратного текста, вы можете нажать кнопку "Добавить" или
+сочетание клавиш <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> на Mac)
+для добавления записи в коллекцию. После чего, карточка будет создана и
+добавлена в выбранную вами колоду. Если вы захотите изменить добавленную
+карточку, вы можете нажать кнопку истории для поиска недавно добавленных карточек
+в [обзоре](browsing.md).
 
 Дополнительные сведения о кнопках между типом записи и полями см. в разделе
 [редактор](editing.md).
 
-### Duplicate Check
+### Проверка на дубликаты
 
-Anki checks the first field for uniqueness, so it will warn you if you
-enter two cards with a Front field of "apple" (for example). The
-uniqueness check is limited to the current note type, so if you're
-studying multiple languages, two cards with the same Front would not be
-listed as duplicates as long as you had a different note type for each
-language.
+Anki проверяет первое поле на уникальность, поэтому предупредит, если вы
+внесёте две карточки в Лицевом поле которых будут одинаковые данные, например,
+"яблоко". Проверка уникальности ограничивается текущим типом записи, так, если
+вы изучаете несколько языков, две карточки с одинаковой Лицевой стороной не
+будут отображаться как повторы, пока у вас будут разные типы записей для
+каждого языка.
 
-Anki does not check for duplicates in other fields automatically for
-efficiency reasons, but the browser has a "Find Duplicates" function,
-which you can run periodically.
+Anki не проверяет на повторы другие поля автоматически из соображений
+эффективности, но в обозревателе есть функция "Найти повторы", которую можно
+запускать периодически.
 
-###  Effective Learning
+###  Эффективное обучение
 
-Разным людям нравится повторять по-разному,но есть некоторые общие концепции,
+Разным людям нравится повторять по-разному, но есть некоторые общие концепции,
 о которых следует помнить. Отличное введение — [эта статья](http://www.supermemo.com/articles/20rules.htm) на сайте SuperMemo. В частности:
 
-- **Keep it simple**: The shorter your cards, the easier they are to
-  review. You may be tempted to include lots of information "just in
-  case," but reviews will quickly become painful.
+- **Будь проще**: Чем короче карточки, тем легче их повторять. У вас может
+  возникнуть соблазн включить много информации "на всякий случай", но повторения
+  станут мучительными очень быстро.
 
-- **Don't memorize without understanding**: If you are studying a
-  language, try to avoid large lists of words. The best way to learn
-  languages is in context, which means seeing those words used in a
-  sentence. Likewise, imagine you're studying a computer course. If
-  you attempt to memorize the mountain of acronyms, you'll find it
-  very difficult to make progress. But if you take the time to
-  understand the concepts behind the acronyms, learning the acronyms
-  will become a lot easier.
+- **Не запоминай без понимания**: Если вы изучаете язык, старайтесь избегать
+  больших списков слов. Лучше всего изучать языки в контексте, что означает
+  видеть использование этих слов в предложении. Так же представьте, что вы
+  изучаете компьютерный курс. Пытаясь запомнить горы сокращений, вам будет очень
+  трудно добиться прогресса. Но уделив время на понимание ключевых принципов,
+  стоящих за этими сокращениями намного упростит их изучение.
 
 ## Добавление типа записи
 
-While basic note types are sufficient for simple cards with only a word
-or phrase on each side, as soon as you find yourself wanting to include
-more than one piece of information on the front or back, it's better to
-split that information up into more fields.
+В то время как основных типов записей достаточно для карточек с одним словом
+или фразой с каждой стороны, как только вы захотите добавлять больше одного
+фрагмента информации на лицевую или обратную стороны, лучше начать делить эту
+информацию на большее количество полей.
 
-You may find yourself thinking "but I only want one card, so why can't I
-just include the audio, a picture, a hint, and the translation in the
-Front field?" If you'd prefer to do that, that's fine. But the
-disadvantage of that approach is that all the information is stuck
-together. If you wanted to sort your cards by the hint, you wouldn't be
-able to do that as it is mixed in with the other content. You also
-wouldn't be able to do things such as moving the audio from the front to the
-back, except by laboriously copying and pasting it for every note. By
-keeping content in separate fields, you make it much easier to adjust
-the layout of your cards in the future.
+Вы можете подумать: "но я хочу лишь одну карточку, так почему я не могу просто
+добавить аудио, картинку, подсказку и перевод в Лицевом поле?" Если вы
+предпочитаете делать именно так, то это нормально. Но недостатком этого подхода
+является то, что вся информация оказывается склеенной. Если вы захотите
+отсортировать ваши корточки по подсказке, то не сможете этого сделать т.к. эта
+информация будет смешана с другим содержимым. Вы также не сможете делать такие
+вещи как, например, перенос аудио с лицевой стороны на оборотную без
+кропотливого копирования и вставки его для каждой отдельной записи. Держа
+информацию в разных полях, вы значительно облегчаете настройку внешнего вида
+ваших карточек в дальнейшем.
 
-To create a new type of note, choose Tools → Manage Note Types from the
-main Anki window. Then click "Add" to add a new type of note. You will now
-see another screen that gives you a choice of note types to base the new
-type on. "Add" means to base the newly created type on one that comes
-with Anki. "Clone" means to base the newly created type on one that is
-already in your collection. For instance, if you'd created a French
-vocab type already, you might want to clone that when creating a German
-vocab type.
+Чтобы создать новый тип записи, выберите Инструменты → Управлять типами записей
+в главном окне Anki. Затем нажмите "Добавить", чтобы добавить новый тип записи.
+Теперь вы увидите другой экран, в котором предлагается выбрать тип записи как
+основу нового типа. "Добавить" означает, создание нового типа на основе того,
+который изначально идёт с Anki. "Клонировать" означает, создание нового типа на
+основе того, который ужу находится в вашей коллекции. Например, если вы уже
+создали тип французский словарь, то, возможно вы захотите клонировать его при
+создании типа немецкий словарь.
 
-After choosing OK, you will be asked to name the new type. The subject
-material that you are studying is a good choice here – things like "Japanese",
-"Trivia", and so on. Once you have chosen a name, close the Note Types
-window, and you will return to the adding window.
+После выбора ОК вам будет предложено назвать новый тип. Тема материала, который
+вы сейчас изучаете, будет хорошим выбором, например, такие вещи как "Японский",
+"Викторина" и так далее. Выбрав имя, закройте окно Типы записей и вы вернётесь
+в окно добавления.
 
 ## Настройка полей
 
-To customize fields, click the "Fields…​" button when adding or editing
-a note, or while the note type is selected in the Manage Note Types
-window.
+Для настройки полей, нажмите кнопку "Поля…​" при добавлении или изменении
+записи, или когда тип записи выделен в окне Управления типами записей.
 
-You can add, remove, or rename fields by clicking the appropriate
-buttons. To change the order in which the fields appear in this dialog
-and the add notes dialog, you can use the reposition button, which asks
-for the numerical position you want the field to have. So if you want to
-change a field to be the new first field, enter "1".
+Вы можете добавлять, удалять или переименовывать поля, нажимая соответствующие
+кнопки. Чтобы изменить порядок, в котором поля отображаются в этом диалоговом
+окне и окне добавления записей, можно использовать кнопку переместить, которая
+запрашивает порядковый номер, который должно иметь поле. Так, если вы хотите
+переместить поле на место первого поля, введите "1".
 
 Не используйте в качестве имен полей 'Tags', 'Type', 'Deck', 'Card' или
 'FrontSide', так как это [специальные поля](templates/fields.md#Специальные-поля)
@@ -124,27 +123,28 @@ change a field to be the new first field, enter "1".
 вы _не_ настраиваете то, что появляется на карточках при повторении; для этого
 смотрите раздел [шаблоны](templates/intro.md).
 
-**Editing Font** allows you to customize the font and size used when
-editing notes. This is useful if you want to make unimportant
-information smaller, or increase the size of foreign characters which
-are hard to read. The changes you make here do not affect how cards
-appear when reviewing: to do that, please see the
-[templates](templates/intro.md) section. If you have enabled the "type in the
-answer" function, however, the text you type will use the font size
-defined here. (For information about how to change the actual font face
-when typing the answer, please see the [checking your
-answer](templates/fields.md#checking-your-answer) section.)
+**Шрифт в редакторе** позволяет настроить шрифт и размер шрифта при
+редактировании записей. Это полезно, если вы хотите сделать неважную информацию
+меньше или увеличить размер иностранных символов, которые трудно прочитать.
+Сделанные здесь изменения не влияют на то, как отображаются карточки при
+повторении: для этого смотрите раздел [шаблоны](templates/intro.md). Однако,
+если у вас включена функция "с вводом ответа", текст, который вы вводите, будет
+использовать заданный здесь размер шрифта. (Информацию о том, как изменить
+реальный вид шрифта при вводе ответа, смотрите в разделе
+[проверка своего ответа](templates/fields.md#Проверка-своего-ответа).)
+
 
 **Сортировать по этому полю…​** указывает Anki отображать это поле в столбце
 Поле сортировки обозревателя. Это можно использовать для сортировки карточек по
 этому полю. Одновременно только одно поле может быть полем сортировки.
 
-**Reverse text direction** is useful if you are studying languages that
-display text from right to left (RTL), such as Arabic or Hebrew. This
-setting currently only controls editing; to make sure the text displays
-correctly during review, you'll need to adjust your
-[template](templates/styling.md#text-direction).
+**Направление текста справа-налево** полезно при изучении языка который
+отображает текст справа-налево (англ. *right to left (RTL)*), например, арабский
+или иврит. В настоящее время этот параметр управляет только редактированием;
+чтобы убедиться, что текст отображается правильно во время повторения,
+необходимо настраивать свой [шаблон](templates/styling.md).
 
+<!----------------------------------------------------------------------------->
 After you have added fields, you will probably want to add them to the front
 or back of your cards. For more information on that, please see the
 [templates](templates/intro.md) section.
