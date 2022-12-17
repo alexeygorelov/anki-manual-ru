@@ -144,135 +144,125 @@ Anki не проверяет на повторы другие поля авто�
 чтобы убедиться, что текст отображается правильно во время повторения,
 необходимо настраивать свой [шаблон](templates/styling.md).
 
-<!----------------------------------------------------------------------------->
-After you have added fields, you will probably want to add them to the front
-or back of your cards. For more information on that, please see the
-[templates](templates/intro.md) section.
+После добавления полей, вы можете разместить их на лицевой или на обратной
+стороне карточек. Более подробную информацию cм. в разделе [шаблоны](templates/intro.md).
 
-## Changing Deck / Note Type
+## Изменение колоды/типа записи
 
-While adding, you can click on the top left button to change note type,
-and the top right button to change deck. The window that opens up will
-not only allow you to select a deck or note type, but also to add new
-decks or manage your note types.
+В окне добавления записи нажмите на кнопку в левом верхнем углу чтобы изменить тип записи
+или кнопку в правом верхнем углу чтобы переключиться на другую колоду.
+В открывшемся окне можно также добавить новые колоды и управлять типами записей.
 
 ## Organizing Content
 
 ### Правильное использование колод
 
-[Decks](getting-started.md#decks) are designed to divide your content up into
-broad categories that you wish to study separately, such as English, Geography,
-and so on. You may be tempted to create lots of little decks to keep your
-content organized, such as "my geography book chapter 1", or "food verbs", but
-this is not recommended, for the following reasons:
+[Колоды](getting-started.md#decks) созданы чтобы разбить карточки на обширные категории,
+которые будут изучаться по отдельности: английский, география и т. д.
+Вы можете создать много маленьких колод для поддержания порядка,
+например "мой учебник географии глава 1" или "глаголы, связанные с едой".
+Однако, так делать не рекомендуется по следующим причинам:
 
-- Lots of little decks may mean you end up seeing cards in a
-  recognizable order. On older scheduler versions, new cards can only
-  be introduced in deck order. And if you were planning to click on each deck
-  in turn (which is slow), you will end up seeing all the "chapter 1" or
-  "food verb" reviews together. This makes it easier to answer the
-  cards, as you can guess them from the context, which leads to weaker
-  memories. When you need to recall the word or phrase outside Anki,
-  you won't always have the luxury of being shown related content first!
+- Из-за множества маленьких колод карты будут показываться в одинаковом порядке.
+  Старые версии планировщика могут сортировать новые карточки только в порядке добавления.
+  К тому же, если вы собирались нажимать на колоды по порядку (это долго),
+  то карточки из "главы 1" и "глаголов" будут показываться вместе.
+  Поэтому отвечать на вопросы будет проще, основываясь на контексте,
+  и информация будет закрепляться хуже.
+  Когда нужно будет вспомнить слово или фразу вне Anki,
+  сопутствующей информации может не быть!
 
-- While less of a problem than it was in earlier Anki versions,
-  adding hundreds of decks may cause slowdowns, and very large deck
-  trees with thousands of items can actually break the display of
-  the deck list in Anki versions before 2.1.50.
+- Добавление сотен колод, особенно на более ранних версиях Anki,
+  может вызвать подтормаживание, а очень большие древа колод с тысячами
+  записей могут "сломать" отображение списка колод на версиях Anki до 2.1.50.
 
-### Using Tags
+### Использование меток
 
-Instead of creating lots of little decks, it's a better idea to use tags
-and/or fields to classify your content. Tags are a useful way to boost 
-search results, find specific content, and keep your collection 
-organized.
-There are many ways of using tags and flags effectively, and
-thinking in advance about how you want to use them will help you decide
-what will work best for you.
+Вместо создания множества маленьких колод, лучше разделять записи
+при помощи меток и/или полей. Метки помогают эффективнее искать записи,
+находить конкретную информацию и организовать всю коллекцию.
+Есть много хороших способов использовать метки и поля. Предварительно подумайте,
+каким образом вы будете ими пользоваться; так будет проще решить, какой подход выбрать.
 
-Some people prefer using decks and subdecks to keep their cards organized,
-but using tags have a big advantage over decks for that: you can add several
-tags to a single note, but a single card can only belong to one deck, which 
-makes tags a more powerful and flexible categorization system than 
-decks in most cases. You can also organize tags in trees [in the same way
-as you can do for decks](getting-started.md#decks).
+Некоторые предпочитают организовывать карточки путем создания колод,
+но у меток есть серьезное преимущество: у одной записи может быть несколько
+меток, но одна карта может находиться только в одной колоде. Это делает метки
+более мощным и гибким решением в большинстве случаев. Метки можно расположить
+в виде дерева [таким же способом, как и колоды](getting-started.md#decks).
 
-For example, instead of creating a "food verbs" deck, you could add those 
-cards to your main language study deck, and tag the cards with "food" and
-"verb". Since each card can have multiple tags, you can do things like 
-[search](searching.md#tags-decks-cards-and-notes) for all verbs, or all 
-food-related vocabulary, or all verbs that are related to food. 
+К примеру, вместо создания колоды "глаголы, связанные с едой", добавьте карточки
+в колоду для изучаемого языка и добавьте карточкам метки "еда" и "глагол". 
+Так как у карточек может быть много меток, можно
+[найти](searching.md#tags-decks-cards-and-notes) все глаголы, или все
+связанные с едой слова, или все глаголы, связанные с едой.
 
-You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
-delete, rename, or organize tags there. Please note that
-tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
-all the siblings will be tagged as well. If you need to tag a single card,
-but not its siblings, you should consider using flags instead.
+Метки можно добавить в окне редактирования или через [обозреватель](browsing.md).
+Там же метки можно удалить, переименовать или реорганизовать. Обратите внимание:
+метки работают на уровне [записи](getting-started.md#notes--fields). Указав метку
+для карты, все связанные карты также получат эту метку. Если нужно отметить
+только одну карту, не изменяя связанные, то стоит воспользоваться флагами.
 
-### Using Flags
+### Использование флагов
 
-Flags are similar to tags, but they will appear during study in the review 
-window, showing a colored flag icon on the upper right area of the screen. 
-You can also search for flagged cards in the Browse screen, rename flags 
-from the browser and create filtered decks from flagged cards, but unlike tags, 
-a single card can have only one flag at a time. Another important difference
-is that flags work at [card](getting-started.md#cards) level, so flagging a card that have siblings 
-won't have any effect on the card's siblings. 
+Флаги схожи с метками, но они показываются во время обучения на экране просмотра
+в виде цветной иконки в верхней правой части окна. Также вы можете найти карты с флагом
+в окне Обзора и создать из них фильтрованную колоду или переименовать флаг в обозревателе.
+В отличие от меток, у одной карты может быть только один флаг. Еще одно важное отличие:
+флаги работают на уровне [карты](getting-started.md#cards), а значит если отметить карту
+флагом, то связанные карты не будут отмечены.
 
-You can flag / unflag cards directly while in review mode (by pressing 
-<kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac) 
-and from the [Browser.](browsing.md)
+Поставить/снять флаг можно во время повторения карточек
+(нажатием <kbd>CTRL</kbd> + <kbd>1-7</kbd> на Windows или
+<kbd>CMD</kbd> + <kbd>1-7</kbd> на Mac) или через [обозреватель.](browsing.md)
 
 
-### The "Marked" Tag
+### Метка "marked" ("отмечено")
 
-Anki treats a tag called "marked" specially. There are options in the review
+Anki ведет себя по особому когда встречает метку "marked". There are options in the review
 screen and browse screen to add and remove the "marked" tag. The review screen 
 will show a star when the current card's note has that tag. And cards are 
 shown in a different color in the browse screen when their note is marked.
 
-Note: Marking is mainly left around for compatibility with older Anki 
-versions; most users will want to use flags instead.
+Примечание: метка "marked" нужна для обратной совместимости с более старыми
+версиями Anki; в большинстве случаев лучше использовать флаги.
 
 
-### Using Fields
+### Использование полей
 
-For those who like to stay very organized, you can add fields to your
-notes to classify your content, such as "book", "page", and so on. Anki
-supports searching in specific fields, which means you can do a search
-for `"book:my book" page:63` and immediately find what you're looking
-for.
+Если вы - очень организованный человек, то можете добавить поля своим
+записям, такие как "книга", "страница" и т.д. Anki поддерживает
+поиск по конкретным полям, что позволяет ввести `"book:my book" page:63`
+и быстро найти то, что вас интересует.
 
-### Custom Study and Filtered Decks
+### Дополнительные занятия и фильтрованные колоды
 
-Using [custom study and filtered deck](filtered-decks.md) you can create 
-temporary decks out of search
-terms. This allows you to review your content mixed together in a single
-deck most of the time (for optimum memory), but also create temporary
-decks when you need to focus on particular material, such as before a
-test. The general rule is that if you always want to be able to study
-some content separately, it should be in a normal deck; if you only
-occasionally need to be able to study it separately (for a test, when
-under a backlog, etc.), then filtered decks created from tags, flags, 
-marks or fields are better.
+С помощью [дополнительных занятий и фильтрованных колод](filtered-decks.md)
+вы можете создать временную колоду на основании результатов поиска.
+Это позволяет повторять карточки в случайном порядке большую часть времени
+(для лучшего закрепления) и создать временную колоду при необходимости
+сделать упор на определенной теме, например, перед экзаменом.
+Общее правило следующее: если материал требует отдельного изучения, то
+ему место в обычной колоде; если же материал будет отдельно изучаться
+только при необходимости (перед экзаменом, при отставании и т.д.), то
+лучше создать фильтрованную колоду с помощью меток, флагов и полей. 
 
-## Editing Features
+## Функции редактора
 
-The editor is shown when [adding notes](editing.md), [editing a
-note](studying.md) during reviews, or [browsing](browsing.md).
+Редактор отображается при [добавлении записей](editing.md),
+[их редактировании](studying.md) во время изучения и в [обозревателе](browsing.md).
 
-On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
-[cards](templates/intro.md) windows.
+В левом верхнем углу находятся кнопки, которые открывают окна 
+[полей](editing.md#customizing-fields) и [карточек](templates/intro.md) соответственно.
 
-On the right are buttons that control formatting. Bold, italic and
-underline work like they do in a word processing program. The next two
-buttons allow you to subscript or superscript text, which is useful for
-chemical compounds like H<sub>2</sub>O or simple mathematical equations like
-x<sup>2</sup>.
+Правее находятся кнопки форматирования. Жирный шрифт, курсив и подчеркивание
+работают как в текстовом процессоре. Следующие две кнопки позволяют
+указать верхний и нижний индекс, что полезно при написании химических формул
+(H<sub>2</sub>O) и простых математических выражений (x<sup>2</sup>).
 
-The rubber eraser button clears any formatting in the currently selected text — including the colour
-of the text,  whether the selected text is bold, etc.
+Кнопка с иконкой ластика сбрасывает форматирование выделенного
+текста — включая цвет, жирность шрифта и т.д.
 
+Следующие три кнопки 
 The next three buttons allow creating lists, text alignment and text indent.
 Then, there are two buttons to allow you to change text colour.
 
