@@ -1,7 +1,6 @@
 [book]
 authors = ["Ankitects Pty Ltd and contributors"]
 language = "ru"
-multilingual = false
 src = "src"
 title = "Руководство по Anki"
 
